@@ -26,15 +26,15 @@ app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key')
 CORS(app)  # 允许跨域请求
 
 # 数据文件路径 - 使用绝对路径
-DATA_FILE_PATH = '/home/zkr/因果发现/07分离/增强知识图谱完整结构.json'
-ALLOWED_DIRS = ['/home/zkr/因果发现/07分离']
-UPLOAD_DIR = '/home/zkr/因果发现/07分离/uploads'
-RAW_DIR = '/home/zkr/因果发现/07分离/原始数据'
-SECURE_DIR = '/home/zkr/因果发现/secure_credentials'
-OLD_USERS_FILE = '/home/zkr/因果发现/07分离/users.json'
-OLD_USER_LOG_FILE = '/home/zkr/因果发现/07分离/users.log'
-USERS_FILE = '/home/zkr/因果发现/secure_credentials/users.json'
-USER_LOG_FILE = '/home/zkr/因果发现/secure_credentials/users.log'
+DATA_FILE_PATH = '/home/zkr/因果发现3/07分离/增强知识图谱完整结构.json'
+ALLOWED_DIRS = ['/home/zkr/因果发现3/07分离']
+UPLOAD_DIR = '/home/zkr/因果发现3/07分离/uploads'
+RAW_DIR = '/home/zkr/因果发现3/07分离/原始数据'
+SECURE_DIR = '/home/zkr/因果发现3/secure_credentials'
+OLD_USERS_FILE = '/home/zkr/因果发现3/07分离/users.json'
+OLD_USER_LOG_FILE = '/home/zkr/因果发现3/07分离/users.log'
+USERS_FILE = '/home/zkr/因果发现3/secure_credentials/users.json'
+USER_LOG_FILE = '/home/zkr/因果发现3/secure_credentials/users.log'
 JWT_SECRET = os.environ.get('JWT_SECRET', 'dev-jwt-secret')
 JWT_TTL_SECONDS = 7 * 24 * 3600
 
@@ -312,10 +312,10 @@ class KnowledgeGraphAPI:
         # 若Theta缺失或命中很少，尝试从方法结果文件中补充（仅做键命中，不读取全部细节）
         if len(results) == 0:
             method_files = [
-                '/home/zkr/因果发现/03多方法参数学习/01MLE_CPT结果/MLE_CPTs.json',
-                '/home/zkr/因果发现/03多方法参数学习/02Bayesian_CPT结果/Bayesian_CPTs.json',
-                '/home/zkr/因果发现/03多方法参数学习/03EM_CPT结果/EM_CPTs.json',
-                '/home/zkr/因果发现/03多方法参数学习/04SEM_结果/SEM_CPT结果/SEM_CPTs.json'
+                '/home/zkr/因果发现3/03多方法参数学习/01MLE_CPT结果/MLE_CPTs.json',
+                '/home/zkr/因果发现3/03多方法参数学习/02Bayesian_CPT结果/Bayesian_CPTs.json',
+                '/home/zkr/因果发现3/03多方法参数学习/03EM_CPT结果/EM_CPTs.json',
+                '/home/zkr/因果发现3/03多方法参数学习/04SEM_结果/SEM_CPT结果/SEM_CPTs.json'
             ]
             for fp in method_files:
                 try:
@@ -448,7 +448,7 @@ class KnowledgeGraphAPI:
 
             # 附加：聚合边级似然增益，计算每方法与总体的平均值
             try:
-                edge_gain_path = '/home/zkr/因果发现/03多方法参数学习/05边级似然增益结果/边级似然增益结果.json'
+                edge_gain_path = '/home/zkr/因果发现3/03多方法参数学习/05边级似然增益结果/边级似然增益结果.json'
                 if os.path.exists(edge_gain_path):
                     with open(edge_gain_path, 'r', encoding='utf-8') as f:
                         edge_gain_data = json.load(f)
@@ -513,10 +513,10 @@ class KnowledgeGraphAPI:
 
         # Theta中未找到，回退到方法输出文件
         method_map = {
-            'MLE': '/home/zkr/因果发现/03多方法参数学习/01MLE_CPT结果/MLE_CPTs.json',
-            'Bayesian': '/home/zkr/因果发现/03多方法参数学习/02Bayesian_CPT结果/Bayesian_CPTs.json',
-            'EM': '/home/zkr/因果发现/03多方法参数学习/03EM_CPT结果/EM_CPTs.json',
-            'SEM': '/home/zkr/因果发现/03多方法参数学习/04SEM_结果/SEM_CPT结果/SEM_CPTs.json',
+            'MLE': '/home/zkr/因果发现3/03多方法参数学习/01MLE_CPT结果/MLE_CPTs.json',
+            'Bayesian': '/home/zkr/因果发现3/03多方法参数学习/02Bayesian_CPT结果/Bayesian_CPTs.json',
+            'EM': '/home/zkr/因果发现3/03多方法参数学习/03EM_CPT结果/EM_CPTs.json',
+            'SEM': '/home/zkr/因果发现3/03多方法参数学习/04SEM_结果/SEM_CPT结果/SEM_CPTs.json',
         }
         details['source'] = 'method_files'
         for mname, fp in method_map.items():
@@ -570,7 +570,7 @@ class KnowledgeGraphAPI:
 
         # Theta中未找到，已尝试方法文件。附加边级似然增益聚合
         try:
-            edge_gain_path = '/home/zkr/因果发现/03多方法参数学习/05边级似然增益结果/边级似然增益结果.json'
+            edge_gain_path = '/home/zkr/因果发现3/03多方法参数学习/05边级似然增益结果/边级似然增益结果.json'
             if os.path.exists(edge_gain_path):
                 with open(edge_gain_path, 'r', encoding='utf-8') as f:
                     edge_gain_data = json.load(f)

@@ -5,8 +5,8 @@ import json
 import shutil
 import stat
 
-OLD_DIR = '/home/zkr/因果发现/07分离'
-SECURE_DIR = '/home/zkr/因果发现/secure_credentials'
+OLD_DIR = '/home/zkr/因果发现3/07分离'
+SECURE_DIR = '/home/zkr/因果发现3/secure_credentials'
 OLD_USERS_FILE = os.path.join(OLD_DIR, 'users.json')
 OLD_LOG_FILE = os.path.join(OLD_DIR, 'users.log')
 NEW_USERS_FILE = os.path.join(SECURE_DIR, 'users.json')
