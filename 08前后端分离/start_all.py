@@ -58,14 +58,18 @@ def run_cmd(cmd: str, cwd: Path | None = None, blocking: bool = False):
 
 def start_backend():
     log("后端：检查虚拟环境与依赖...")
+    conda_prefix = os.environ.get('CONDA_PREFIX', '')
+    use_conda = os.path.exists(os.path.join(conda_prefix, 'bin', 'python'))
     venv_dir = BACKEND_DIR / 'venv'
-    if not venv_dir.exists():
-        log("后端：创建Python虚拟环境...")
-        subprocess.run([sys.executable, '-m', 'venv', str(venv_dir)], check=True)
-
-    # activate venv by using its python explicitly
-    python_bin = venv_dir / 'bin' / 'python'
-    pip_bin = venv_dir / 'bin' / 'pip'
+    if use_conda:
+        python_bin = Path(conda_prefix) / 'bin' / 'python'
+        pip_bin = Path(conda_prefix) / 'bin' / 'pip'
+    else:
+        if not venv_dir.exists():
+            log("后端：创建Python虚拟环境...")
+            subprocess.run([sys.executable, '-m', 'venv', str(venv_dir)], check=True)
+        python_bin = venv_dir / 'bin' / 'python'
+        pip_bin = venv_dir / 'bin' / 'pip'
 
     log("后端：安装依赖（requirements.txt）...")
     subprocess.run([str(pip_bin), 'install', '-r', 'requirements.txt'], cwd=str(BACKEND_DIR), check=True)
