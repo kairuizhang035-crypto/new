@@ -1,0 +1,3857 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d9" for="edge" attr.name="weight_ref" attr.type="string" />
+  <key id="d8" for="edge" attr.name="support_algorithm_count" attr.type="long" />
+  <key id="d7" for="edge" attr.name="edge_hierarchy" attr.type="string" />
+  <key id="d6" for="edge" attr.name="relation_type" attr.type="string" />
+  <key id="d5" for="edge" attr.name="is_triangulated" attr.type="boolean" />
+  <key id="d4" for="edge" attr.name="integrated_score" attr.type="double" />
+  <key id="d3" for="edge" attr.name="quality_level" attr.type="string" />
+  <key id="d2" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d1" for="node" attr.name="label" attr.type="string" />
+  <key id="d0" for="node" attr.name="node_type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="检验_嗜酸性粒细胞数量">
+      <data key="d0">检验</data>
+      <data key="d1">检验_嗜酸性粒细胞数量</data>
+    </node>
+    <node id="药物_磷酸可待因片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_磷酸可待因片</data>
+    </node>
+    <node id="药物_复方鲜竹沥液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_复方鲜竹沥液</data>
+    </node>
+    <node id="疾病_心功能">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_心功能</data>
+    </node>
+    <node id="药物_盐酸布桂嗪注射液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_盐酸布桂嗪注射液</data>
+    </node>
+    <node id="疾病_肾性贫血">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_肾性贫血</data>
+    </node>
+    <node id="药物_肝素钠注射液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_肝素钠注射液</data>
+    </node>
+    <node id="疾病_脑梗死">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_脑梗死</data>
+    </node>
+    <node id="药物_碳酸钙片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_碳酸钙片</data>
+    </node>
+    <node id="药物_维生素B6注射液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_维生素B6注射液</data>
+    </node>
+    <node id="检验_氯">
+      <data key="d0">检验</data>
+      <data key="d1">检验_氯</data>
+    </node>
+    <node id="疾病_颈椎病">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_颈椎病</data>
+    </node>
+    <node id="药物_骨化三醇胶丸">
+      <data key="d0">药物</data>
+      <data key="d1">药物_骨化三醇胶丸</data>
+    </node>
+    <node id="药物_卡维地洛片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_卡维地洛片</data>
+    </node>
+    <node id="药物_盐酸二甲双胍片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_盐酸二甲双胍片</data>
+    </node>
+    <node id="药物_硝苯地平控释片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_硝苯地平控释片</data>
+    </node>
+    <node id="药物_甲钴胺分散片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_甲钴胺分散片</data>
+    </node>
+    <node id="检验_红细胞压积">
+      <data key="d0">检验</data>
+      <data key="d1">检验_红细胞压积</data>
+    </node>
+    <node id="检验_钠">
+      <data key="d0">检验</data>
+      <data key="d1">检验_钠</data>
+    </node>
+    <node id="检验_红细胞平均体积">
+      <data key="d0">检验</data>
+      <data key="d1">检验_红细胞平均体积</data>
+    </node>
+    <node id="疾病_肝功能异常">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_肝功能异常</data>
+    </node>
+    <node id="检验_葡萄糖">
+      <data key="d0">检验</data>
+      <data key="d1">检验_葡萄糖</data>
+    </node>
+    <node id="药物_碳酸氢钠片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_碳酸氢钠片</data>
+    </node>
+    <node id="疾病_尿毒症">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_尿毒症</data>
+    </node>
+    <node id="检验_白球比">
+      <data key="d0">检验</data>
+      <data key="d1">检验_白球比</data>
+    </node>
+    <node id="药物_酒石酸美托洛尔片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_酒石酸美托洛尔片</data>
+    </node>
+    <node id="疾病_前列腺增生">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_前列腺增生</data>
+    </node>
+    <node id="检验_谷草/谷丙">
+      <data key="d0">检验</data>
+      <data key="d1">检验_谷草/谷丙</data>
+    </node>
+    <node id="疾病_心律失常">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_心律失常</data>
+    </node>
+    <node id="疾病_泌尿系感染">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_泌尿系感染</data>
+    </node>
+    <node id="疾病_不稳定性心绞痛">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_不稳定性心绞痛</data>
+    </node>
+    <node id="疾病_脂肪肝">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_脂肪肝</data>
+    </node>
+    <node id="药物_维生素C注射液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_维生素C注射液</data>
+    </node>
+    <node id="疾病_腔隙性脑梗死">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_腔隙性脑梗死</data>
+    </node>
+    <node id="药物_二羟丙茶碱注射液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_二羟丙茶碱注射液</data>
+    </node>
+    <node id="药物_琥珀酸亚铁片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_琥珀酸亚铁片</data>
+    </node>
+    <node id="疾病_重度骨质疏松">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_重度骨质疏松</data>
+    </node>
+    <node id="药物_单硝酸异山梨酯缓释片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_单硝酸异山梨酯缓释片</data>
+    </node>
+    <node id="检验_红细胞分布宽度SD">
+      <data key="d0">检验</data>
+      <data key="d1">检验_红细胞分布宽度SD</data>
+    </node>
+    <node id="药物_氯化钾注射液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_氯化钾注射液</data>
+    </node>
+    <node id="疾病_医疗机构新收治患者及陪护人员">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_医疗机构新收治患者及陪护人员</data>
+    </node>
+    <node id="检验_谷丙转氨酶">
+      <data key="d0">检验</data>
+      <data key="d1">检验_谷丙转氨酶</data>
+    </node>
+    <node id="检验_平均血小板体积">
+      <data key="d0">检验</data>
+      <data key="d1">检验_平均血小板体积</data>
+    </node>
+    <node id="检验_钙">
+      <data key="d0">检验</data>
+      <data key="d1">检验_钙</data>
+    </node>
+    <node id="药物_硫酸氢氯吡格雷片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_硫酸氢氯吡格雷片</data>
+    </node>
+    <node id="疾病_肛乳头肥大">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_肛乳头肥大</data>
+    </node>
+    <node id="检验_平均血红蛋白含量">
+      <data key="d0">检验</data>
+      <data key="d1">检验_平均血红蛋白含量</data>
+    </node>
+    <node id="疾病_腰椎间盘突出">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_腰椎间盘突出</data>
+    </node>
+    <node id="检验_血红蛋白">
+      <data key="d0">检验</data>
+      <data key="d1">检验_血红蛋白</data>
+    </node>
+    <node id="检验_中性粒细胞数量">
+      <data key="d0">检验</data>
+      <data key="d1">检验_中性粒细胞数量</data>
+    </node>
+    <node id="检验_总胆汁酸">
+      <data key="d0">检验</data>
+      <data key="d1">检验_总胆汁酸</data>
+    </node>
+    <node id="检验_C反应蛋白">
+      <data key="d0">检验</data>
+      <data key="d1">检验_C反应蛋白</data>
+    </node>
+    <node id="药物_盐酸氨溴索注射液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_盐酸氨溴索注射液</data>
+    </node>
+    <node id="检验_间接胆红素">
+      <data key="d0">检验</data>
+      <data key="d1">检验_间接胆红素</data>
+    </node>
+    <node id="药物_富马酸比索洛尔片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_富马酸比索洛尔片</data>
+    </node>
+    <node id="疾病_冠状动脉粥样硬化性心脏病">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_冠状动脉粥样硬化性心脏病</data>
+    </node>
+    <node id="药物_螺内酯片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_螺内酯片</data>
+    </node>
+    <node id="疾病_恶性肿瘤维持性化学治疗">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_恶性肿瘤维持性化学治疗</data>
+    </node>
+    <node id="药物_甲钴胺片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_甲钴胺片</data>
+    </node>
+    <node id="检验_嗜酸性粒细胞比率">
+      <data key="d0">检验</data>
+      <data key="d1">检验_嗜酸性粒细胞比率</data>
+    </node>
+    <node id="检验_白蛋白">
+      <data key="d0">检验</data>
+      <data key="d1">检验_白蛋白</data>
+    </node>
+    <node id="疾病_肢体动脉硬化">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_肢体动脉硬化</data>
+    </node>
+    <node id="疾病_颈总动脉斑块">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_颈总动脉斑块</data>
+    </node>
+    <node id="药物_叶酸片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_叶酸片</data>
+    </node>
+    <node id="药物_佐匹克隆片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_佐匹克隆片</data>
+    </node>
+    <node id="药物_劳拉西泮片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_劳拉西泮片</data>
+    </node>
+    <node id="疾病_慢性胃炎">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_慢性胃炎</data>
+    </node>
+    <node id="药物_地西泮片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_地西泮片</data>
+    </node>
+    <node id="药物_厄贝沙坦氢氯噻嗪片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_厄贝沙坦氢氯噻嗪片</data>
+    </node>
+    <node id="检验_碳酸氢盐">
+      <data key="d0">检验</data>
+      <data key="d1">检验_碳酸氢盐</data>
+    </node>
+    <node id="疾病_老年性白内障">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_老年性白内障</data>
+    </node>
+    <node id="药物_葡萄糖注射液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_葡萄糖注射液</data>
+    </node>
+    <node id="检验_红细胞">
+      <data key="d0">检验</data>
+      <data key="d1">检验_红细胞</data>
+    </node>
+    <node id="疾病_高尿酸血症">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_高尿酸血症</data>
+    </node>
+    <node id="药物_贞芪扶正">
+      <data key="d0">药物</data>
+      <data key="d1">药物_贞芪扶正</data>
+    </node>
+    <node id="药物_呋塞米片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_呋塞米片</data>
+    </node>
+    <node id="疾病_后天性肾囊肿">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_后天性肾囊肿</data>
+    </node>
+    <node id="药物_精蛋白生物合成人胰岛素注射液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_精蛋白生物合成人胰岛素注射液</data>
+    </node>
+    <node id="疾病_白内障">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_白内障</data>
+    </node>
+    <node id="检验_淋巴细胞数量">
+      <data key="d0">检验</data>
+      <data key="d1">检验_淋巴细胞数量</data>
+    </node>
+    <node id="检验_总胆红素">
+      <data key="d0">检验</data>
+      <data key="d1">检验_总胆红素</data>
+    </node>
+    <node id="药物_苯磺酸氨氯地平片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_苯磺酸氨氯地平片</data>
+    </node>
+    <node id="药物_阿托伐他汀钙片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_阿托伐他汀钙片</data>
+    </node>
+    <node id="疾病_高脂血症">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_高脂血症</data>
+    </node>
+    <node id="检验_前白蛋白">
+      <data key="d0">检验</data>
+      <data key="d1">检验_前白蛋白</data>
+    </node>
+    <node id="药物_重组人促红素注射液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_重组人促红素注射液</data>
+    </node>
+    <node id="检验_直接胆红素">
+      <data key="d0">检验</data>
+      <data key="d1">检验_直接胆红素</data>
+    </node>
+    <node id="检验_谷草转氨酶">
+      <data key="d0">检验</data>
+      <data key="d1">检验_谷草转氨酶</data>
+    </node>
+    <node id="检验_单核细胞比率">
+      <data key="d0">检验</data>
+      <data key="d1">检验_单核细胞比率</data>
+    </node>
+    <node id="检验_血小板">
+      <data key="d0">检验</data>
+      <data key="d1">检验_血小板</data>
+    </node>
+    <node id="疾病_糖尿病">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_糖尿病</data>
+    </node>
+    <node id="检验_转肽酶">
+      <data key="d0">检验</data>
+      <data key="d1">检验_转肽酶</data>
+    </node>
+    <node id="检验_总蛋白">
+      <data key="d0">检验</data>
+      <data key="d1">检验_总蛋白</data>
+    </node>
+    <node id="药物_阿卡波糖片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_阿卡波糖片</data>
+    </node>
+    <node id="疾病_肺部感染">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_肺部感染</data>
+    </node>
+    <node id="疾病_血糖控制不佳">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_血糖控制不佳</data>
+    </node>
+    <node id="疾病_反流性食管炎">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_反流性食管炎</data>
+    </node>
+    <node id="疾病_贫血">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_贫血</data>
+    </node>
+    <node id="药物_地西泮注射液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_地西泮注射液</data>
+    </node>
+    <node id="疾病_混合痔">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_混合痔</data>
+    </node>
+    <node id="疾病_非毒性多个甲状腺结节">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_非毒性多个甲状腺结节</data>
+    </node>
+    <node id="疾病_动脉硬化">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_动脉硬化</data>
+    </node>
+    <node id="检验_尿酸">
+      <data key="d0">检验</data>
+      <data key="d1">检验_尿酸</data>
+    </node>
+    <node id="疾病_低蛋白血症">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_低蛋白血症</data>
+    </node>
+    <node id="药物_阿司匹林肠溶片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_阿司匹林肠溶片</data>
+    </node>
+    <node id="疾病_肝囊肿">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_肝囊肿</data>
+    </node>
+    <node id="检验_碱性磷酸酶">
+      <data key="d0">检验</data>
+      <data key="d1">检验_碱性磷酸酶</data>
+    </node>
+    <node id="检验_镁">
+      <data key="d0">检验</data>
+      <data key="d1">检验_镁</data>
+    </node>
+    <node id="疾病_非毒性单个甲状腺结节">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_非毒性单个甲状腺结节</data>
+    </node>
+    <node id="检验_球蛋白">
+      <data key="d0">检验</data>
+      <data key="d1">检验_球蛋白</data>
+    </node>
+    <node id="检验_白细胞">
+      <data key="d0">检验</data>
+      <data key="d1">检验_白细胞</data>
+    </node>
+    <node id="检验_红细胞分布宽度CV">
+      <data key="d0">检验</data>
+      <data key="d1">检验_红细胞分布宽度CV</data>
+    </node>
+    <node id="检验_中性粒细胞比率">
+      <data key="d0">检验</data>
+      <data key="d1">检验_中性粒细胞比率</data>
+    </node>
+    <node id="疾病_结肠息肉">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_结肠息肉</data>
+    </node>
+    <node id="检验_血小板比容">
+      <data key="d0">检验</data>
+      <data key="d1">检验_血小板比容</data>
+    </node>
+    <node id="疾病_高血压">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_高血压</data>
+    </node>
+    <node id="药物_盐酸羟考酮缓释片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_盐酸羟考酮缓释片</data>
+    </node>
+    <node id="药物_氯化钠注射液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_氯化钠注射液</data>
+    </node>
+    <node id="药物_厄贝沙坦片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_厄贝沙坦片</data>
+    </node>
+    <node id="药物_头孢地尼分散片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_头孢地尼分散片</data>
+    </node>
+    <node id="疾病_糖尿病性视网膜病变">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_糖尿病性视网膜病变</data>
+    </node>
+    <node id="检验_平均血红蛋白浓度">
+      <data key="d0">检验</data>
+      <data key="d1">检验_平均血红蛋白浓度</data>
+    </node>
+    <node id="检验_大型血小板比率">
+      <data key="d0">检验</data>
+      <data key="d1">检验_大型血小板比率</data>
+    </node>
+    <node id="药物_盐酸曲美他嗪片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_盐酸曲美他嗪片</data>
+    </node>
+    <node id="药物_艾司唑仑片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_艾司唑仑片</data>
+    </node>
+    <node id="疾病_慢性支气管炎">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_慢性支气管炎</data>
+    </node>
+    <node id="疾病_肺恶性肿瘤">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_肺恶性肿瘤</data>
+    </node>
+    <node id="疾病_胆囊结石">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_胆囊结石</data>
+    </node>
+    <node id="药物_匹伐他汀钙片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_匹伐他汀钙片</data>
+    </node>
+    <node id="检验_淋巴细胞比率">
+      <data key="d0">检验</data>
+      <data key="d1">检验_淋巴细胞比率</data>
+    </node>
+    <node id="疾病_高同型半胱氨酸血症">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_高同型半胱氨酸血症</data>
+    </node>
+    <node id="疾病_糖尿病性周围神经病">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_糖尿病性周围神经病</data>
+    </node>
+    <node id="药物_单硝酸异山梨酯片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_单硝酸异山梨酯片</data>
+    </node>
+    <node id="药物_盐酸吗啡注射液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_盐酸吗啡注射液</data>
+    </node>
+    <node id="药物_裸花紫珠分散片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_裸花紫珠分散片</data>
+    </node>
+    <node id="疾病_类风湿性关节炎">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_类风湿性关节炎</data>
+    </node>
+    <node id="检验_胆碱酯酶">
+      <data key="d0">检验</data>
+      <data key="d1">检验_胆碱酯酶</data>
+    </node>
+    <node id="检验_嗜碱性粒细胞比率">
+      <data key="d0">检验</data>
+      <data key="d1">检验_嗜碱性粒细胞比率</data>
+    </node>
+    <node id="疾病_陈旧性脑梗死">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_陈旧性脑梗死</data>
+    </node>
+    <node id="检验_血小板分布宽度">
+      <data key="d0">检验</data>
+      <data key="d1">检验_血小板分布宽度</data>
+    </node>
+    <node id="药物_硝苯地平缓释片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_硝苯地平缓释片</data>
+    </node>
+    <node id="检验_钾">
+      <data key="d0">检验</data>
+      <data key="d1">检验_钾</data>
+    </node>
+    <node id="疾病_低钾血症">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_低钾血症</data>
+    </node>
+    <node id="疾病_糖尿病性周围血管病">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_糖尿病性周围血管病</data>
+    </node>
+    <node id="检验_磷">
+      <data key="d0">检验</data>
+      <data key="d1">检验_磷</data>
+    </node>
+    <node id="检验_嗜碱性粒细胞数量">
+      <data key="d0">检验</data>
+      <data key="d1">检验_嗜碱性粒细胞数量</data>
+    </node>
+    <node id="检验_单核细胞数量">
+      <data key="d0">检验</data>
+      <data key="d1">检验_单核细胞数量</data>
+    </node>
+    <node id="检验_肌酐">
+      <data key="d0">检验</data>
+      <data key="d1">检验_肌酐</data>
+    </node>
+    <edge source="检验_嗜酸性粒细胞数量" target="检验_嗜酸性粒细胞比率">
+      <data key="d2">0.054399265398345845</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3399954087396615</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_嗜酸性粒细胞数量-&gt;检验_嗜酸性粒细胞比率</data>
+    </edge>
+    <edge source="检验_嗜酸性粒细胞数量" target="疾病_心功能">
+      <data key="d2">0.0538893217301188</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3368082608132425</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_嗜酸性粒细胞数量-&gt;疾病_心功能</data>
+    </edge>
+    <edge source="疾病_心功能" target="疾病_不稳定性心绞痛">
+      <data key="d2">0.053837842790302404</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.33648651743939</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_心功能-&gt;疾病_不稳定性心绞痛</data>
+    </edge>
+    <edge source="疾病_肾性贫血" target="药物_碳酸氢钠片">
+      <data key="d2">0.580029052033947</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.656295393803042</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">疾病_肾性贫血-&gt;药物_碳酸氢钠片</data>
+    </edge>
+    <edge source="疾病_肾性贫血" target="药物_骨化三醇胶丸">
+      <data key="d2">0.05415438844464679</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3384649277790424</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_肾性贫血-&gt;药物_骨化三醇胶丸</data>
+    </edge>
+    <edge source="疾病_肾性贫血" target="药物_琥珀酸亚铁片">
+      <data key="d2">0.05393416516088084</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3370885322555053</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_肾性贫血-&gt;药物_琥珀酸亚铁片</data>
+    </edge>
+    <edge source="药物_肝素钠注射液" target="疾病_脑梗死">
+      <data key="d2">0.3003173648954589</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5008815691540526</data>
+      <data key="d5">True</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_肝素钠注射液-&gt;疾病_脑梗死</data>
+    </edge>
+    <edge source="药物_肝素钠注射液" target="药物_氯化钠注射液">
+      <data key="d2">0.054073667456686125</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3379604216042883</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_肝素钠注射液-&gt;药物_氯化钠注射液</data>
+    </edge>
+    <edge source="疾病_脑梗死" target="药物_肝素钠注射液">
+      <data key="d2">0.05454105106464842</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3408815691540526</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_脑梗死-&gt;药物_肝素钠注射液</data>
+    </edge>
+    <edge source="疾病_脑梗死" target="疾病_糖尿病性视网膜病变">
+      <data key="d2">0.054104067370677134</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3381504210667321</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_脑梗死-&gt;疾病_糖尿病性视网膜病变</data>
+    </edge>
+    <edge source="药物_碳酸钙片" target="药物_骨化三醇胶丸">
+      <data key="d2">0.053876956668191714</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3367309791761982</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_碳酸钙片-&gt;药物_骨化三醇胶丸</data>
+    </edge>
+    <edge source="药物_碳酸钙片" target="疾病_糖尿病性视网膜病变">
+      <data key="d2">0.053505501353975506</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3344093834623469</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_碳酸钙片-&gt;疾病_糖尿病性视网膜病变</data>
+    </edge>
+    <edge source="检验_氯" target="检验_钠">
+      <data key="d2">0.5814456343184181</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.6585088036225283</data>
+      <data key="d5">True</data>
+      <data key="d6">test_test</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">检验_氯-&gt;检验_钠</data>
+    </edge>
+    <edge source="检验_氯" target="药物_单硝酸异山梨酯缓释片">
+      <data key="d2">0.053942061849586345</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3371378865599146</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_氯-&gt;药物_单硝酸异山梨酯缓释片</data>
+    </edge>
+    <edge source="检验_氯" target="药物_葡萄糖注射液">
+      <data key="d2">0.05370466019472103</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3356541262170064</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_氯-&gt;药物_葡萄糖注射液</data>
+    </edge>
+    <edge source="疾病_颈椎病" target="疾病_腰椎间盘突出">
+      <data key="d2">0.4193807174545248</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.655282371022695</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">4</data>
+      <data key="d9">疾病_颈椎病-&gt;疾病_腰椎间盘突出</data>
+    </edge>
+    <edge source="药物_骨化三醇胶丸" target="疾病_类风湿性关节炎">
+      <data key="d2">0.11921984065616403</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4967493360673501</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_骨化三醇胶丸-&gt;疾病_类风湿性关节炎</data>
+    </edge>
+    <edge source="药物_骨化三醇胶丸" target="药物_碳酸钙片">
+      <data key="d2">0.11921543500228757</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4967309791761982</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_骨化三醇胶丸-&gt;药物_碳酸钙片</data>
+    </edge>
+    <edge source="药物_骨化三醇胶丸" target="药物_酒石酸美托洛尔片">
+      <data key="d2">0.054087487376581256</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3380467961036328</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_骨化三醇胶丸-&gt;药物_酒石酸美托洛尔片</data>
+    </edge>
+    <edge source="药物_硝苯地平控释片" target="药物_厄贝沙坦片">
+      <data key="d2">0.11858148765942195</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4940895319142581</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_硝苯地平控释片-&gt;药物_厄贝沙坦片</data>
+    </edge>
+    <edge source="药物_硝苯地平控释片" target="药物_厄贝沙坦氢氯噻嗪片">
+      <data key="d2">0.11839553626379667</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4933147344324862</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_硝苯地平控释片-&gt;药物_厄贝沙坦氢氯噻嗪片</data>
+    </edge>
+    <edge source="药物_甲钴胺分散片" target="药物_卡维地洛片">
+      <data key="d2">0.053644672558752854</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3352792034922053</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_甲钴胺分散片-&gt;药物_卡维地洛片</data>
+    </edge>
+    <edge source="检验_红细胞压积" target="检验_红细胞分布宽度CV">
+      <data key="d2">0.054576946782867265</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3411059173929204</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞压积-&gt;检验_红细胞分布宽度CV</data>
+    </edge>
+    <edge source="检验_红细胞压积" target="检验_红细胞">
+      <data key="d2">0.05449305451384308</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3405815907115192</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞压积-&gt;检验_红细胞</data>
+    </edge>
+    <edge source="检验_红细胞压积" target="检验_直接胆红素">
+      <data key="d2">0.054162145152178244</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.338513407201114</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞压积-&gt;检验_直接胆红素</data>
+    </edge>
+    <edge source="检验_红细胞压积" target="药物_碳酸氢钠片">
+      <data key="d2">0.05382442303841874</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3364026439901171</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞压积-&gt;药物_碳酸氢钠片</data>
+    </edge>
+    <edge source="检验_钠" target="药物_重组人促红素注射液">
+      <data key="d2">0.05440011178354919</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3400006986471824</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_钠-&gt;药物_重组人促红素注射液</data>
+    </edge>
+    <edge source="检验_钠" target="检验_淋巴细胞比率">
+      <data key="d2">0.054280575709142145</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3392535981821384</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_钠-&gt;检验_淋巴细胞比率</data>
+    </edge>
+    <edge source="检验_钠" target="检验_葡萄糖">
+      <data key="d2">0.05422661927960111</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3389163704975069</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_钠-&gt;检验_葡萄糖</data>
+    </edge>
+    <edge source="检验_钠" target="检验_氯">
+      <data key="d2">0.05416140857960453</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3385088036225283</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_钠-&gt;检验_氯</data>
+    </edge>
+    <edge source="检验_红细胞平均体积" target="检验_平均血红蛋白含量">
+      <data key="d2">0.18018040431410273</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5005011230947298</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_红细胞平均体积-&gt;检验_平均血红蛋白含量</data>
+    </edge>
+    <edge source="检验_葡萄糖" target="疾病_肝囊肿">
+      <data key="d2">0.11915510266853437</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4964795944522265</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_葡萄糖-&gt;疾病_肝囊肿</data>
+    </edge>
+    <edge source="检验_葡萄糖" target="疾病_糖尿病">
+      <data key="d2">0.13515973972407666</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3447483732754789</data>
+      <data key="d5">True</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_葡萄糖-&gt;疾病_糖尿病</data>
+    </edge>
+    <edge source="检验_葡萄糖" target="药物_地西泮注射液">
+      <data key="d2">0.053914497419200014</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3369656088700001</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_葡萄糖-&gt;药物_地西泮注射液</data>
+    </edge>
+    <edge source="检验_葡萄糖" target="药物_碳酸钙片">
+      <data key="d2">0.05389849534898085</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3368655959311303</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_葡萄糖-&gt;药物_碳酸钙片</data>
+    </edge>
+    <edge source="药物_碳酸氢钠片" target="检验_磷">
+      <data key="d2">0.053677620049586885</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.335485125309918</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_碳酸氢钠片-&gt;检验_磷</data>
+    </edge>
+    <edge source="疾病_尿毒症" target="检验_胆碱酯酶">
+      <data key="d2">0.23941601165905751</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.497566715246073</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_尿毒症-&gt;检验_胆碱酯酶</data>
+    </edge>
+    <edge source="疾病_尿毒症" target="检验_谷丙转氨酶">
+      <data key="d2">0.11926271720599127</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.496927988358297</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_尿毒症-&gt;检验_谷丙转氨酶</data>
+    </edge>
+    <edge source="疾病_尿毒症" target="疾病_高血压">
+      <data key="d2">0.058550241841002194</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3659390115062637</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_尿毒症-&gt;疾病_高血压</data>
+    </edge>
+    <edge source="疾病_尿毒症" target="检验_淋巴细胞数量">
+      <data key="d2">0.054360982285191095</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3397561392824443</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_尿毒症-&gt;检验_淋巴细胞数量</data>
+    </edge>
+    <edge source="疾病_尿毒症" target="检验_肌酐">
+      <data key="d2">0.054014980387152425</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3375936274197026</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_尿毒症-&gt;检验_肌酐</data>
+    </edge>
+    <edge source="疾病_尿毒症" target="检验_红细胞平均体积">
+      <data key="d2">0.053967176759261506</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3372948547453844</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_尿毒症-&gt;检验_红细胞平均体积</data>
+    </edge>
+    <edge source="检验_白球比" target="检验_C反应蛋白">
+      <data key="d2">1.0192662966330273</data>
+      <data key="d3">platinum</data>
+      <data key="d4">0.8192662966330273</data>
+      <data key="d5">True</data>
+      <data key="d6">test_test</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">5</data>
+      <data key="d9">检验_白球比-&gt;检验_C反应蛋白</data>
+    </edge>
+    <edge source="检验_白球比" target="检验_前白蛋白">
+      <data key="d2">0.18071546472545635</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5019874020151566</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_白球比-&gt;检验_前白蛋白</data>
+    </edge>
+    <edge source="检验_白球比" target="检验_白蛋白">
+      <data key="d2">0.18006457496098777</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5001793748916327</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_白球比-&gt;检验_白蛋白</data>
+    </edge>
+    <edge source="检验_白球比" target="检验_血小板">
+      <data key="d2">0.11985040377443001</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4993766823934584</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_白球比-&gt;检验_血小板</data>
+    </edge>
+    <edge source="检验_白球比" target="疾病_高脂血症">
+      <data key="d2">0.055092010097964376</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3443250631122773</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_白球比-&gt;疾病_高脂血症</data>
+    </edge>
+    <edge source="检验_白球比" target="药物_氯化钾注射液">
+      <data key="d2">0.05449789099274182</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3406118187046363</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_白球比-&gt;药物_氯化钾注射液</data>
+    </edge>
+    <edge source="检验_白球比" target="检验_钙">
+      <data key="d2">0.05432859323803292</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3395537077377057</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_白球比-&gt;检验_钙</data>
+    </edge>
+    <edge source="检验_白球比" target="药物_盐酸吗啡注射液">
+      <data key="d2">0.053977526609343754</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3373595413083984</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_白球比-&gt;药物_盐酸吗啡注射液</data>
+    </edge>
+    <edge source="药物_酒石酸美托洛尔片" target="药物_富马酸比索洛尔片">
+      <data key="d2">0.05384458587928477</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3365286617455298</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_酒石酸美托洛尔片-&gt;药物_富马酸比索洛尔片</data>
+    </edge>
+    <edge source="药物_酒石酸美托洛尔片" target="药物_硝苯地平缓释片">
+      <data key="d2">0.05370119648063221</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3356324780039513</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_酒石酸美托洛尔片-&gt;药物_硝苯地平缓释片</data>
+    </edge>
+    <edge source="疾病_前列腺增生" target="检验_钙">
+      <data key="d2">0.11915075324780403</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4964614718658501</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_前列腺增生-&gt;检验_钙</data>
+    </edge>
+    <edge source="疾病_心律失常" target="疾病_慢性支气管炎">
+      <data key="d2">0.053534701470187254</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3345918841886703</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_心律失常-&gt;疾病_慢性支气管炎</data>
+    </edge>
+    <edge source="疾病_不稳定性心绞痛" target="疾病_心功能">
+      <data key="d2">0.5801513711612097</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.65648651743939</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">疾病_不稳定性心绞痛-&gt;疾病_心功能</data>
+    </edge>
+    <edge source="疾病_不稳定性心绞痛" target="疾病_反流性食管炎">
+      <data key="d2">0.05444890005053298</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3403056253158311</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_不稳定性心绞痛-&gt;疾病_反流性食管炎</data>
+    </edge>
+    <edge source="疾病_不稳定性心绞痛" target="药物_盐酸曲美他嗪片">
+      <data key="d2">0.05393936172419486</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3371210107762178</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_不稳定性心绞痛-&gt;药物_盐酸曲美他嗪片</data>
+    </edge>
+    <edge source="疾病_脂肪肝" target="疾病_胆囊结石">
+      <data key="d2">0.05441682255956453</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3401051409972783</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_脂肪肝-&gt;疾病_胆囊结石</data>
+    </edge>
+    <edge source="疾病_脂肪肝" target="检验_C反应蛋白">
+      <data key="d2">0.05413430280193147</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3383393925120717</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_脂肪肝-&gt;检验_C反应蛋白</data>
+    </edge>
+    <edge source="疾病_脂肪肝" target="疾病_糖尿病性周围血管病">
+      <data key="d2">0.05396531274037265</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3372832046273291</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_脂肪肝-&gt;疾病_糖尿病性周围血管病</data>
+    </edge>
+    <edge source="疾病_脂肪肝" target="疾病_肺恶性肿瘤">
+      <data key="d2">0.05395220689564032</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.337201293097752</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_脂肪肝-&gt;疾病_肺恶性肿瘤</data>
+    </edge>
+    <edge source="药物_维生素C注射液" target="药物_维生素B6注射液">
+      <data key="d2">0.5797475183207743</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.6558554973762096</data>
+      <data key="d5">True</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">药物_维生素C注射液-&gt;药物_维生素B6注射液</data>
+    </edge>
+    <edge source="疾病_腔隙性脑梗死" target="药物_劳拉西泮片">
+      <data key="d2">0.11882888708738273</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4951203628640947</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_腔隙性脑梗死-&gt;药物_劳拉西泮片</data>
+    </edge>
+    <edge source="疾病_腔隙性脑梗死" target="疾病_高尿酸血症">
+      <data key="d2">0.05372891289908143</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3358057056192589</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_腔隙性脑梗死-&gt;疾病_高尿酸血症</data>
+    </edge>
+    <edge source="药物_二羟丙茶碱注射液" target="药物_阿卡波糖片">
+      <data key="d2">0.23949745221082575</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4979060508784407</data>
+      <data key="d5">True</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_二羟丙茶碱注射液-&gt;药物_阿卡波糖片</data>
+    </edge>
+    <edge source="药物_二羟丙茶碱注射液" target="药物_富马酸比索洛尔片">
+      <data key="d2">0.11932986007590674</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.497207750316278</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_二羟丙茶碱注射液-&gt;药物_富马酸比索洛尔片</data>
+    </edge>
+    <edge source="药物_二羟丙茶碱注射液" target="药物_酒石酸美托洛尔片">
+      <data key="d2">0.05409870799101332</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3381169249438332</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_二羟丙茶碱注射液-&gt;药物_酒石酸美托洛尔片</data>
+    </edge>
+    <edge source="药物_二羟丙茶碱注射液" target="药物_维生素C注射液">
+      <data key="d2">0.13408488061372803</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3380305038358002</data>
+      <data key="d5">True</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_二羟丙茶碱注射液-&gt;药物_维生素C注射液</data>
+    </edge>
+    <edge source="药物_琥珀酸亚铁片" target="药物_叶酸片">
+      <data key="d2">0.05397397379044442</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3373373361902776</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_琥珀酸亚铁片-&gt;药物_叶酸片</data>
+    </edge>
+    <edge source="药物_琥珀酸亚铁片" target="疾病_糖尿病性周围血管病">
+      <data key="d2">0.053653673693299486</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3353354605831218</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_琥珀酸亚铁片-&gt;疾病_糖尿病性周围血管病</data>
+    </edge>
+    <edge source="疾病_重度骨质疏松" target="药物_骨化三醇胶丸">
+      <data key="d2">0.11916497051864995</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4965207104943748</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_重度骨质疏松-&gt;药物_骨化三醇胶丸</data>
+    </edge>
+    <edge source="疾病_重度骨质疏松" target="药物_碳酸钙片">
+      <data key="d2">0.11870302412073414</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4945959338363923</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_重度骨质疏松-&gt;药物_碳酸钙片</data>
+    </edge>
+    <edge source="药物_单硝酸异山梨酯缓释片" target="药物_裸花紫珠分散片">
+      <data key="d2">0.11878111415862032</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4949213089942513</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_单硝酸异山梨酯缓释片-&gt;药物_裸花紫珠分散片</data>
+    </edge>
+    <edge source="检验_红细胞分布宽度SD" target="检验_红细胞">
+      <data key="d2">0.0550128380280169</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3438302376751056</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞分布宽度SD-&gt;检验_红细胞</data>
+    </edge>
+    <edge source="检验_红细胞分布宽度SD" target="检验_红细胞平均体积">
+      <data key="d2">0.054709726864400114</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3419357929025007</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞分布宽度SD-&gt;检验_红细胞平均体积</data>
+    </edge>
+    <edge source="药物_氯化钾注射液" target="疾病_肺部感染">
+      <data key="d2">0.11990519006805124</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4996049586168802</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_氯化钾注射液-&gt;疾病_肺部感染</data>
+    </edge>
+    <edge source="药物_氯化钾注射液" target="药物_维生素C注射液">
+      <data key="d2">0.23962036445386314</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4984181852244297</data>
+      <data key="d5">True</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_氯化钾注射液-&gt;药物_维生素C注射液</data>
+    </edge>
+    <edge source="药物_氯化钾注射液" target="药物_氯化钠注射液">
+      <data key="d2">0.11952208307031575</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.498008679459649</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_氯化钾注射液-&gt;药物_氯化钠注射液</data>
+    </edge>
+    <edge source="药物_氯化钾注射液" target="检验_平均血红蛋白浓度">
+      <data key="d2">0.05443035566487179</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3401897229054487</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_氯化钾注射液-&gt;检验_平均血红蛋白浓度</data>
+    </edge>
+    <edge source="药物_氯化钾注射液" target="药物_盐酸氨溴索注射液">
+      <data key="d2">0.1342656443002166</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3391602768763537</data>
+      <data key="d5">True</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_氯化钾注射液-&gt;药物_盐酸氨溴索注射液</data>
+    </edge>
+    <edge source="疾病_医疗机构新收治患者及陪护人员" target="疾病_慢性胃炎">
+      <data key="d2">0.11848294535061238</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4936789389608849</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_医疗机构新收治患者及陪护人员-&gt;疾病_慢性胃炎</data>
+    </edge>
+    <edge source="检验_谷丙转氨酶" target="检验_谷草转氨酶">
+      <data key="d2">0.11972292884877961</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.498845536869915</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_谷丙转氨酶-&gt;检验_谷草转氨酶</data>
+    </edge>
+    <edge source="检验_谷丙转氨酶" target="检验_谷草/谷丙">
+      <data key="d2">0.11912856853128144</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.496369035547006</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_谷丙转氨酶-&gt;检验_谷草/谷丙</data>
+    </edge>
+    <edge source="检验_谷丙转氨酶" target="疾病_肺恶性肿瘤">
+      <data key="d2">0.053820487386046584</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3363780461627911</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_谷丙转氨酶-&gt;疾病_肺恶性肿瘤</data>
+    </edge>
+    <edge source="检验_钙" target="检验_嗜碱性粒细胞比率">
+      <data key="d2">0.053973501331912914</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3373343833244557</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_钙-&gt;检验_嗜碱性粒细胞比率</data>
+    </edge>
+    <edge source="药物_硫酸氢氯吡格雷片" target="药物_单硝酸异山梨酯片">
+      <data key="d2">0.05386623369225484</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3366639605765927</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_硫酸氢氯吡格雷片-&gt;药物_单硝酸异山梨酯片</data>
+    </edge>
+    <edge source="药物_硫酸氢氯吡格雷片" target="药物_盐酸曲美他嗪片">
+      <data key="d2">0.05366272896011423</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3353920560007139</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_硫酸氢氯吡格雷片-&gt;药物_盐酸曲美他嗪片</data>
+    </edge>
+    <edge source="药物_硫酸氢氯吡格雷片" target="疾病_陈旧性脑梗死">
+      <data key="d2">0.05361886787909031</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3351179242443144</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_硫酸氢氯吡格雷片-&gt;疾病_陈旧性脑梗死</data>
+    </edge>
+    <edge source="疾病_肛乳头肥大" target="疾病_混合痔">
+      <data key="d2">0.05397320124442211</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3373325077776382</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_肛乳头肥大-&gt;疾病_混合痔</data>
+    </edge>
+    <edge source="疾病_肛乳头肥大" target="检验_谷草/谷丙">
+      <data key="d2">0.05359767353839744</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.334985459614984</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_肛乳头肥大-&gt;检验_谷草/谷丙</data>
+    </edge>
+    <edge source="检验_平均血红蛋白含量" target="疾病_贫血">
+      <data key="d2">0.05452850085433264</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.340803130339579</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_平均血红蛋白含量-&gt;疾病_贫血</data>
+    </edge>
+    <edge source="检验_平均血红蛋白含量" target="疾病_类风湿性关节炎">
+      <data key="d2">0.05415675765681639</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3384797353551024</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_平均血红蛋白含量-&gt;疾病_类风湿性关节炎</data>
+    </edge>
+    <edge source="检验_血红蛋白" target="检验_红细胞分布宽度CV">
+      <data key="d2">0.18062592143719106</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5017386706588641</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_血红蛋白-&gt;检验_红细胞分布宽度CV</data>
+    </edge>
+    <edge source="检验_血红蛋白" target="检验_红细胞压积">
+      <data key="d2">0.11978912480735955</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4991213533639981</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_血红蛋白-&gt;检验_红细胞压积</data>
+    </edge>
+    <edge source="检验_血红蛋白" target="检验_红细胞">
+      <data key="d2">0.05459429503639407</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3412143439774629</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_血红蛋白-&gt;检验_红细胞</data>
+    </edge>
+    <edge source="检验_血红蛋白" target="疾病_低蛋白血症">
+      <data key="d2">0.054482466029206436</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3405154126825402</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_血红蛋白-&gt;疾病_低蛋白血症</data>
+    </edge>
+    <edge source="检验_血红蛋白" target="检验_胆碱酯酶">
+      <data key="d2">0.05433468155288745</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3395917597055465</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_血红蛋白-&gt;检验_胆碱酯酶</data>
+    </edge>
+    <edge source="检验_中性粒细胞数量" target="检验_白细胞">
+      <data key="d2">0.5826699634515654</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.660421817893071</data>
+      <data key="d5">True</data>
+      <data key="d6">test_test</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">检验_中性粒细胞数量-&gt;检验_白细胞</data>
+    </edge>
+    <edge source="检验_中性粒细胞数量" target="检验_单核细胞数量">
+      <data key="d2">0.11959261433385407</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4983025597243919</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_中性粒细胞数量-&gt;检验_单核细胞数量</data>
+    </edge>
+    <edge source="检验_中性粒细胞数量" target="检验_镁">
+      <data key="d2">0.05429761658561153</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3393601036600721</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_中性粒细胞数量-&gt;检验_镁</data>
+    </edge>
+    <edge source="检验_中性粒细胞数量" target="药物_复方鲜竹沥液">
+      <data key="d2">0.05428942599284219</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3393089124552637</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_中性粒细胞数量-&gt;药物_复方鲜竹沥液</data>
+    </edge>
+    <edge source="检验_中性粒细胞数量" target="药物_苯磺酸氨氯地平片">
+      <data key="d2">0.05415064575814761</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3384415359884225</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_中性粒细胞数量-&gt;药物_苯磺酸氨氯地平片</data>
+    </edge>
+    <edge source="检验_总胆汁酸" target="检验_转肽酶">
+      <data key="d2">0.05448987832503852</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3405617395314907</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_总胆汁酸-&gt;检验_转肽酶</data>
+    </edge>
+    <edge source="检验_C反应蛋白" target="药物_复方鲜竹沥液">
+      <data key="d2">0.5801799753791491</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.6565312115299204</data>
+      <data key="d5">True</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">检验_C反应蛋白-&gt;药物_复方鲜竹沥液</data>
+    </edge>
+    <edge source="检验_C反应蛋白" target="疾病_低钾血症">
+      <data key="d2">0.11901996622750927</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4959165259479553</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_C反应蛋白-&gt;疾病_低钾血症</data>
+    </edge>
+    <edge source="检验_C反应蛋白" target="检验_总蛋白">
+      <data key="d2">0.05401417600490491</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3375886000306556</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_C反应蛋白-&gt;检验_总蛋白</data>
+    </edge>
+    <edge source="药物_盐酸氨溴索注射液" target="药物_二羟丙茶碱注射液">
+      <data key="d2">0.23970542291705382</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4987725954877242</data>
+      <data key="d5">True</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_盐酸氨溴索注射液-&gt;药物_二羟丙茶碱注射液</data>
+    </edge>
+    <edge source="药物_盐酸氨溴索注射液" target="检验_碳酸氢盐">
+      <data key="d2">0.11910748073436762</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4962811697265318</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_盐酸氨溴索注射液-&gt;检验_碳酸氢盐</data>
+    </edge>
+    <edge source="药物_盐酸氨溴索注射液" target="药物_肝素钠注射液">
+      <data key="d2">0.1342579230433589</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3391120190209929</data>
+      <data key="d5">True</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_盐酸氨溴索注射液-&gt;药物_肝素钠注射液</data>
+    </edge>
+    <edge source="检验_间接胆红素" target="检验_总胆红素">
+      <data key="d2">0.05386917733566489</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3366823583479055</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_间接胆红素-&gt;检验_总胆红素</data>
+    </edge>
+    <edge source="药物_富马酸比索洛尔片" target="药物_硝苯地平缓释片">
+      <data key="d2">0.053555728540223384</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3347233033763961</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_富马酸比索洛尔片-&gt;药物_硝苯地平缓释片</data>
+    </edge>
+    <edge source="药物_富马酸比索洛尔片" target="疾病_心律失常">
+      <data key="d2">0.05351861780471234</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3344913612794521</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_富马酸比索洛尔片-&gt;疾病_心律失常</data>
+    </edge>
+    <edge source="药物_富马酸比索洛尔片" target="药物_甲钴胺片">
+      <data key="d2">0.05350145253160248</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3343840783225155</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_富马酸比索洛尔片-&gt;药物_甲钴胺片</data>
+    </edge>
+    <edge source="疾病_冠状动脉粥样硬化性心脏病" target="药物_盐酸曲美他嗪片">
+      <data key="d2">0.5803898221811625</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.6568590971580665</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">疾病_冠状动脉粥样硬化性心脏病-&gt;药物_盐酸曲美他嗪片</data>
+    </edge>
+    <edge source="疾病_冠状动脉粥样硬化性心脏病" target="疾病_不稳定性心绞痛">
+      <data key="d2">0.11955195981297276</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4981331658873865</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_冠状动脉粥样硬化性心脏病-&gt;疾病_不稳定性心绞痛</data>
+    </edge>
+    <edge source="疾病_冠状动脉粥样硬化性心脏病" target="药物_单硝酸异山梨酯片">
+      <data key="d2">0.11955144041614685</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4981310017339452</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_冠状动脉粥样硬化性心脏病-&gt;药物_单硝酸异山梨酯片</data>
+    </edge>
+    <edge source="疾病_冠状动脉粥样硬化性心脏病" target="药物_阿托伐他汀钙片">
+      <data key="d2">0.05398078312844436</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3373798945527772</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_冠状动脉粥样硬化性心脏病-&gt;药物_阿托伐他汀钙片</data>
+    </edge>
+    <edge source="疾病_冠状动脉粥样硬化性心脏病" target="疾病_尿毒症">
+      <data key="d2">0.05388602159841839</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3367876349901149</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_冠状动脉粥样硬化性心脏病-&gt;疾病_尿毒症</data>
+    </edge>
+    <edge source="药物_螺内酯片" target="药物_酒石酸美托洛尔片">
+      <data key="d2">0.5814784678067284</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.6585601059480131</data>
+      <data key="d5">True</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">药物_螺内酯片-&gt;药物_酒石酸美托洛尔片</data>
+    </edge>
+    <edge source="药物_螺内酯片" target="药物_呋塞米片">
+      <data key="d2">0.11955332544306993</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4981388560127914</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_螺内酯片-&gt;药物_呋塞米片</data>
+    </edge>
+    <edge source="药物_螺内酯片" target="药物_艾司唑仑片">
+      <data key="d2">0.05410369832725825</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.338148114545364</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_螺内酯片-&gt;药物_艾司唑仑片</data>
+    </edge>
+    <edge source="疾病_恶性肿瘤维持性化学治疗" target="检验_尿酸">
+      <data key="d2">0.05387957200887161</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3367473250554476</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_恶性肿瘤维持性化学治疗-&gt;检验_尿酸</data>
+    </edge>
+    <edge source="检验_嗜酸性粒细胞比率" target="检验_嗜酸性粒细胞数量">
+      <data key="d2">0.11999889809751876</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4999954087396615</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_嗜酸性粒细胞比率-&gt;检验_嗜酸性粒细胞数量</data>
+    </edge>
+    <edge source="检验_嗜酸性粒细胞比率" target="药物_硝苯地平控释片">
+      <data key="d2">0.054067074335714706</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3379192145982169</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_嗜酸性粒细胞比率-&gt;药物_硝苯地平控释片</data>
+    </edge>
+    <edge source="检验_嗜酸性粒细胞比率" target="疾病_医疗机构新收治患者及陪护人员">
+      <data key="d2">0.05396902088825709</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3373063805516068</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_嗜酸性粒细胞比率-&gt;疾病_医疗机构新收治患者及陪护人员</data>
+    </edge>
+    <edge source="检验_白蛋白" target="检验_总蛋白">
+      <data key="d2">0.05416026852628178</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3385016782892611</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_白蛋白-&gt;检验_总蛋白</data>
+    </edge>
+    <edge source="疾病_肢体动脉硬化" target="疾病_颈总动脉斑块">
+      <data key="d2">0.054385349767358676</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3399084360459917</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_肢体动脉硬化-&gt;疾病_颈总动脉斑块</data>
+    </edge>
+    <edge source="疾病_肢体动脉硬化" target="药物_艾司唑仑片">
+      <data key="d2">0.05426714455030124</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3391696534393827</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_肢体动脉硬化-&gt;药物_艾司唑仑片</data>
+    </edge>
+    <edge source="疾病_颈总动脉斑块" target="疾病_心律失常">
+      <data key="d2">0.11897455850663215</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4957273271109673</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_颈总动脉斑块-&gt;疾病_心律失常</data>
+    </edge>
+    <edge source="疾病_颈总动脉斑块" target="疾病_肢体动脉硬化">
+      <data key="d2">0.054385349767358676</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3399084360459917</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_颈总动脉斑块-&gt;疾病_肢体动脉硬化</data>
+    </edge>
+    <edge source="疾病_颈总动脉斑块" target="疾病_老年性白内障">
+      <data key="d2">0.05395787711103214</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3372367319439508</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_颈总动脉斑块-&gt;疾病_老年性白内障</data>
+    </edge>
+    <edge source="药物_叶酸片" target="药物_卡维地洛片">
+      <data key="d2">0.11895063516559334</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4956276465233056</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_叶酸片-&gt;药物_卡维地洛片</data>
+    </edge>
+    <edge source="药物_叶酸片" target="药物_甲钴胺分散片">
+      <data key="d2">0.05414772232997575</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3384232645623484</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_叶酸片-&gt;药物_甲钴胺分散片</data>
+    </edge>
+    <edge source="药物_叶酸片" target="药物_琥珀酸亚铁片">
+      <data key="d2">0.05397397379044442</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3373373361902776</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_叶酸片-&gt;药物_琥珀酸亚铁片</data>
+    </edge>
+    <edge source="疾病_慢性胃炎" target="疾病_结肠息肉">
+      <data key="d2">0.05345868661484026</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3341167913427516</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_慢性胃炎-&gt;疾病_结肠息肉</data>
+    </edge>
+    <edge source="药物_地西泮片" target="药物_磷酸可待因片">
+      <data key="d2">0.1187877482236889</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4949489509320371</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_地西泮片-&gt;药物_磷酸可待因片</data>
+    </edge>
+    <edge source="药物_厄贝沙坦氢氯噻嗪片" target="疾病_低钾血症">
+      <data key="d2">0.053335680851352575</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3333480053209536</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_厄贝沙坦氢氯噻嗪片-&gt;疾病_低钾血症</data>
+    </edge>
+    <edge source="疾病_老年性白内障" target="疾病_白内障">
+      <data key="d2">0.11894484247394928</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.495603510308122</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_老年性白内障-&gt;疾病_白内障</data>
+    </edge>
+    <edge source="疾病_老年性白内障" target="检验_大型血小板比率">
+      <data key="d2">0.05410854767144722</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3381784229465451</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_老年性白内障-&gt;检验_大型血小板比率</data>
+    </edge>
+    <edge source="检验_红细胞" target="检验_血红蛋白">
+      <data key="d2">0.05459429503639407</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3412143439774629</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞-&gt;检验_血红蛋白</data>
+    </edge>
+    <edge source="检验_红细胞" target="疾病_贫血">
+      <data key="d2">0.05457314300755653</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3410821437972283</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞-&gt;疾病_贫血</data>
+    </edge>
+    <edge source="检验_红细胞" target="检验_白蛋白">
+      <data key="d2">0.05451048559926537</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3406905349954085</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞-&gt;检验_白蛋白</data>
+    </edge>
+    <edge source="检验_红细胞" target="疾病_白内障">
+      <data key="d2">0.05419996454674652</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3387497784171657</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞-&gt;疾病_白内障</data>
+    </edge>
+    <edge source="疾病_高尿酸血症" target="药物_碳酸氢钠片">
+      <data key="d2">0.5789610264817581</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.6546266038777471</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">疾病_高尿酸血症-&gt;药物_碳酸氢钠片</data>
+    </edge>
+    <edge source="疾病_高尿酸血症" target="药物_硝苯地平控释片">
+      <data key="d2">0.11877872374124016</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.494911348921834</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_高尿酸血症-&gt;药物_硝苯地平控释片</data>
+    </edge>
+    <edge source="药物_贞芪扶正" target="疾病_肺恶性肿瘤">
+      <data key="d2">0.1191651383607595</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4965214098364979</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_贞芪扶正-&gt;疾病_肺恶性肿瘤</data>
+    </edge>
+    <edge source="药物_贞芪扶正" target="疾病_恶性肿瘤维持性化学治疗">
+      <data key="d2">0.053872960498553606</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.33670600311596</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_贞芪扶正-&gt;疾病_恶性肿瘤维持性化学治疗</data>
+    </edge>
+    <edge source="药物_呋塞米片" target="药物_螺内酯片">
+      <data key="d2">0.05410221696204664</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3381388560127914</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_呋塞米片-&gt;药物_螺内酯片</data>
+    </edge>
+    <edge source="检验_淋巴细胞数量" target="检验_淋巴细胞比率">
+      <data key="d2">0.5834904657815047</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.661703852783601</data>
+      <data key="d5">True</data>
+      <data key="d6">test_test</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">检验_淋巴细胞数量-&gt;检验_淋巴细胞比率</data>
+    </edge>
+    <edge source="检验_淋巴细胞数量" target="检验_直接胆红素">
+      <data key="d2">0.054587718012645406</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3411732375790338</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_淋巴细胞数量-&gt;检验_直接胆红素</data>
+    </edge>
+    <edge source="检验_淋巴细胞数量" target="检验_碳酸氢盐">
+      <data key="d2">0.05420971382768726</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3388107114230453</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_淋巴细胞数量-&gt;检验_碳酸氢盐</data>
+    </edge>
+    <edge source="检验_总胆红素" target="检验_直接胆红素">
+      <data key="d2">0.11944136943343242</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4976723726393017</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_总胆红素-&gt;检验_直接胆红素</data>
+    </edge>
+    <edge source="检验_总胆红素" target="检验_间接胆红素">
+      <data key="d2">0.2392037660034973</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4966823583479055</data>
+      <data key="d5">True</data>
+      <data key="d6">test_test</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_总胆红素-&gt;检验_间接胆红素</data>
+    </edge>
+    <edge source="检验_总胆红素" target="疾病_非毒性单个甲状腺结节">
+      <data key="d2">0.05363247053550654</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3352029408469158</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_总胆红素-&gt;疾病_非毒性单个甲状腺结节</data>
+    </edge>
+    <edge source="药物_苯磺酸氨氯地平片" target="疾病_高血压">
+      <data key="d2">0.05844970746232553</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3653106716395345</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_苯磺酸氨氯地平片-&gt;疾病_高血压</data>
+    </edge>
+    <edge source="药物_阿托伐他汀钙片" target="药物_硫酸氢氯吡格雷片">
+      <data key="d2">0.05374605654326795</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3359128533954247</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_阿托伐他汀钙片-&gt;药物_硫酸氢氯吡格雷片</data>
+    </edge>
+    <edge source="药物_阿托伐他汀钙片" target="疾病_心律失常">
+      <data key="d2">0.05362014178217992</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3351258861386245</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_阿托伐他汀钙片-&gt;疾病_心律失常</data>
+    </edge>
+    <edge source="疾病_高脂血症" target="疾病_动脉硬化">
+      <data key="d2">0.3016134938688679</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5044819274135219</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_高脂血症-&gt;疾病_动脉硬化</data>
+    </edge>
+    <edge source="疾病_高脂血症" target="药物_匹伐他汀钙片">
+      <data key="d2">0.18117223551545694</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5032562097651582</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_高脂血症-&gt;药物_匹伐他汀钙片</data>
+    </edge>
+    <edge source="疾病_高脂血症" target="药物_阿托伐他汀钙片">
+      <data key="d2">0.30069955234981954</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5019432009717208</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_高脂血症-&gt;药物_阿托伐他汀钙片</data>
+    </edge>
+    <edge source="疾病_高脂血症" target="疾病_腔隙性脑梗死">
+      <data key="d2">0.18066109616501863</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5018363782361629</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_高脂血症-&gt;疾病_腔隙性脑梗死</data>
+    </edge>
+    <edge source="疾病_高脂血症" target="疾病_前列腺增生">
+      <data key="d2">0.05459725235846748</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3412328272404217</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高脂血症-&gt;疾病_前列腺增生</data>
+    </edge>
+    <edge source="检验_前白蛋白" target="检验_胆碱酯酶">
+      <data key="d2">0.1803153520249258</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5008759778470161</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_前白蛋白-&gt;检验_胆碱酯酶</data>
+    </edge>
+    <edge source="检验_前白蛋白" target="检验_镁">
+      <data key="d2">0.11983284194804597</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4993035081168582</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_前白蛋白-&gt;检验_镁</data>
+    </edge>
+    <edge source="检验_前白蛋白" target="检验_总胆红素">
+      <data key="d2">0.05433032591098487</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3395645369436554</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_前白蛋白-&gt;检验_总胆红素</data>
+    </edge>
+    <edge source="药物_重组人促红素注射液" target="疾病_尿毒症">
+      <data key="d2">0.5813752522734051</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.6583988316771953</data>
+      <data key="d5">True</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">药物_重组人促红素注射液-&gt;疾病_尿毒症</data>
+    </edge>
+    <edge source="药物_重组人促红素注射液" target="检验_磷">
+      <data key="d2">0.11972966500572624</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.498873604190526</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_重组人促红素注射液-&gt;检验_磷</data>
+    </edge>
+    <edge source="药物_重组人促红素注射液" target="检验_钠">
+      <data key="d2">0.05440011178354919</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3400006986471824</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_重组人促红素注射液-&gt;检验_钠</data>
+    </edge>
+    <edge source="药物_重组人促红素注射液" target="检验_谷丙转氨酶">
+      <data key="d2">0.054339648371919604</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3396228023244975</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_重组人促红素注射液-&gt;检验_谷丙转氨酶</data>
+    </edge>
+    <edge source="检验_直接胆红素" target="检验_总胆汁酸">
+      <data key="d2">0.11974893220423757</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4989538841843232</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_直接胆红素-&gt;检验_总胆汁酸</data>
+    </edge>
+    <edge source="检验_直接胆红素" target="检验_碱性磷酸酶">
+      <data key="d2">0.05434543342505557</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3396589589065973</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_直接胆红素-&gt;检验_碱性磷酸酶</data>
+    </edge>
+    <edge source="检验_直接胆红素" target="药物_盐酸羟考酮缓释片">
+      <data key="d2">0.05428609157418658</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3392880723386661</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_直接胆红素-&gt;药物_盐酸羟考酮缓释片</data>
+    </edge>
+    <edge source="检验_直接胆红素" target="检验_总胆红素">
+      <data key="d2">0.05402757962228828</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3376723726393017</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_直接胆红素-&gt;检验_总胆红素</data>
+    </edge>
+    <edge source="检验_直接胆红素" target="疾病_泌尿系感染">
+      <data key="d2">0.053764656591218055</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3360291036951128</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_直接胆红素-&gt;疾病_泌尿系感染</data>
+    </edge>
+    <edge source="检验_谷草转氨酶" target="疾病_腰椎间盘突出">
+      <data key="d2">0.053761342299881554</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3360083893742597</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_谷草转氨酶-&gt;疾病_腰椎间盘突出</data>
+    </edge>
+    <edge source="检验_单核细胞比率" target="检验_白细胞">
+      <data key="d2">0.05425785176536018</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3391115735335011</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_单核细胞比率-&gt;检验_白细胞</data>
+    </edge>
+    <edge source="检验_单核细胞比率" target="药物_艾司唑仑片">
+      <data key="d2">0.05411432790783648</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.338214549423978</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_单核细胞比率-&gt;药物_艾司唑仑片</data>
+    </edge>
+    <edge source="检验_单核细胞比率" target="检验_单核细胞数量">
+      <data key="d2">0.05391877045837154</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3369923153648221</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_单核细胞比率-&gt;检验_单核细胞数量</data>
+    </edge>
+    <edge source="检验_血小板" target="药物_维生素C注射液">
+      <data key="d2">0.05394928782612031</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3371830489132519</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_血小板-&gt;药物_维生素C注射液</data>
+    </edge>
+    <edge source="检验_血小板" target="检验_血小板比容">
+      <data key="d2">0.05376119921572414</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3360074950982759</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_血小板-&gt;检验_血小板比容</data>
+    </edge>
+    <edge source="疾病_糖尿病" target="疾病_糖尿病性周围神经病">
+      <data key="d2">0.584674164789873</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.6635533824841766</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">疾病_糖尿病-&gt;疾病_糖尿病性周围神经病</data>
+    </edge>
+    <edge source="疾病_糖尿病" target="检验_葡萄糖">
+      <data key="d2">0.3017094143791724</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.504748373275479</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_糖尿病-&gt;检验_葡萄糖</data>
+    </edge>
+    <edge source="疾病_糖尿病" target="药物_甲钴胺分散片">
+      <data key="d2">0.18155638417286898</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5043232893690806</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_糖尿病-&gt;药物_甲钴胺分散片</data>
+    </edge>
+    <edge source="疾病_糖尿病" target="药物_阿卡波糖片">
+      <data key="d2">0.3013658121808583</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5037939227246064</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_糖尿病-&gt;药物_阿卡波糖片</data>
+    </edge>
+    <edge source="疾病_糖尿病" target="药物_盐酸二甲双胍片">
+      <data key="d2">0.1813340549504405</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5037057081956681</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_糖尿病-&gt;药物_盐酸二甲双胍片</data>
+    </edge>
+    <edge source="疾病_糖尿病" target="检验_尿酸">
+      <data key="d2">0.0551274469951121</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3445465437194506</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_糖尿病-&gt;检验_尿酸</data>
+    </edge>
+    <edge source="疾病_糖尿病" target="疾病_肝囊肿">
+      <data key="d2">0.0547684765413857</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3423029783836606</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_糖尿病-&gt;疾病_肝囊肿</data>
+    </edge>
+    <edge source="检验_转肽酶" target="疾病_恶性肿瘤维持性化学治疗">
+      <data key="d2">0.1196072693852899</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4983636224387079</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_转肽酶-&gt;疾病_恶性肿瘤维持性化学治疗</data>
+    </edge>
+    <edge source="检验_转肽酶" target="检验_碱性磷酸酶">
+      <data key="d2">0.0546026902806024</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.341266814253765</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_转肽酶-&gt;检验_碱性磷酸酶</data>
+    </edge>
+    <edge source="检验_转肽酶" target="药物_骨化三醇胶丸">
+      <data key="d2">0.05443277446661515</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3402048404163447</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_转肽酶-&gt;药物_骨化三醇胶丸</data>
+    </edge>
+    <edge source="检验_转肽酶" target="疾病_非毒性单个甲状腺结节">
+      <data key="d2">0.05402826205743283</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3376766378589552</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_转肽酶-&gt;疾病_非毒性单个甲状腺结节</data>
+    </edge>
+    <edge source="检验_总蛋白" target="检验_钙">
+      <data key="d2">0.1194902426724802</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4978760111353342</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_总蛋白-&gt;检验_钙</data>
+    </edge>
+    <edge source="检验_总蛋白" target="检验_球蛋白">
+      <data key="d2">0.054271633590613114</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3391977099413319</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_总蛋白-&gt;检验_球蛋白</data>
+    </edge>
+    <edge source="检验_总蛋白" target="检验_白蛋白">
+      <data key="d2">0.05416026852628178</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3385016782892611</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_总蛋白-&gt;检验_白蛋白</data>
+    </edge>
+    <edge source="药物_阿卡波糖片" target="疾病_非毒性单个甲状腺结节">
+      <data key="d2">0.11887385267540419</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4953077194808508</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_阿卡波糖片-&gt;疾病_非毒性单个甲状腺结节</data>
+    </edge>
+    <edge source="药物_阿卡波糖片" target="药物_精蛋白生物合成人胰岛素注射液">
+      <data key="d2">0.11867532814519995</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4944805339383331</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_阿卡波糖片-&gt;药物_精蛋白生物合成人胰岛素注射液</data>
+    </edge>
+    <edge source="药物_阿卡波糖片" target="检验_谷草转氨酶">
+      <data key="d2">0.05412441623812247</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3382776014882654</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_阿卡波糖片-&gt;检验_谷草转氨酶</data>
+    </edge>
+    <edge source="药物_阿卡波糖片" target="疾病_糖尿病性周围神经病">
+      <data key="d2">0.053884087680299224</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3367755480018701</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_阿卡波糖片-&gt;疾病_糖尿病性周围神经病</data>
+    </edge>
+    <edge source="药物_阿卡波糖片" target="疾病_泌尿系感染">
+      <data key="d2">0.05364288650626817</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.335268040664176</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_阿卡波糖片-&gt;疾病_泌尿系感染</data>
+    </edge>
+    <edge source="疾病_肺部感染" target="疾病_低钾血症">
+      <data key="d2">0.11935095128270504</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4972956303446043</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_肺部感染-&gt;疾病_低钾血症</data>
+    </edge>
+    <edge source="疾病_肺部感染" target="药物_葡萄糖注射液">
+      <data key="d2">0.11914043253382142</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4964184688909226</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_肺部感染-&gt;药物_葡萄糖注射液</data>
+    </edge>
+    <edge source="疾病_肺部感染" target="检验_血小板">
+      <data key="d2">0.05413917156891238</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3383698223057024</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_肺部感染-&gt;检验_血小板</data>
+    </edge>
+    <edge source="疾病_肺部感染" target="检验_镁">
+      <data key="d2">0.05407384114102046</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3379615071313778</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_肺部感染-&gt;检验_镁</data>
+    </edge>
+    <edge source="疾病_血糖控制不佳" target="药物_精蛋白生物合成人胰岛素注射液">
+      <data key="d2">0.05338048061150698</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3336280038219186</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_血糖控制不佳-&gt;药物_精蛋白生物合成人胰岛素注射液</data>
+    </edge>
+    <edge source="疾病_反流性食管炎" target="药物_贞芪扶正">
+      <data key="d2">0.18011787434624468</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5003274287395686</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_反流性食管炎-&gt;药物_贞芪扶正</data>
+    </edge>
+    <edge source="疾病_反流性食管炎" target="疾病_恶性肿瘤维持性化学治疗">
+      <data key="d2">0.11966273892060374</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4985947455025156</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_反流性食管炎-&gt;疾病_恶性肿瘤维持性化学治疗</data>
+    </edge>
+    <edge source="疾病_反流性食管炎" target="疾病_胆囊结石">
+      <data key="d2">0.05461024001961277</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3413140001225798</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_反流性食管炎-&gt;疾病_胆囊结石</data>
+    </edge>
+    <edge source="疾病_反流性食管炎" target="疾病_贫血">
+      <data key="d2">0.05453647019164775</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3408529386977984</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_反流性食管炎-&gt;疾病_贫血</data>
+    </edge>
+    <edge source="疾病_反流性食管炎" target="疾病_混合痔">
+      <data key="d2">0.054519710363187625</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3407481897699226</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_反流性食管炎-&gt;疾病_混合痔</data>
+    </edge>
+    <edge source="疾病_反流性食管炎" target="疾病_糖尿病性周围神经病">
+      <data key="d2">0.05430009431100516</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3393755894437822</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_反流性食管炎-&gt;疾病_糖尿病性周围神经病</data>
+    </edge>
+    <edge source="疾病_反流性食管炎" target="药物_琥珀酸亚铁片">
+      <data key="d2">0.05424953087305848</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3390595679566154</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_反流性食管炎-&gt;药物_琥珀酸亚铁片</data>
+    </edge>
+    <edge source="疾病_贫血" target="药物_琥珀酸亚铁片">
+      <data key="d2">0.054031413684526346</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3376963355282896</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_贫血-&gt;药物_琥珀酸亚铁片</data>
+    </edge>
+    <edge source="疾病_混合痔" target="药物_裸花紫珠分散片">
+      <data key="d2">0.5801462108404744</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.6564784544382412</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">疾病_混合痔-&gt;药物_裸花紫珠分散片</data>
+    </edge>
+    <edge source="疾病_混合痔" target="药物_头孢地尼分散片">
+      <data key="d2">0.23952054508327728</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4980022711803219</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_混合痔-&gt;药物_头孢地尼分散片</data>
+    </edge>
+    <edge source="疾病_混合痔" target="疾病_肛乳头肥大">
+      <data key="d2">0.05397320124442211</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3373325077776382</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_混合痔-&gt;疾病_肛乳头肥大</data>
+    </edge>
+    <edge source="疾病_非毒性多个甲状腺结节" target="疾病_血糖控制不佳">
+      <data key="d2">0.11926999759927949</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4969583233303312</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_非毒性多个甲状腺结节-&gt;疾病_血糖控制不佳</data>
+    </edge>
+    <edge source="疾病_非毒性多个甲状腺结节" target="疾病_脂肪肝">
+      <data key="d2">0.054272325722137006</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3392020357633563</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_非毒性多个甲状腺结节-&gt;疾病_脂肪肝</data>
+    </edge>
+    <edge source="疾病_非毒性多个甲状腺结节" target="检验_红细胞压积">
+      <data key="d2">0.05416753749993967</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3385471093746229</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_非毒性多个甲状腺结节-&gt;检验_红细胞压积</data>
+    </edge>
+    <edge source="疾病_非毒性多个甲状腺结节" target="疾病_老年性白内障">
+      <data key="d2">0.05399901310064706</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3374938318790441</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_非毒性多个甲状腺结节-&gt;疾病_老年性白内障</data>
+    </edge>
+    <edge source="疾病_非毒性多个甲状腺结节" target="疾病_后天性肾囊肿">
+      <data key="d2">0.05387875464568265</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3367422165355165</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_非毒性多个甲状腺结节-&gt;疾病_后天性肾囊肿</data>
+    </edge>
+    <edge source="疾病_动脉硬化" target="疾病_慢性胃炎">
+      <data key="d2">0.11947960293174695</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4978316788822789</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_动脉硬化-&gt;疾病_慢性胃炎</data>
+    </edge>
+    <edge source="疾病_动脉硬化" target="疾病_高脂血症">
+      <data key="d2">0.05511710838616351</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3444819274135219</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_动脉硬化-&gt;疾病_高脂血症</data>
+    </edge>
+    <edge source="检验_尿酸" target="疾病_高尿酸血症">
+      <data key="d2">0.1192149420126363</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4967289250526512</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_尿酸-&gt;疾病_高尿酸血症</data>
+    </edge>
+    <edge source="检验_尿酸" target="疾病_重度骨质疏松">
+      <data key="d2">0.053832559630924565</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3364534976932785</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_尿酸-&gt;疾病_重度骨质疏松</data>
+    </edge>
+    <edge source="检验_尿酸" target="检验_钾">
+      <data key="d2">0.0537966684264277</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3362291776651731</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_尿酸-&gt;检验_钾</data>
+    </edge>
+    <edge source="检验_尿酸" target="疾病_慢性胃炎">
+      <data key="d2">0.05377749586212998</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3361093491383123</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_尿酸-&gt;疾病_慢性胃炎</data>
+    </edge>
+    <edge source="检验_尿酸" target="药物_劳拉西泮片">
+      <data key="d2">0.053766973167597945</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3360435822974871</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_尿酸-&gt;药物_劳拉西泮片</data>
+    </edge>
+    <edge source="疾病_低蛋白血症" target="检验_白球比">
+      <data key="d2">0.5833372735528227</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.6614644899262855</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">疾病_低蛋白血症-&gt;检验_白球比</data>
+    </edge>
+    <edge source="疾病_低蛋白血症" target="疾病_泌尿系感染">
+      <data key="d2">0.11937560541854286</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4973983559105953</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_低蛋白血症-&gt;疾病_泌尿系感染</data>
+    </edge>
+    <edge source="疾病_低蛋白血症" target="检验_C反应蛋白">
+      <data key="d2">0.054252564070700865</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3390785254418804</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_低蛋白血症-&gt;检验_C反应蛋白</data>
+    </edge>
+    <edge source="药物_阿司匹林肠溶片" target="疾病_重度骨质疏松">
+      <data key="d2">0.11925928253689745</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4969136772370727</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_阿司匹林肠溶片-&gt;疾病_重度骨质疏松</data>
+    </edge>
+    <edge source="药物_阿司匹林肠溶片" target="药物_阿托伐他汀钙片">
+      <data key="d2">0.054106418092471686</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.338165113077948</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_阿司匹林肠溶片-&gt;药物_阿托伐他汀钙片</data>
+    </edge>
+    <edge source="药物_阿司匹林肠溶片" target="药物_厄贝沙坦片">
+      <data key="d2">0.05381876601421914</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3363672875888696</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_阿司匹林肠溶片-&gt;药物_厄贝沙坦片</data>
+    </edge>
+    <edge source="疾病_肝囊肿" target="疾病_结肠息肉">
+      <data key="d2">0.11862844970415297</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4942852071006374</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_肝囊肿-&gt;疾病_结肠息肉</data>
+    </edge>
+    <edge source="检验_碱性磷酸酶" target="检验_转肽酶">
+      <data key="d2">0.18045605313135535</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.501266814253765</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_碱性磷酸酶-&gt;检验_转肽酶</data>
+    </edge>
+    <edge source="检验_碱性磷酸酶" target="药物_盐酸吗啡注射液">
+      <data key="d2">0.1192615830010063</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4969232625041929</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_碱性磷酸酶-&gt;药物_盐酸吗啡注射液</data>
+    </edge>
+    <edge source="检验_碱性磷酸酶" target="药物_盐酸羟考酮缓释片">
+      <data key="d2">0.05446541071057438</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3404088169410899</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_碱性磷酸酶-&gt;药物_盐酸羟考酮缓释片</data>
+    </edge>
+    <edge source="检验_碱性磷酸酶" target="检验_尿酸">
+      <data key="d2">0.05434408269928075</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3396505168705047</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_碱性磷酸酶-&gt;检验_尿酸</data>
+    </edge>
+    <edge source="检验_碱性磷酸酶" target="疾病_肝功能异常">
+      <data key="d2">0.05395169626624896</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.337198101664056</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_碱性磷酸酶-&gt;疾病_肝功能异常</data>
+    </edge>
+    <edge source="检验_镁" target="检验_碳酸氢盐">
+      <data key="d2">0.05360781082504257</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.335048817656516</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_镁-&gt;检验_碳酸氢盐</data>
+    </edge>
+    <edge source="检验_球蛋白" target="检验_总蛋白">
+      <data key="d2">0.054271633590613114</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3391977099413319</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_球蛋白-&gt;检验_总蛋白</data>
+    </edge>
+    <edge source="检验_球蛋白" target="疾病_结肠息肉">
+      <data key="d2">0.05397078132886732</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3373173833054207</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_球蛋白-&gt;疾病_结肠息肉</data>
+    </edge>
+    <edge source="检验_白细胞" target="检验_中性粒细胞数量">
+      <data key="d2">0.05446749086289135</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3404218178930709</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_白细胞-&gt;检验_中性粒细胞数量</data>
+    </edge>
+    <edge source="检验_白细胞" target="药物_二羟丙茶碱注射液">
+      <data key="d2">0.054176313224113176</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3386019576507073</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_白细胞-&gt;药物_二羟丙茶碱注射液</data>
+    </edge>
+    <edge source="检验_红细胞分布宽度CV" target="检验_钾">
+      <data key="d2">0.11971923117433733</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4988301298930722</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_红细胞分布宽度CV-&gt;检验_钾</data>
+    </edge>
+    <edge source="检验_红细胞分布宽度CV" target="检验_红细胞分布宽度SD">
+      <data key="d2">0.05509673029704109</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3443545643565068</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞分布宽度CV-&gt;检验_红细胞分布宽度SD</data>
+    </edge>
+    <edge source="检验_红细胞分布宽度CV" target="疾病_胆囊结石">
+      <data key="d2">0.05473080510454575</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3420675319034109</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞分布宽度CV-&gt;疾病_胆囊结石</data>
+    </edge>
+    <edge source="检验_红细胞分布宽度CV" target="检验_血小板">
+      <data key="d2">0.05446594706858168</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3404121691786355</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞分布宽度CV-&gt;检验_血小板</data>
+    </edge>
+    <edge source="检验_红细胞分布宽度CV" target="检验_磷">
+      <data key="d2">0.05443014379403541</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3401883987127213</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞分布宽度CV-&gt;检验_磷</data>
+    </edge>
+    <edge source="检验_红细胞分布宽度CV" target="检验_镁">
+      <data key="d2">0.05440061664068975</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3400038540043109</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞分布宽度CV-&gt;检验_镁</data>
+    </edge>
+    <edge source="检验_红细胞分布宽度CV" target="检验_谷草/谷丙">
+      <data key="d2">0.05426474774209594</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3391546733880996</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_红细胞分布宽度CV-&gt;检验_谷草/谷丙</data>
+    </edge>
+    <edge source="检验_中性粒细胞比率" target="检验_中性粒细胞数量">
+      <data key="d2">1.021467508965381</data>
+      <data key="d3">platinum</data>
+      <data key="d4">0.821467508965381</data>
+      <data key="d5">True</data>
+      <data key="d6">test_test</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">5</data>
+      <data key="d9">检验_中性粒细胞比率-&gt;检验_中性粒细胞数量</data>
+    </edge>
+    <edge source="检验_中性粒细胞比率" target="检验_淋巴细胞比率">
+      <data key="d2">0.054407898291580895</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3400493643223806</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_中性粒细胞比率-&gt;检验_淋巴细胞比率</data>
+    </edge>
+    <edge source="检验_血小板比容" target="检验_血小板">
+      <data key="d2">0.05376119921572414</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3360074950982759</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_血小板比容-&gt;检验_血小板</data>
+    </edge>
+    <edge source="疾病_高血压" target="药物_阿司匹林肠溶片">
+      <data key="d2">0.19001082503179967</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5278078473105546</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_高血压-&gt;药物_阿司匹林肠溶片</data>
+    </edge>
+    <edge source="疾病_高血压" target="药物_富马酸比索洛尔片">
+      <data key="d2">0.1893228286355113</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5258967462097537</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_高血压-&gt;药物_富马酸比索洛尔片</data>
+    </edge>
+    <edge source="疾病_高血压" target="药物_硝苯地平控释片">
+      <data key="d2">0.18919083298893954</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5255300916359432</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_高血压-&gt;药物_硝苯地平控释片</data>
+    </edge>
+    <edge source="疾病_高血压" target="疾病_肝功能异常">
+      <data key="d2">0.18896229092171224</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5248952525603118</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_高血压-&gt;疾病_肝功能异常</data>
+    </edge>
+    <edge source="疾病_高血压" target="药物_厄贝沙坦氢氯噻嗪片">
+      <data key="d2">0.18862511331530724</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5239586480980757</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_高血压-&gt;药物_厄贝沙坦氢氯噻嗪片</data>
+    </edge>
+    <edge source="疾病_高血压" target="疾病_糖尿病">
+      <data key="d2">0.05973966100067565</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3733728812542228</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;疾病_糖尿病</data>
+    </edge>
+    <edge source="疾病_高血压" target="疾病_反流性食管炎">
+      <data key="d2">0.059071214114212546</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3691950882138284</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;疾病_反流性食管炎</data>
+    </edge>
+    <edge source="疾病_高血压" target="疾病_动脉硬化">
+      <data key="d2">0.05905119960171634</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3690699975107271</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;疾病_动脉硬化</data>
+    </edge>
+    <edge source="疾病_高血压" target="疾病_脂肪肝">
+      <data key="d2">0.05887779665416431</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3679862290885269</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;疾病_脂肪肝</data>
+    </edge>
+    <edge source="疾病_高血压" target="疾病_混合痔">
+      <data key="d2">0.058836337097220304</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3677271068576269</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;疾病_混合痔</data>
+    </edge>
+    <edge source="疾病_高血压" target="检验_嗜酸性粒细胞数量">
+      <data key="d2">0.05881700572438207</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3676062857773879</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;检验_嗜酸性粒细胞数量</data>
+    </edge>
+    <edge source="疾病_高血压" target="疾病_非毒性多个甲状腺结节">
+      <data key="d2">0.058782369916217936</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3673898119763621</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;疾病_非毒性多个甲状腺结节</data>
+    </edge>
+    <edge source="疾病_高血压" target="检验_红细胞压积">
+      <data key="d2">0.05877300843196697</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3673313026997935</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;检验_红细胞压积</data>
+    </edge>
+    <edge source="疾病_高血压" target="药物_贞芪扶正">
+      <data key="d2">0.05876901533236365</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3673063458272728</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;药物_贞芪扶正</data>
+    </edge>
+    <edge source="疾病_高血压" target="检验_谷丙转氨酶">
+      <data key="d2">0.05874607714457056</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3671629821535659</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;检验_谷丙转氨酶</data>
+    </edge>
+    <edge source="疾病_高血压" target="药物_盐酸二甲双胍片">
+      <data key="d2">0.05864109315887646</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3665068322429778</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;药物_盐酸二甲双胍片</data>
+    </edge>
+    <edge source="疾病_高血压" target="疾病_前列腺增生">
+      <data key="d2">0.05853134357402029</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3658208973376268</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;疾病_前列腺增生</data>
+    </edge>
+    <edge source="疾病_高血压" target="疾病_陈旧性脑梗死">
+      <data key="d2">0.05851781470685052</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3657363419178157</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;疾病_陈旧性脑梗死</data>
+    </edge>
+    <edge source="疾病_高血压" target="检验_血小板比容">
+      <data key="d2">0.05848703134628799</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3655439459142999</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;检验_血小板比容</data>
+    </edge>
+    <edge source="疾病_高血压" target="药物_苯磺酸氨氯地平片">
+      <data key="d2">0.05844970746232553</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3653106716395345</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;药物_苯磺酸氨氯地平片</data>
+    </edge>
+    <edge source="疾病_高血压" target="疾病_肝囊肿">
+      <data key="d2">0.05841665638895527</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3651041024309704</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高血压-&gt;疾病_肝囊肿</data>
+    </edge>
+    <edge source="药物_盐酸羟考酮缓释片" target="药物_盐酸布桂嗪注射液">
+      <data key="d2">0.5800515087614498</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.6563304824397651</data>
+      <data key="d5">True</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">药物_盐酸羟考酮缓释片-&gt;药物_盐酸布桂嗪注射液</data>
+    </edge>
+    <edge source="药物_盐酸羟考酮缓释片" target="药物_硝苯地平缓释片">
+      <data key="d2">0.11926380600095715</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4969325250039881</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_盐酸羟考酮缓释片-&gt;药物_硝苯地平缓释片</data>
+    </edge>
+    <edge source="药物_盐酸羟考酮缓释片" target="检验_碱性磷酸酶">
+      <data key="d2">0.05446541071057438</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3404088169410899</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_盐酸羟考酮缓释片-&gt;检验_碱性磷酸酶</data>
+    </edge>
+    <edge source="药物_氯化钠注射液" target="药物_葡萄糖注射液">
+      <data key="d2">0.11875732553608594</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4948221897336914</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_氯化钠注射液-&gt;药物_葡萄糖注射液</data>
+    </edge>
+    <edge source="疾病_糖尿病性视网膜病变" target="疾病_白内障">
+      <data key="d2">0.11866050478989905</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4944187699579127</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_糖尿病性视网膜病变-&gt;疾病_白内障</data>
+    </edge>
+    <edge source="疾病_糖尿病性视网膜病变" target="药物_厄贝沙坦片">
+      <data key="d2">0.05338443602117126</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3336527251323203</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_糖尿病性视网膜病变-&gt;药物_厄贝沙坦片</data>
+    </edge>
+    <edge source="检验_平均血红蛋白浓度" target="药物_复方鲜竹沥液">
+      <data key="d2">0.05415921283442206</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3384950802151378</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_平均血红蛋白浓度-&gt;药物_复方鲜竹沥液</data>
+    </edge>
+    <edge source="检验_平均血红蛋白浓度" target="药物_佐匹克隆片">
+      <data key="d2">0.05395919436167852</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3372449647604907</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_平均血红蛋白浓度-&gt;药物_佐匹克隆片</data>
+    </edge>
+    <edge source="检验_大型血小板比率" target="检验_血小板分布宽度">
+      <data key="d2">0.11975433905327075</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4989764127219614</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_大型血小板比率-&gt;检验_血小板分布宽度</data>
+    </edge>
+    <edge source="检验_大型血小板比率" target="疾病_医疗机构新收治患者及陪护人员">
+      <data key="d2">0.11923623727959921</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4968176553316634</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_大型血小板比率-&gt;疾病_医疗机构新收治患者及陪护人员</data>
+    </edge>
+    <edge source="检验_大型血小板比率" target="疾病_老年性白内障">
+      <data key="d2">0.05410854767144722</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3381784229465451</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_大型血小板比率-&gt;疾病_老年性白内障</data>
+    </edge>
+    <edge source="药物_盐酸曲美他嗪片" target="药物_硫酸氢氯吡格雷片">
+      <data key="d2">0.11889409344017134</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4953920560007139</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_盐酸曲美他嗪片-&gt;药物_硫酸氢氯吡格雷片</data>
+    </edge>
+    <edge source="药物_盐酸曲美他嗪片" target="疾病_低蛋白血症">
+      <data key="d2">0.0541698928625629</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3385618303910181</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_盐酸曲美他嗪片-&gt;疾病_低蛋白血症</data>
+    </edge>
+    <edge source="药物_盐酸曲美他嗪片" target="药物_阿卡波糖片">
+      <data key="d2">0.05382904242313583</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3364315151445989</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_盐酸曲美他嗪片-&gt;药物_阿卡波糖片</data>
+    </edge>
+    <edge source="药物_盐酸曲美他嗪片" target="疾病_陈旧性脑梗死">
+      <data key="d2">0.05369164964647971</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3355728102904982</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_盐酸曲美他嗪片-&gt;疾病_陈旧性脑梗死</data>
+    </edge>
+    <edge source="疾病_肺恶性肿瘤" target="疾病_前列腺增生">
+      <data key="d2">0.053605753815496315</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.335035961346852</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_肺恶性肿瘤-&gt;疾病_前列腺增生</data>
+    </edge>
+    <edge source="疾病_肺恶性肿瘤" target="疾病_恶性肿瘤维持性化学治疗">
+      <data key="d2">0.053566196255911205</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.334788726599445</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_肺恶性肿瘤-&gt;疾病_恶性肿瘤维持性化学治疗</data>
+    </edge>
+    <edge source="疾病_肺恶性肿瘤" target="检验_单核细胞数量">
+      <data key="d2">0.05350188150155666</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3343867593847291</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_肺恶性肿瘤-&gt;检验_单核细胞数量</data>
+    </edge>
+    <edge source="疾病_胆囊结石" target="疾病_脂肪肝">
+      <data key="d2">0.05441682255956453</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3401051409972783</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_胆囊结石-&gt;疾病_脂肪肝</data>
+    </edge>
+    <edge source="疾病_胆囊结石" target="检验_钙">
+      <data key="d2">0.05422935867816119</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3389334917385074</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_胆囊结石-&gt;检验_钙</data>
+    </edge>
+    <edge source="疾病_胆囊结石" target="药物_盐酸二甲双胍片">
+      <data key="d2">0.054180119064276694</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3386257441517293</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_胆囊结石-&gt;药物_盐酸二甲双胍片</data>
+    </edge>
+    <edge source="疾病_胆囊结石" target="药物_甲钴胺片">
+      <data key="d2">0.053884839891687346</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3367802493230459</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_胆囊结石-&gt;药物_甲钴胺片</data>
+    </edge>
+    <edge source="药物_匹伐他汀钙片" target="疾病_脂肪肝">
+      <data key="d2">0.11991756087584582</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4996565036493576</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_匹伐他汀钙片-&gt;疾病_脂肪肝</data>
+    </edge>
+    <edge source="药物_匹伐他汀钙片" target="药物_阿托伐他汀钙片">
+      <data key="d2">0.05411224730076108</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3382015456297567</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_匹伐他汀钙片-&gt;药物_阿托伐他汀钙片</data>
+    </edge>
+    <edge source="检验_淋巴细胞比率" target="检验_中性粒细胞比率">
+      <data key="d2">0.18001777115605697</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5000493643223806</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_淋巴细胞比率-&gt;检验_中性粒细胞比率</data>
+    </edge>
+    <edge source="检验_淋巴细胞比率" target="检验_淋巴细胞数量">
+      <data key="d2">0.05467261644537617</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.341703852783601</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_淋巴细胞比率-&gt;检验_淋巴细胞数量</data>
+    </edge>
+    <edge source="检验_淋巴细胞比率" target="药物_维生素B6注射液">
+      <data key="d2">0.05392363562469667</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3370227226543541</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_淋巴细胞比率-&gt;药物_维生素B6注射液</data>
+    </edge>
+    <edge source="疾病_高同型半胱氨酸血症" target="药物_叶酸片">
+      <data key="d2">0.11977916667137982</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4990798611307492</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_高同型半胱氨酸血症-&gt;药物_叶酸片</data>
+    </edge>
+    <edge source="疾病_高同型半胱氨酸血症" target="疾病_肢体动脉硬化">
+      <data key="d2">0.05448907743832228</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3405567339895142</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高同型半胱氨酸血症-&gt;疾病_肢体动脉硬化</data>
+    </edge>
+    <edge source="疾病_高同型半胱氨酸血症" target="疾病_慢性支气管炎">
+      <data key="d2">0.05401668380835685</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3376042738022303</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高同型半胱氨酸血症-&gt;疾病_慢性支气管炎</data>
+    </edge>
+    <edge source="疾病_糖尿病性周围神经病" target="疾病_糖尿病性周围血管病">
+      <data key="d2">0.5796169485249848</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.6556514820702887</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">疾病_糖尿病性周围神经病-&gt;疾病_糖尿病性周围血管病</data>
+    </edge>
+    <edge source="疾病_糖尿病性周围神经病" target="疾病_糖尿病性视网膜病变">
+      <data key="d2">0.5793752230937338</data>
+      <data key="d3">gold</data>
+      <data key="d4">0.6552737860839591</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">4</data>
+      <data key="d9">疾病_糖尿病性周围神经病-&gt;疾病_糖尿病性视网膜病变</data>
+    </edge>
+    <edge source="疾病_糖尿病性周围神经病" target="疾病_高尿酸血症">
+      <data key="d2">0.11897658331617053</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4957357638173772</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_糖尿病性周围神经病-&gt;疾病_高尿酸血症</data>
+    </edge>
+    <edge source="疾病_糖尿病性周围神经病" target="药物_甲钴胺片">
+      <data key="d2">0.11876204127461958</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4948418386442482</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_糖尿病性周围神经病-&gt;药物_甲钴胺片</data>
+    </edge>
+    <edge source="药物_单硝酸异山梨酯片" target="疾病_冠状动脉粥样硬化性心脏病">
+      <data key="d2">0.05410096027743125</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3381310017339452</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_单硝酸异山梨酯片-&gt;疾病_冠状动脉粥样硬化性心脏病</data>
+    </edge>
+    <edge source="药物_单硝酸异山梨酯片" target="疾病_类风湿性关节炎">
+      <data key="d2">0.05385869339993399</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3366168337495874</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_单硝酸异山梨酯片-&gt;疾病_类风湿性关节炎</data>
+    </edge>
+    <edge source="药物_盐酸吗啡注射液" target="药物_盐酸布桂嗪注射液">
+      <data key="d2">0.0532551884804589</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3328449280028681</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_盐酸吗啡注射液-&gt;药物_盐酸布桂嗪注射液</data>
+    </edge>
+    <edge source="检验_胆碱酯酶" target="检验_前白蛋白">
+      <data key="d2">0.054540156455522584</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3408759778470161</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_胆碱酯酶-&gt;检验_前白蛋白</data>
+    </edge>
+    <edge source="检验_嗜碱性粒细胞比率" target="检验_嗜碱性粒细胞数量">
+      <data key="d2">0.11938240500445034</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4974266875185431</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_嗜碱性粒细胞比率-&gt;检验_嗜碱性粒细胞数量</data>
+    </edge>
+    <edge source="疾病_陈旧性脑梗死" target="药物_硫酸氢氯吡格雷片">
+      <data key="d2">0.11882830181863545</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4951179242443144</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_陈旧性脑梗死-&gt;药物_硫酸氢氯吡格雷片</data>
+    </edge>
+    <edge source="疾病_陈旧性脑梗死" target="疾病_重度骨质疏松">
+      <data key="d2">0.1187621212426401</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4948421718443337</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_陈旧性脑梗死-&gt;疾病_重度骨质疏松</data>
+    </edge>
+    <edge source="检验_血小板分布宽度" target="检验_大型血小板比率">
+      <data key="d2">0.11975433905327075</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4989764127219614</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_血小板分布宽度-&gt;检验_大型血小板比率</data>
+    </edge>
+    <edge source="检验_血小板分布宽度" target="检验_平均血小板体积">
+      <data key="d2">0.11894196474712426</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4955915197796844</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_血小板分布宽度-&gt;检验_平均血小板体积</data>
+    </edge>
+    <edge source="检验_血小板分布宽度" target="检验_中性粒细胞数量">
+      <data key="d2">0.05443310069256305</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.340206879328519</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_血小板分布宽度-&gt;检验_中性粒细胞数量</data>
+    </edge>
+    <edge source="疾病_低钾血症" target="疾病_心功能">
+      <data key="d2">0.05356245400964245</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3347653375602653</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_低钾血症-&gt;疾病_心功能</data>
+    </edge>
+    <edge source="疾病_低钾血症" target="检验_钾">
+      <data key="d2">0.053511179587651725</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3344448724228233</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_低钾血症-&gt;检验_钾</data>
+    </edge>
+    <edge source="疾病_糖尿病性周围血管病" target="疾病_血糖控制不佳">
+      <data key="d2">0.11880947812663296</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.495039492194304</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_糖尿病性周围血管病-&gt;疾病_血糖控制不佳</data>
+    </edge>
+    <edge source="检验_磷" target="药物_碳酸钙片">
+      <data key="d2">0.053716781220469745</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3357298826279359</data>
+      <data key="d5">False</data>
+      <data key="d6">test_drug</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_磷-&gt;药物_碳酸钙片</data>
+    </edge>
+    <edge source="检验_嗜碱性粒细胞数量" target="检验_嗜碱性粒细胞比率">
+      <data key="d2">0.11938240500445034</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.4974266875185431</data>
+      <data key="d5">False</data>
+      <data key="d6">test_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">检验_嗜碱性粒细胞数量-&gt;检验_嗜碱性粒细胞比率</data>
+    </edge>
+    <edge source="检验_肌酐" target="疾病_腔隙性脑梗死">
+      <data key="d2">0.05409265027948912</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.338079064246807</data>
+      <data key="d5">False</data>
+      <data key="d6">test_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">检验_肌酐-&gt;疾病_腔隙性脑梗死</data>
+    </edge>
+  </graph>
+</graphml>

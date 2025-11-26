@@ -1,0 +1,1243 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>增强知识图谱结构展示 - KG=(V,E_core,R,W,Θ,Φ)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .nav-tab {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #495057;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-tab:hover {
+            background: #e9ecef;
+            color: #007bff;
+        }
+        
+        .nav-tab.active {
+            background: #007bff;
+            color: white;
+        }
+        
+        .nav-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #007bff;
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 30px;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .section-title {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title .icon {
+            margin-right: 15px;
+            font-size: 1.2em;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #007bff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 1.1em;
+            color: #6c757d;
+            font-weight: 500;
+        }
+        
+        .detail-section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .detail-title {
+            font-size: 1.3em;
+            color: #495057;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .detail-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        
+        .detail-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #28a745;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .detail-item strong {
+            color: #495057;
+        }
+        
+        .table-container {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+        }
+        
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .table th {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+        
+        .badge-primary { background: #007bff; color: white; }
+        .badge-success { background: #28a745; color: white; }
+        .badge-warning { background: #ffc107; color: #212529; }
+        .badge-danger { background: #dc3545; color: white; }
+        .badge-info { background: #17a2b8; color: white; }
+        
+        .progress-bar {
+            background: #e9ecef;
+            border-radius: 10px;
+            height: 20px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+        
+        .network-preview {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .network-preview svg {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>增强知识图谱结构展示</h1>
+            <div class="subtitle">KG = (V, E_core, R, W, Θ, Φ) 完整结构分析</div>
+        </div>
+        
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showTab('v-tab')">
+                <span class="icon">🔵</span> 节点集合 V
+            </button>
+            <button class="nav-tab" onclick="showTab('ecore-tab')">
+                <span class="icon">🔗</span> 核心边集合 E_core
+            </button>
+            <button class="nav-tab" onclick="showTab('r-tab')">
+                <span class="icon">🔄</span> 关系类型 R
+            </button>
+            <button class="nav-tab" onclick="showTab('w-tab')">
+                <span class="icon">⚖️</span> 权重属性 W
+            </button>
+            <button class="nav-tab" onclick="showTab('theta-tab')">
+                <span class="icon">📊</span> 参数属性 Θ
+            </button>
+            <button class="nav-tab" onclick="showTab('phi-tab')">
+                <span class="icon">⚡</span> 效应属性 Φ
+            </button>
+        </div>
+        
+        <!-- V 节点集合 -->
+        <div id="v-tab" class="tab-content active">
+            <div class="section-title">
+                <span class="icon">🔵</span>
+                节点集合 V - 知识图谱的基础实体
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">148</div>
+                    <div class="stat-label">总节点数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">节点类型数</div>
+                </div>
+            </div>
+            
+            <div class="detail-section">
+                <div class="detail-title">节点类型分布</div>
+                <div class="detail-list">
+                    
+                <div class="detail-item">
+                    <strong>检验</strong><br>
+                    数量: 50 (33.8%)
+                </div>
+            
+                <div class="detail-item">
+                    <strong>药物</strong><br>
+                    数量: 49 (33.1%)
+                </div>
+            
+                <div class="detail-item">
+                    <strong>疾病</strong><br>
+                    数量: 49 (33.1%)
+                </div>
+            
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>节点名称</th>
+                            <th>节点类型</th>
+                            <th>总度数</th>
+                            <th>入度</th>
+                            <th>出度</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                <tr>
+                    <td>检验_嗜酸性粒细胞数量</td>
+                    <td><span class="badge badge-primary">检验</span></td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td>药物_磷酸可待因片</td>
+                    <td><span class="badge badge-primary">药物</span></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+            
+                <tr>
+                    <td>药物_复方鲜竹沥液</td>
+                    <td><span class="badge badge-primary">药物</span></td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>0</td>
+                </tr>
+            
+                <tr>
+                    <td>疾病_心功能</td>
+                    <td><span class="badge badge-primary">疾病</span></td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td>药物_盐酸布桂嗪注射液</td>
+                    <td><span class="badge badge-primary">药物</span></td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+            
+                <tr>
+                    <td>疾病_肾性贫血</td>
+                    <td><span class="badge badge-primary">疾病</span></td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td>药物_肝素钠注射液</td>
+                    <td><span class="badge badge-primary">药物</span></td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td>疾病_脑梗死</td>
+                    <td><span class="badge badge-primary">疾病</span></td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td>药物_碳酸钙片</td>
+                    <td><span class="badge badge-primary">药物</span></td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td>药物_维生素B6注射液</td>
+                    <td><span class="badge badge-primary">药物</span></td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+            
+                <tr>
+                    <td>检验_氯</td>
+                    <td><span class="badge badge-primary">检验</span></td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td>疾病_颈椎病</td>
+                    <td><span class="badge badge-primary">疾病</span></td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td>药物_骨化三醇胶丸</td>
+                    <td><span class="badge badge-primary">药物</span></td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td>药物_卡维地洛片</td>
+                    <td><span class="badge badge-primary">药物</span></td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+            
+                <tr>
+                    <td>药物_盐酸二甲双胍片</td>
+                    <td><span class="badge badge-primary">药物</span></td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>0</td>
+                </tr>
+            
+                <tr>
+                    <td>药物_硝苯地平控释片</td>
+                    <td><span class="badge badge-primary">药物</span></td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td>药物_甲钴胺分散片</td>
+                    <td><span class="badge badge-primary">药物</span></td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td>检验_红细胞压积</td>
+                    <td><span class="badge badge-primary">检验</span></td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td>检验_钠</td>
+                    <td><span class="badge badge-primary">检验</span></td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td>检验_红细胞平均体积</td>
+                    <td><span class="badge badge-primary">检验</span></td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td colspan="5" style="text-align: center; color: #6c757d; font-style: italic;">
+                        ... 还有 128 个节点未显示
+                    </td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- E_core 核心边集合 -->
+        <div id="ecore-tab" class="tab-content">
+            <div class="section-title">
+                <span class="icon">🔗</span>
+                核心边集合 E_core - 知识图谱的关系骨架
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">325</div>
+                    <div class="stat-label">总边数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">质量等级数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">层次类型数</div>
+                </div>
+            </div>
+            
+            <div class="detail-section">
+                <div class="detail-title">边质量分布</div>
+                <div class="detail-list">
+                    
+                <div class="detail-item">
+                    <strong><span class="badge badge-info">unknown</span></strong><br>
+                    数量: 325 (100.0%)
+                </div>
+            
+                </div>
+            </div>
+            
+            <div class="detail-section">
+                <div class="detail-title">边层次分布</div>
+                <div class="detail-list">
+                    
+                <div class="detail-item">
+                    <strong>unknown</strong><br>
+                    数量: 325 (100.0%)
+                </div>
+            
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>源节点</th>
+                            <th>目标节点</th>
+                            <th>质量等级</th>
+                            <th>层次</th>
+                            <th>三角化</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                <tr>
+                    <td>检验_中性粒细胞比率</td>
+                    <td>检验_中性粒细胞数量</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>检验_白球比</td>
+                    <td>检验_C反应蛋白</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>疾病_糖尿病</td>
+                    <td>疾病_糖尿病性周围神经病</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>检验_淋巴细胞数量</td>
+                    <td>检验_淋巴细胞比率</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>疾病_低蛋白血症</td>
+                    <td>检验_白球比</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>检验_中性粒细胞数量</td>
+                    <td>检验_白细胞</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>药物_螺内酯片</td>
+                    <td>药物_酒石酸美托洛尔片</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>检验_氯</td>
+                    <td>检验_钠</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>药物_重组人促红素注射液</td>
+                    <td>疾病_尿毒症</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>疾病_冠状动脉粥样硬化性心脏病</td>
+                    <td>药物_盐酸曲美他嗪片</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>检验_C反应蛋白</td>
+                    <td>药物_复方鲜竹沥液</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>疾病_不稳定性心绞痛</td>
+                    <td>疾病_心功能</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>疾病_混合痔</td>
+                    <td>药物_裸花紫珠分散片</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>药物_盐酸羟考酮缓释片</td>
+                    <td>药物_盐酸布桂嗪注射液</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>疾病_肾性贫血</td>
+                    <td>药物_碳酸氢钠片</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>药物_维生素C注射液</td>
+                    <td>药物_维生素B6注射液</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>疾病_糖尿病性周围神经病</td>
+                    <td>疾病_糖尿病性周围血管病</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>疾病_颈椎病</td>
+                    <td>疾病_腰椎间盘突出</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>疾病_糖尿病性周围神经病</td>
+                    <td>疾病_糖尿病性视网膜病变</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td>疾病_高尿酸血症</td>
+                    <td>药物_碳酸氢钠片</td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                    <td><span class="badge badge-danger">否</span></td>
+                </tr>
+            
+                <tr>
+                    <td colspan="5" style="text-align: center; color: #6c757d; font-style: italic;">
+                        ... 还有 305 条边未显示
+                    </td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- R 关系类型 -->
+        <div id="r-tab" class="tab-content">
+            <div class="section-title">
+                <span class="icon">🔄</span>
+                关系类型集合 R - 定义节点间的语义关系
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">9</div>
+                    <div class="stat-label">关系类型总数</div>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>关系类型</th>
+                            <th>描述</th>
+                            <th>因果性</th>
+                            <th>方向性</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                <tr>
+                    <td><strong>disease_disease</strong></td>
+                    <td>疾病间的因果关系或共病关系</td>
+                    <td><span class="badge badge-warning">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                </tr>
+            
+                <tr>
+                    <td><strong>disease_drug</strong></td>
+                    <td>疾病对药物使用的需求关系</td>
+                    <td><span class="badge badge-warning">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                </tr>
+            
+                <tr>
+                    <td><strong>disease_test</strong></td>
+                    <td>疾病对检验指标的影响</td>
+                    <td><span class="badge badge-warning">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                </tr>
+            
+                <tr>
+                    <td><strong>drug_disease</strong></td>
+                    <td>药物对疾病的治疗效果</td>
+                    <td><span class="badge badge-warning">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                </tr>
+            
+                <tr>
+                    <td><strong>drug_drug</strong></td>
+                    <td>药物间的相互作用</td>
+                    <td><span class="badge badge-warning">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                </tr>
+            
+                <tr>
+                    <td><strong>drug_test</strong></td>
+                    <td>药物对检验指标的影响</td>
+                    <td><span class="badge badge-warning">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                </tr>
+            
+                <tr>
+                    <td><strong>test_disease</strong></td>
+                    <td>检验指标异常指示疾病</td>
+                    <td><span class="badge badge-warning">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                </tr>
+            
+                <tr>
+                    <td><strong>test_drug</strong></td>
+                    <td>检验结果指导药物使用</td>
+                    <td><span class="badge badge-warning">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                </tr>
+            
+                <tr>
+                    <td><strong>test_test</strong></td>
+                    <td>检验指标间的生理关联</td>
+                    <td><span class="badge badge-warning">unknown</span></td>
+                    <td><span class="badge badge-info">unknown</span></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- W 权重属性 -->
+        <div id="w-tab" class="tab-content">
+            <div class="section-title">
+                <span class="icon">⚖️</span>
+                权重属性 W - 量化边的重要性和强度
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">325</div>
+                    <div class="stat-label">带权重边数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">权重类型数</div>
+                </div>
+            </div>
+            
+            <div class="detail-section">
+                <div class="detail-title">权重统计信息</div>
+                <div class="detail-list">
+                <div class="detail-item">
+                    <strong>base_weight</strong><br>
+                    数量: 325<br>
+                    均值: 0.0000<br>
+                    标准差: 0.0000<br>
+                    范围: [0.0000, 0.0000]
+                </div>
+            
+                <div class="detail-item">
+                    <strong>candidate_details</strong><br>
+                    数量: 325<br>
+                    均值: 0.0000<br>
+                    标准差: 0.0000<br>
+                    范围: [0.0000, 0.0000]
+                </div>
+            
+                <div class="detail-item">
+                    <strong>triangulation_weights</strong><br>
+                    数量: 325<br>
+                    均值: 0.0000<br>
+                    标准差: 0.0000<br>
+                    范围: [0.0000, 0.0000]
+                </div>
+            
+                <div class="detail-item">
+                    <strong>hierarchy_weight</strong><br>
+                    数量: 325<br>
+                    均值: 0.0000<br>
+                    标准差: 0.0000<br>
+                    范围: [0.0000, 0.0000]
+                </div>
+            
+                <div class="detail-item">
+                    <strong>weight_params</strong><br>
+                    数量: 325<br>
+                    均值: 0.0000<br>
+                    标准差: 0.0000<br>
+                    范围: [0.0000, 0.0000]
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Θ 参数属性 -->
+        <div id="theta-tab" class="tab-content">
+            <div class="section-title">
+                <span class="icon">📊</span>
+                参数属性 Θ - 统计学习的模型参数
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">325</div>
+                    <div class="stat-label">参数化边数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">参数方法数</div>
+                </div>
+            </div>
+            
+            <div class="detail-section">
+                <div class="detail-title">参数方法分布</div>
+                <div class="detail-list">
+                    
+                <div class="detail-item">
+                    <strong>parameter_learning</strong><br>
+                    数量: 325 (100.0%)
+                </div>
+            
+                <div class="detail-item">
+                    <strong>cpt_info</strong><br>
+                    数量: 325 (100.0%)
+                </div>
+            
+                <div class="detail-item">
+                    <strong>edge_conditional_prob</strong><br>
+                    数量: 325 (100.0%)
+                </div>
+            
+                <div class="detail-item">
+                    <strong>method_estimates</strong><br>
+                    数量: 325 (100.0%)
+                </div>
+            
+                <div class="detail-item">
+                    <strong>parameter_stability</strong><br>
+                    数量: 325 (100.0%)
+                </div>
+            
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>参数方法</th>
+                            <th>总边数</th>
+                            <th>完整数据</th>
+                            <th>不完整数据</th>
+                            <th>完整率</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                <tr>
+                    <td><strong>parameter_learning</strong></td>
+                    <td>325</td>
+                    <td><span class="badge badge-success">0</span></td>
+                    <td><span class="badge badge-warning">325</span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0.0%">
+                                0.0%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><strong>cpt_info</strong></td>
+                    <td>325</td>
+                    <td><span class="badge badge-success">0</span></td>
+                    <td><span class="badge badge-warning">325</span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0.0%">
+                                0.0%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><strong>edge_conditional_prob</strong></td>
+                    <td>325</td>
+                    <td><span class="badge badge-success">0</span></td>
+                    <td><span class="badge badge-warning">325</span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0.0%">
+                                0.0%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><strong>method_estimates</strong></td>
+                    <td>325</td>
+                    <td><span class="badge badge-success">0</span></td>
+                    <td><span class="badge badge-warning">325</span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0.0%">
+                                0.0%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><strong>parameter_stability</strong></td>
+                    <td>325</td>
+                    <td><span class="badge badge-success">0</span></td>
+                    <td><span class="badge badge-warning">325</span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0.0%">
+                                0.0%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Φ 效应属性 -->
+        <div id="phi-tab" class="tab-content">
+            <div class="section-title">
+                <span class="icon">⚡</span>
+                效应属性 Φ - 因果效应的量化结果
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">325</div>
+                    <div class="stat-label">效应边数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">效应类型数</div>
+                </div>
+            </div>
+            
+            <div class="detail-section">
+                <div class="detail-title">效应类型分布</div>
+                <div class="detail-list">
+                    
+                <div class="detail-item">
+                    <strong>mediation_effects</strong><br>
+                    数量: 325 (100.0%)
+                </div>
+            
+                <div class="detail-item">
+                    <strong>pathway_membership</strong><br>
+                    数量: 325 (100.0%)
+                </div>
+            
+                <div class="detail-item">
+                    <strong>significance_info</strong><br>
+                    数量: 325 (100.0%)
+                </div>
+            
+                <div class="detail-item">
+                    <strong>effect_statistics</strong><br>
+                    数量: 325 (100.0%)
+                </div>
+            
+                <div class="detail-item">
+                    <strong>confidence_intervals</strong><br>
+                    数量: 325 (100.0%)
+                </div>
+            
+                <div class="detail-item">
+                    <strong>effect_directions</strong><br>
+                    数量: 325 (100.0%)
+                </div>
+            
+                <div class="detail-item">
+                    <strong>mediation_types</strong><br>
+                    数量: 325 (100.0%)
+                </div>
+            
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>效应类型</th>
+                            <th>总边数</th>
+                            <th>显著效应</th>
+                            <th>显著率</th>
+                            <th>平均效应值</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                <tr>
+                    <td><strong>mediation_effects</strong></td>
+                    <td>325</td>
+                    <td><span class="badge badge-success">0</span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0.0%">
+                                0.0%
+                            </div>
+                        </div>
+                    </td>
+                    <td>0.0000</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>pathway_membership</strong></td>
+                    <td>325</td>
+                    <td><span class="badge badge-success">0</span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0.0%">
+                                0.0%
+                            </div>
+                        </div>
+                    </td>
+                    <td>0.0000</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>significance_info</strong></td>
+                    <td>325</td>
+                    <td><span class="badge badge-success">0</span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0.0%">
+                                0.0%
+                            </div>
+                        </div>
+                    </td>
+                    <td>0.0000</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>effect_statistics</strong></td>
+                    <td>325</td>
+                    <td><span class="badge badge-success">0</span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0.0%">
+                                0.0%
+                            </div>
+                        </div>
+                    </td>
+                    <td>0.0000</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>confidence_intervals</strong></td>
+                    <td>325</td>
+                    <td><span class="badge badge-success">0</span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0.0%">
+                                0.0%
+                            </div>
+                        </div>
+                    </td>
+                    <td>0.0000</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>effect_directions</strong></td>
+                    <td>325</td>
+                    <td><span class="badge badge-success">0</span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0.0%">
+                                0.0%
+                            </div>
+                        </div>
+                    </td>
+                    <td>0.0000</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>mediation_types</strong></td>
+                    <td>325</td>
+                    <td><span class="badge badge-success">0</span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0.0%">
+                                0.0%
+                            </div>
+                        </div>
+                    </td>
+                    <td>0.0000</td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showTab(tabId) {
+            // 隐藏所有标签页内容
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // 移除所有标签页按钮的激活状态
+            const tabs = document.querySelectorAll('.nav-tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // 显示选中的标签页内容
+            document.getElementById(tabId).classList.add('active');
+            
+            // 激活对应的标签页按钮
+            event.target.classList.add('active');
+        }
+        
+        // 页面加载完成后的初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('知识图谱结构展示界面已加载');
+        });
+    </script>
+</body>
+</html>
+        

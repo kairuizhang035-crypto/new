@@ -1,0 +1,17 @@
+# Node/Vite frontend
+08前后端分离/frontend/node_modules/
+08前后端分离/frontend/dist/
+08前后端分离/frontend/.vite/
+08前后端分离/frontend/.cache/
+08前后端分离/frontend/.env*
+
+# Common
+**/.DS_Store
+.vscode/
+**/*.log
+**/__pycache__/
+**/*.pyc
+**/.venv/
+
+# Large data (use LFS or ignore)
+07分离/uploads/*.json
