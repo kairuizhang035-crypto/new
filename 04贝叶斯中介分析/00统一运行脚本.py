@@ -116,12 +116,6 @@ def main():
             'name': '可视化.py',
             'description': '贝叶斯中介分析结果可视化',
             'interactive': False
-        },
-        {
-            'path': os.path.join(script_dir, '02贝叶斯中介分析结果', '生成详细CSV报告.py'),
-            'name': '生成详细CSV报告.py',
-            'description': '生成贝叶斯中介分析详细CSV报告',
-            'interactive': False
         }
     ]
     
@@ -179,7 +173,6 @@ def main():
         print(f"1. 01中介路径分析结果/ - 中介路径提取结果")
         print(f"2. 02贝叶斯中介分析结果/ - 贝叶斯中介分析结果")
         print(f"3. 可视化/ - 贝叶斯中介分析可视化结果")
-        print(f"4. 02贝叶斯中介分析结果/贝叶斯中介分析详细结果.csv - 详细CSV报告")
     else:
         print(f"\n⚠️  有 {len(scripts) - success_count} 个脚本运行失败")
         print(f"请检查上述错误信息并修复问题后重新运行")
