@@ -12,6 +12,13 @@
         <div class="avatar">👤</div>
         <div class="user-name">{{ userName || '未登录' }}</div>
         <button class="ds-btn sm" @click="onLogout">退出登录</button>
+        <button 
+          class="ds-btn sm back" 
+          @click="goToUpload" 
+          @keydown.enter.prevent="goToUpload" 
+          aria-label="返回上传界面"
+          title="返回上传界面"
+        >返回上传</button>
       </div>
 
       <!-- 数据源信息 -->
@@ -554,6 +561,14 @@ export default {
         window.$vueRouter.replace({ path: '/login', query: { redirect: '/', origin: window.location.href } })
       } else {
         window.location.href = '/login?redirect=/&origin=' + encodeURIComponent(window.location.href)
+      }
+    }
+
+    const goToUpload = () => {
+      try {
+        window.location.assign('http://localhost:8080/upload')
+      } catch (e) {
+        window.location.href = 'http://localhost:8080/upload'
       }
     }
 
@@ -2455,6 +2470,7 @@ export default {
       onApplyFromDropdown,
       isCurrent,
       onLogout,
+      goToUpload,
       userName
     }
   }
@@ -2573,6 +2589,16 @@ export default {
 .ds-btn:hover { background: rgba(255,255,255,0.28); box-shadow: 0 6px 14px rgba(0,0,0,0.18); }
 .ds-btn:active { transform: translateY(1px); }
 .ds-btn.sm { padding: 4px 8px; font-size: 12px; }
+.ds-btn.back {
+  border: 1px solid var(--btn-border);
+  background: var(--btn-bg);
+  color: #fff;
+}
+.ds-btn.back:hover {
+  background: rgba(255,255,255,0.28);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+}
+.ds-btn.back:active { transform: translateY(1px); }
 .current-path {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.85);

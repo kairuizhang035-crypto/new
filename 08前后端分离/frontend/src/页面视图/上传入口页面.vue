@@ -62,32 +62,50 @@
               <span class="meta-item"><strong>文件名:</strong> {{ preview.name }}</span>
               <span class="meta-item"><strong>类型:</strong> {{ preview.type }}</span>
               <span class="meta-item"><strong>大小:</strong> {{ humanSize(preview.size) }}</span>
-              <span class="meta-item"><strong>行数:</strong> {{ preview.rowsCount }}</span>
-              <span class="meta-item"><strong>列数:</strong> {{ preview.columns }}</span>
             </div>
           <div class="preview-actions">
               <button class="btn" @click="clear">清空</button>
               <button class="btn success" :disabled="uploading" @click="goToGraph">上传数据并进入增强知识图谱</button>
           </div>
           <div v-if="uploadError" class="hint error">{{ uploadError }}</div>
-          <div v-if="uploadMessage" class="hint ok">{{ uploadMessage }}</div>
           </div>
 
-          <div class="table-wrap" v-if="preview.headers.length">
-            <table class="preview-table">
-              <thead>
-                <tr>
-                  <th v-for="h in preview.headers" :key="h">{{ h }}</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="(row,i) in preview.rows" :key="i">
-                  <td v-for="(h, j) in preview.headers" :key="j">{{ formatCell(row[h]) }}</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="table-hint">仅展示前 {{ preview.rows.length }} 行，用于快速校验</div>
+          <div class="preview-illustration" aria-label="解析摘要">
+            <div class="illus-icon">{{ fileIcon }}</div>
+            <div class="illus-content">
+              <div class="illus-title">文件已解析</div>
+              <div class="illus-desc">可直接上传进入增强知识图谱</div>
+              <div class="illus-badges">
+                <span class="badge">{{ preview.type }}</span>
+                <span class="badge">{{ humanSize(preview.size) }}</span>
+              </div>
+              <div class="illus-chips">
+                <span class="chip">本地解析</span>
+                <span class="chip">安全</span>
+                <span class="chip">快速</span>
+              </div>
+            </div>
           </div>
+
+          <div class="preview-tips">
+            <div class="tip">
+              <div class="tip-icon">⬆️</div>
+              <div class="tip-text">拖拽上传或点击按钮</div>
+            </div>
+            <div class="tip">
+              <div class="tip-icon">🔒</div>
+              <div class="tip-text">本地解析，数据不上传</div>
+            </div>
+            <div class="tip">
+              <div class="tip-icon">🚀</div>
+              <div class="tip-text">一键进入增强知识图谱</div>
+            </div>
+            <div class="tip">
+              <div class="tip-icon">🧠</div>
+              <div class="tip-text">智能摘要与因果分析</div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -145,8 +163,9 @@ export default {
     const uploading = ref(false)
     const uploadError = ref('')
     const uploadMessage = ref('')
+    const fileIcon = computed(() => (String(preview.value.type).toUpperCase() === 'CSV' ? '📑' : '🧩'))
 
-    const hasPreview = computed(() => preview.value && preview.value.headers && preview.value.headers.length)
+    const hasPreview = computed(() => !!(preview.value && preview.value.name))
 
     // 用户信息面板状态与数据（集成到脚本内）
     const userPanelOpen = ref(false)
@@ -244,6 +263,8 @@ export default {
         } catch (err) {
           console.warn('解析失败', err)
           preview.value = { name, type: type || '未知', size: file.size, headers: [], rows: [], rowsCount: 0, columns: 0 }
+          uploadMessage.value = ''
+          uploadError.value = '解析失败，请检查文件格式或内容'
         }
       }
       reader.readAsText(file)
@@ -334,6 +355,8 @@ export default {
         }
         sessionStorage.setItem('upload_summary', JSON.stringify(summary))
       } catch (e) {}
+      uploadError.value = ''
+      uploadMessage.value = ''
     }
 
     const formatCell = (val) => {
@@ -451,6 +474,7 @@ export default {
       dropActive,
       preview,
       hasPreview,
+      fileIcon,
       chooseFile,
       onFileChange,
       onDragOver,
@@ -585,6 +609,7 @@ export default {
   background: #fff;
   box-shadow: 0 8px 24px rgba(0,0,0,0.06);
 }
+.upload-card { position: relative; min-height: clamp(420px, 52vh, 560px); }
 .upload-card .title { font-size: 22px; margin: 0; color: #1f2937; }
 .upload-card .desc { margin: 6px 0 14px; color: #6b7280; }
 .file-input { display: none; }
@@ -598,6 +623,8 @@ export default {
   transition: all .2s ease;
 }
 .drop-zone.active { background: #e0f2fe; border-color: #3b82f6; }
+.dz-content { gap: 14px; }
+.preview-header { margin-top: 12px; }
 .dz-content { display: flex; align-items: center; gap: 14px; justify-content: center; }
 .dz-icon { font-size: 26px; }
 .dz-title { color: #334155; margin-bottom: 8px; }
@@ -620,17 +647,31 @@ export default {
 
 .preview { margin-top: 16px; }
 .preview-header { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.preview-header + .preview-illustration { margin-top: 10px; }
 .file-meta { display: flex; flex-wrap: wrap; gap: 10px; color: #475569; }
 .meta-item { background: #f1f5f9; padding: 6px 10px; border-radius: 8px; }
 .preview-actions { display: flex; gap: 8px; }
-.table-wrap { margin-top: 10px; overflow: auto; }
-.preview-table { width: 100%; border-collapse: collapse; }
-.preview-table th, .preview-table td { border: 1px solid #e5e7eb; padding: 8px; font-size: 13px; }
-.preview-table thead { background: #f8fafc; }
-.table-hint { margin-top: 8px; color: #6b7280; font-size: 12px; }
+.table-wrap, .preview-table, .table-hint { display: none; }
 .hint { margin-top: 8px; font-size: 12px; }
 .hint.error { color: #ef4444; }
 .hint.ok { color: #10b981; }
+.preview-illustration { display: grid; grid-template-columns: 90px 1fr; align-items: center; gap: 16px; padding: 18px; border: 1px solid #dae1e7; border-radius: 16px; background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 50%, #e0f2fe 100%); box-shadow: 0 12px 30px rgba(0,0,0,0.08); margin-top: 14px; }
+.illus-icon { width: 90px; height: 90px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 40px; background: #ffffff; border: 1px solid #e5e7eb; box-shadow: 0 12px 20px rgba(0,0,0,0.10); }
+.illus-title { font-size: 14px; color: #1f2937; font-weight: 600; }
+.illus-desc { margin-top: 6px; font-size: 12px; color: #6b7280; }
+.illus-badges { margin-top: 6px; display: flex; gap: 8px; }
+.badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; background: #e0f2fe; color: #0f172a; font-size: 12px; border: 1px solid #e5e7eb; }
+.illus-chips { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.preview-tips { margin-top: 12px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+.tip { display: flex; align-items: center; gap: 8px; padding: 10px; border: 1px dashed #e2e8f0; border-radius: 12px; background: #f8fafc; }
+.tip-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; background: #fff; border: 1px solid #e5e7eb; box-shadow: 0 4px 10px rgba(0,0,0,0.06); }
+.tip-text { font-size: 12px; color: #475569; }
+
+@media (max-width: 640px) {
+  .preview-illustration { margin-top: 12px; }
+  .upload-card { min-height: auto; }
+  .illus-icon { width: 64px; height: 64px; font-size: 30px; }
+}
 
 .info-card .sub-title { margin: 0 0 10px; font-size: 18px; color: #1f2937; }
 .steps { list-style: none; padding: 0; margin: 0 0 12px; display: grid; gap: 8px; }
