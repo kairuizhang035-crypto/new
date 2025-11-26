@@ -38,12 +38,14 @@ def run_algorithm_script(script_path, algorithm_name):
         print(f"🚀 开始执行: {algorithm_name}")
         print(f"📄 脚本路径: {script_path}")
         
-        # 运行脚本
+        use_auto_input = os.path.basename(script_path) == "05专家在循环.py"
+        auto_input = "0\n0.3\n10000\nY\n" if use_auto_input else None
         result = subprocess.run(
             [sys.executable, script_path],
             capture_output=True,
             text=True,
-            encoding='utf-8'
+            encoding='utf-8',
+            input=auto_input
         )
         
         end_time = time.time()
