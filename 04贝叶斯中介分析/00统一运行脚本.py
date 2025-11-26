@@ -13,7 +13,7 @@ import subprocess
 import time
 from datetime import datetime
 
-def run_script(script_path, script_name, interactive=False):
+def run_script(script_path, script_name, interactive=False, stdin_input=None):
     """
     运行指定的Python脚本
     
@@ -53,7 +53,8 @@ def run_script(script_path, script_name, interactive=False):
             result = subprocess.run([sys.executable, script_path], 
                                   capture_output=True, 
                                   text=True, 
-                                  encoding='utf-8')
+                                  encoding='utf-8',
+                                  input=stdin_input)
             returncode = result.returncode
             stdout = result.stdout
             stderr = result.stderr
@@ -108,8 +109,9 @@ def main():
         {
             'path': os.path.join(script_dir, '02贝叶斯中介分析.py'),
             'name': '02贝叶斯中介分析.py',
-            'description': '基于中介路径进行贝叶斯中介效应分析（交互式选择路径数量）',
-            'interactive': True
+            'description': '基于中介路径进行贝叶斯中介效应分析（非交互，分析全部路径）',
+            'interactive': False,
+            'stdin_input': '1\ny\n'
         },
         {
             'path': os.path.join(script_dir, '可视化.py'),
@@ -139,7 +141,12 @@ def main():
         print(f"步骤 {i}/{len(scripts)}: {script['description']}")
         print(f"{'='*80}")
         
-        success = run_script(script['path'], script['name'], script.get('interactive', False))
+        success = run_script(
+            script['path'],
+            script['name'],
+            script.get('interactive', False),
+            script.get('stdin_input')
+        )
         
         if success:
             success_count += 1
