@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "analysis_time": "2025-11-26 13:15:48",
+    "analysis_time": "2025-11-26 15:50:57",
     "total_edges": 325,
     "core_edges_count": 34,
     "filtering_criteria": {
@@ -17,13 +17,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 1.0,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.2986,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.35,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.32465,
         "expert_direction": 0.03
       },
@@ -37,13 +37,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 1.0,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.1633,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.35,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.290825,
         "expert_direction": 0.03
       },
@@ -57,13 +57,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.174,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.2935,
         "expert_direction": 0.03
       },
@@ -77,13 +77,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.2864,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.3216,
         "expert_direction": 0.03
       },
@@ -97,13 +97,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.2338,
         "expert_direction": 0.36000000000000004
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.30845,
         "expert_direction": 0.054000000000000006
       },
@@ -117,13 +117,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.2606,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.31515,
         "expert_direction": 0.03
       },
@@ -137,13 +137,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.2924,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.3231,
         "expert_direction": 0.03
       },
@@ -152,18 +152,18 @@
     "检验_氯 -> 检验_钠": {
       "source": "检验_氯",
       "target": "检验_钠",
-      "confidence": 0.6987317234857501,
-      "quality_adjusted_confidence": 0.6113902580500313,
+      "confidence": 0.6987317234857487,
+      "quality_adjusted_confidence": 0.6113902580500301,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.43292689394300043,
+        "parameter_fitting": 0.4329268939429952,
         "mediation_support": 1.1219999999999999,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.10823172348575011,
+        "parameter_fitting": 0.1082317234857488,
         "mediation_support": 0.28049999999999997,
         "expert_direction": 0.03
       },
@@ -177,13 +177,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.37681125,
         "expert_direction": 0.24
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.3442028125,
         "expert_direction": 0.036
       },
@@ -197,13 +197,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.1888,
         "expert_direction": 0.38
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.2972,
         "expert_direction": 0.056999999999999995
       },
@@ -217,13 +217,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.1188,
         "expert_direction": 0.27999999999999997
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.2797,
         "expert_direction": 0.041999999999999996
       },
@@ -237,13 +237,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.1442,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.28605,
         "expert_direction": 0.03
       },
@@ -257,13 +257,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.3248,
         "expert_direction": 0.38
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.3312,
         "expert_direction": 0.056999999999999995
       },
@@ -277,13 +277,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.2117,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.302925,
         "expert_direction": 0.03
       },
@@ -297,13 +297,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.0827734,
         "expert_direction": 0.38
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.27069335,
         "expert_direction": 0.056999999999999995
       },
@@ -317,13 +317,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.4314,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.35785,
         "expert_direction": 0.03
       },
@@ -337,13 +337,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.2591999999999999,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.31479999999999997,
         "expert_direction": 0.03
       },
@@ -357,13 +357,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.131,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.28275,
         "expert_direction": 0.03
       },
@@ -377,13 +377,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.8,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.1254,
         "expert_direction": 0.38
       },
       "dimension_contributions": {
         "structural_consistency": 0.27999999999999997,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.28135,
         "expert_direction": 0.056999999999999995
       },
@@ -392,18 +392,18 @@
     "疾病_糖尿病 -> 检验_葡萄糖": {
       "source": "疾病_糖尿病",
       "target": "检验_葡萄糖",
-      "confidence": 0.7496148157170477,
-      "quality_adjusted_confidence": 0.6559129637524167,
+      "confidence": 0.7496148157170461,
+      "quality_adjusted_confidence": 0.6559129637524154,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.6,
-        "parameter_fitting": 0.8248592628681908,
+        "parameter_fitting": 0.8248592628681842,
         "mediation_support": 1.1176,
         "expert_direction": 0.36000000000000004
       },
       "dimension_contributions": {
         "structural_consistency": 0.21,
-        "parameter_fitting": 0.2062148157170477,
+        "parameter_fitting": 0.20621481571704606,
         "mediation_support": 0.2794,
         "expert_direction": 0.054000000000000006
       },
@@ -412,18 +412,18 @@
     "疾病_高脂血症 -> 疾病_动脉硬化": {
       "source": "疾病_高脂血症",
       "target": "疾病_动脉硬化",
-      "confidence": 0.6627124125413185,
-      "quality_adjusted_confidence": 0.5798733609736537,
+      "confidence": 0.6627124125413181,
+      "quality_adjusted_confidence": 0.5798733609736533,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.6,
-        "parameter_fitting": 0.601149650165274,
+        "parameter_fitting": 0.6011496501652722,
         "mediation_support": 1.0897000000000001,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.21,
-        "parameter_fitting": 0.1502874125413185,
+        "parameter_fitting": 0.15028741254131806,
         "mediation_support": 0.27242500000000003,
         "expert_direction": 0.03
       },
@@ -432,18 +432,18 @@
     "疾病_糖尿病 -> 药物_阿卡波糖片": {
       "source": "疾病_糖尿病",
       "target": "药物_阿卡波糖片",
-      "confidence": 0.7332648574182798,
-      "quality_adjusted_confidence": 0.6416067502409949,
+      "confidence": 0.7332648574182792,
+      "quality_adjusted_confidence": 0.6416067502409943,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.6,
-        "parameter_fitting": 0.7060594296731197,
+        "parameter_fitting": 0.7060594296731166,
         "mediation_support": 1.159,
         "expert_direction": 0.38
       },
       "dimension_contributions": {
         "structural_consistency": 0.21,
-        "parameter_fitting": 0.17651485741827994,
+        "parameter_fitting": 0.17651485741827916,
         "mediation_support": 0.28975,
         "expert_direction": 0.056999999999999995
       },
@@ -477,13 +477,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.6,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.478,
         "expert_direction": 0.24
       },
       "dimension_contributions": {
         "structural_consistency": 0.21,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.3695,
         "expert_direction": 0.036
       },
@@ -497,13 +497,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.6,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.8435000000000001,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.21,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.46087500000000003,
         "expert_direction": 0.03
       },
@@ -512,18 +512,18 @@
     "药物_氯化钾注射液 -> 药物_维生素C注射液": {
       "source": "药物_氯化钾注射液",
       "target": "药物_维生素C注射液",
-      "confidence": 0.6198044869998076,
-      "quality_adjusted_confidence": 0.5423289261248316,
+      "confidence": 0.6198044869998077,
+      "quality_adjusted_confidence": 0.5423289261248317,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.6,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.4314,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.21,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.35785,
         "expert_direction": 0.03
       },
@@ -537,13 +537,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.6,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.2532,
         "expert_direction": 0.38
       },
       "dimension_contributions": {
         "structural_consistency": 0.21,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.3133,
         "expert_direction": 0.056999999999999995
       },
@@ -552,18 +552,18 @@
     "药物_二羟丙茶碱注射液 -> 药物_阿卡波糖片": {
       "source": "药物_二羟丙茶碱注射液",
       "target": "药物_阿卡波糖片",
-      "confidence": 0.6039084244998076,
-      "quality_adjusted_confidence": 0.5284198714373317,
+      "confidence": 0.6039084244998077,
+      "quality_adjusted_confidence": 0.5284198714373318,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.6,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.36781575,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.21,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.3419539375,
         "expert_direction": 0.03
       },
@@ -577,13 +577,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.6,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.3267,
         "expert_direction": 0.36000000000000004
       },
       "dimension_contributions": {
         "structural_consistency": 0.21,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.331675,
         "expert_direction": 0.054000000000000006
       },
@@ -597,13 +597,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.6,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.4134,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.21,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.35335,
         "expert_direction": 0.03
       },
@@ -617,13 +617,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.4,
-        "parameter_fitting": 0.8428604746829946,
+        "parameter_fitting": 0.8428604746829952,
         "mediation_support": 1.1592,
         "expert_direction": 0.34
       },
       "dimension_contributions": {
         "structural_consistency": 0.13999999999999999,
-        "parameter_fitting": 0.21071511867074866,
+        "parameter_fitting": 0.2107151186707488,
         "mediation_support": 0.2898,
         "expert_direction": 0.051000000000000004
       },
@@ -637,13 +637,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.4,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.8435000000000001,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.13999999999999999,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.46087500000000003,
         "expert_direction": 0.03
       },
@@ -657,13 +657,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.4,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.7934,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.13999999999999999,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.44835,
         "expert_direction": 0.03
       },
@@ -677,13 +677,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.4,
-        "parameter_fitting": 0.08781794799923062,
+        "parameter_fitting": 0.08781794799923068,
         "mediation_support": 1.7530999999999999,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.13999999999999999,
-        "parameter_fitting": 0.021954486999807656,
+        "parameter_fitting": 0.02195448699980767,
         "mediation_support": 0.43827499999999997,
         "expert_direction": 0.03
       },
@@ -693,7 +693,7 @@
   "statistics": {
     "core_edges_confidence_stats": {
       "mean": 0.660160210623433,
-      "std": 0.043219367279287574,
+      "std": 0.04321936727928739,
       "min": 0.6022544869998077,
       "max": 0.7758824973689651,
       "median": 0.6499669869998077
