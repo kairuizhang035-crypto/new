@@ -186,26 +186,11 @@ def run_all_algorithms():
     print(f"📂 工作目录: {script_dir}")
     print(f"🔢 发现 {len(algorithms)} 个算法")
     
-    # 询问是否执行专家在循环算法
+    # 默认执行专家在循环算法，不再询问
     expert_algorithm = next((alg for alg in algorithms if "专家在循环" in alg["name"]), None)
     if expert_algorithm:
         print(f"\n⚠️  注意: {expert_algorithm['name']} 执行时间较长（可能需要几分钟）")
-        print("   该算法使用LLM进行智能因果推断，但执行速度较慢")
-        
-        while True:
-            choice = input(f"\n是否执行 {expert_algorithm['name']}? (y/n): ").lower().strip()
-            if choice in ['y', 'yes', '是', '执行']:
-                run_expert = True
-                break
-            elif choice in ['n', 'no', '否', '跳过']:
-                run_expert = False
-                break
-            else:
-                print("请输入 y/yes/是/执行 或 n/no/否/跳过")
-        
-        if not run_expert:
-            print(f"⏭️  跳过执行 {expert_algorithm['name']}")
-            algorithms = [alg for alg in algorithms if "专家在循环" not in alg["name"]]
+        print("   该算法使用LLM进行智能因果推断，默认执行该步骤")
     
     total_start_time = time.time()
     successful_count = 0
