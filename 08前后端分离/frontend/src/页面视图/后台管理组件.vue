@@ -25,6 +25,27 @@
           </ul>
           <div v-if="showDetails && pipelineLogs" class="guide logs">{{ pipelineLogs }}</div>
         </div>
+
+        <div class="uploads-section">
+          <div class="uploads-header">
+            <span class="title">已上传的 JSON 数据</span>
+            <div class="actions">
+              <button class="btn" @click="refreshUploadsList">刷新</button>
+            </div>
+          </div>
+          <div v-if="uploads && uploads.length" class="uploads-list" role="list">
+            <div v-for="f in uploads" :key="f.path" class="upload-item" role="listitem">
+              <div class="upload-main">
+                <span class="upload-name">{{ f.name }}</span>
+                <span class="upload-size">（{{ humanSize(f.size) }}）</span>
+              </div>
+              <div class="upload-actions">
+                <button class="btn danger" @click="onDeleteUpload(f.path)">删除</button>
+              </div>
+            </div>
+          </div>
+          <div v-else class="uploads-empty">暂无上传数据</div>
+        </div>
       </div>
     </div>
   </div>
@@ -45,6 +66,42 @@ export default {
     const polling = ref(false)
     const uploadMessage = ref('')
     const uploadError = ref('')
+
+    const uploads = ref([])
+    const humanSize = (bytes) => {
+      const kb = 1024, mb = kb * 1024
+      if (bytes >= mb) return (bytes / mb).toFixed(2) + ' MB'
+      if (bytes >= kb) return (bytes / kb).toFixed(2) + ' KB'
+      return (bytes ?? 0) + ' B'
+    }
+    const refreshUploadsList = async () => {
+      try {
+        const res = await fetch('/api/datasource/list')
+        const json = await res.json()
+        const files = json?.data || []
+        uploads.value = files.filter(f => String(f.path || '').includes('/07分离/uploads/'))
+      } catch (_) {
+        uploads.value = []
+      }
+    }
+    const onDeleteUpload = async (path) => {
+      try {
+        const resp = await fetch('/api/datasource/delete', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ path })
+        })
+        const j = await resp.json().catch(()=>({}))
+        if (j && j.success === false) {
+          uploadError.value = j.error || '删除失败'
+        } else {
+          uploadMessage.value = '已删除上传数据'
+          await refreshUploadsList()
+        }
+      } catch (e) {
+        uploadError.value = '删除失败'
+      }
+    }
 
     const toggleDetails = () => { showDetails.value = !showDetails.value }
     const stateClass = (s) => ({ waiting: 'waiting', running: 'running', succeeded: 'succeeded', failed: 'failed' }[String(s)] || 'waiting')
@@ -90,6 +147,7 @@ export default {
     onMounted(() => {
       loadJobId()
       if (pipelineJobId.value) startPolling()
+      refreshUploadsList()
     })
 
     return {
@@ -102,6 +160,10 @@ export default {
       polling,
       uploadMessage,
       uploadError,
+      uploads,
+      humanSize,
+      refreshUploadsList,
+      onDeleteUpload,
       toggleDetails,
       stateClass,
       displayState,
@@ -136,4 +198,16 @@ export default {
 .step-state.succeeded { color: #10b981; }
 .step-state.failed { color: #ef4444; }
 .guide.logs { max-height: 260px; overflow: auto; white-space: pre-wrap; font-family: ui-monospace, Menlo, Monaco, Consolas, 'Liberation Mono', monospace; margin-top: 8px; }
+
+.uploads-section { margin-top: 14px; border: 1px solid #e5e7eb; border-radius: 12px; background: #fff; box-shadow: 0 8px 20px rgba(0,0,0,0.06); }
+.uploads-header { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-bottom: 1px solid #f1f5f9; }
+.uploads-header .title { font-size: 14px; font-weight: 600; color: #1f2937; }
+.uploads-list { display: grid; grid-template-columns: 1fr; }
+.upload-item { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-top: 1px solid #f1f5f9; }
+.upload-item:hover { background: #f8fafc; }
+.upload-main { display: flex; align-items: center; gap: 8px; color: #334155; }
+.upload-name { font-weight: 600; }
+.upload-size { font-size: 12px; color: #64748b; }
+.upload-actions .btn.danger { border-color: #ef4444; background: #ef4444; color: #fff; }
+.uploads-empty { padding: 12px; color: #64748b; font-size: 13px; }
 </style>

@@ -56,6 +56,7 @@
                 </div>
               </div>
             </div>
+            <div class="ds-menu-footer">支持 JSON/CSV 文件，建议不超过 10MB。</div>
           </div>
         </div>
         <div v-if="dsConfirmVisible" class="ds-confirm">
@@ -2638,7 +2639,7 @@ export default {
 .ds-dropdown-toggle.open { box-shadow: 0 10px 24px rgba(0,0,0,0.28); }
 .ds-caret { opacity: 0.9; transition: transform .16s ease; }
 .ds-dropdown-toggle.open .ds-caret { transform: rotate(180deg); }
-.ds-dropdown-menu { position: absolute; top: calc(100% + 6px); left: 0; right: 0; background: #ffffff; color: #111827; border-radius: 12px; box-shadow: 0 14px 28px rgba(0,0,0,0.14); padding: 8px; z-index: 10; max-height: 280px; overflow: auto; border: 1px solid #e5e7eb; animation: dsMenuIn .14s ease-out; }
+.ds-dropdown-menu { position: static; margin-top: 8px; width: 100%; background: #ffffff; color: #111827; border-radius: 12px; box-shadow: 0 14px 28px rgba(0,0,0,0.14); padding: 8px; max-height: 280px; overflow: auto; border: 1px solid #e5e7eb; animation: dsMenuIn .14s ease-out; }
 @keyframes dsMenuIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
 .ds-dropdown-item { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; border-radius: 10px; }
 .ds-dropdown-item:hover { background: #f5f7fb; }
@@ -3251,3 +3252,4 @@ export default {
 }
 .modal-body :deep(.action-btn.mediation:hover) { background: #ffedd5; }
 </style>
+.ds-menu-footer { margin-top: 8px; font-size: 12px; color: #6b7280; }

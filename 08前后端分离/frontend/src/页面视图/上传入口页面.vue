@@ -117,9 +117,10 @@
                 <span class="step-state" :class="stateClass(s)">{{ displayState(s) }}</span>
               </li>
             </ul>
-            <div v-if="showDetails && pipelineLogs" class="guide logs">{{ pipelineLogs }}</div>
+          <div v-if="showDetails && pipelineLogs" class="guide logs">{{ pipelineLogs }}</div>
           </div>
 
+          
           
 
         </div>
@@ -418,6 +419,7 @@ export default {
       uploadError.value = ''
       uploadMessage.value = ''
     }
+
 
     const listDatasources = async () => {
       try {
