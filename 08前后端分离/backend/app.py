@@ -105,6 +105,10 @@ def _run_step(job_id, step_idx, step):
         job['current_step'] = step_idx
         job['current_step_name'] = step.get('name')
         job['status'] = 'running'
+        sts = job.get('step_statuses') or []
+        if step_idx < len(sts):
+            sts[step_idx] = 'running'
+            job['step_statuses'] = sts
         PIPELINE_JOBS[job_id] = job
     _append_pipeline_log(job_id, f"开始执行: {step.get('name')} -> {step.get('path')}")
     try:
@@ -117,12 +121,23 @@ def _run_step(job_id, step_idx, step):
             _append_pipeline_log(job_id, res.stderr)
         if res.returncode != 0:
             raise RuntimeError(f"步骤失败: {step.get('name')} 返回码 {res.returncode}")
+        with PIPELINE_LOCK:
+            job2 = PIPELINE_JOBS.get(job_id) or {}
+            sts2 = job2.get('step_statuses') or []
+            if step_idx < len(sts2):
+                sts2[step_idx] = 'succeeded'
+                job2['step_statuses'] = sts2
+            PIPELINE_JOBS[job_id] = job2
     except Exception as e:
         with PIPELINE_LOCK:
             job = PIPELINE_JOBS.get(job_id) or {}
             job['status'] = 'failed'
             job['error'] = str(e)
             job['end_time'] = int(time.time())
+            sts = job.get('step_statuses') or []
+            if step_idx < len(sts):
+                sts[step_idx] = 'failed'
+                job['step_statuses'] = sts
             PIPELINE_JOBS[job_id] = job
         _append_pipeline_log(job_id, f"错误: {e}")
         raise
@@ -1320,6 +1335,10 @@ def pipeline_upload_and_run():
                 'source_csv_name': fname,
                 'source_csv_basename': os.path.splitext(fname)[0]
             }
+        with PIPELINE_LOCK:
+            j = PIPELINE_JOBS.get(job_id) or {}
+            j['step_statuses'] = ['waiting'] * len(PIPELINE_STEPS)
+            PIPELINE_JOBS[job_id] = j
         _append_pipeline_log(job_id, f"CSV保存: {dest}")
         t = threading.Thread(target=_run_pipeline, args=(job_id,), daemon=True)
         t.start()

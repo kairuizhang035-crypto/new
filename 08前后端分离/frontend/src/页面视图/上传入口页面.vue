@@ -69,7 +69,6 @@
           </div>
           <div v-if="uploadError" class="hint error">{{ uploadError }}</div>
           <div v-if="uploadMessage" class="hint ok">{{ uploadMessage }}</div>
-          <div v-if="pipelineLogs" class="guide" style="max-height:220px; overflow:auto; white-space:pre-wrap; font-family: ui-monospace, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;">{{ pipelineLogs }}</div>
           </div>
 
           <div class="preview-illustration" aria-label="解析摘要">
@@ -107,6 +106,21 @@
               <div class="tip-text">智能摘要与因果分析</div>
             </div>
           </div>
+          <div v-if="stepStatuses && stepStatuses.length" class="progress-wrap">
+            <div class="progress-header">
+              <span>处理进度</span>
+              <button class="btn" @click="toggleDetails">{{ showDetails ? '隐藏详情' : '显示详情' }}</button>
+            </div>
+            <ul class="progress-list">
+              <li v-for="(s, i) in stepStatuses" :key="i">
+                <span class="step-name">{{ stepNames[i] }}</span>
+                <span class="step-state" :class="stateClass(s)">{{ displayState(s) }}</span>
+              </li>
+            </ul>
+            <div v-if="showDetails && pipelineLogs" class="guide logs">{{ pipelineLogs }}</div>
+          </div>
+
+          
 
         </div>
       </div>
@@ -168,6 +182,12 @@ export default {
     const pipelineJobId = ref('')
     const pipelineStatus = ref('')
     const pipelineLogs = ref('')
+    const stepStatuses = ref([])
+    const stepNames = ref(['数据预处理','因果发现','多方法参数学习','贝叶斯中介分析','三角测量验证','知识图谱构建'])
+    const showDetails = ref(false)
+    const toggleDetails = () => { showDetails.value = !showDetails.value }
+    const stateClass = (s) => ({ waiting: 'waiting', running: 'running', succeeded: 'succeeded', failed: 'failed' }[String(s)] || 'waiting')
+    const displayState = (s) => ({ waiting: '等待', running: '执行中', succeeded: '成功', failed: '失败' }[String(s)] || '等待')
     const polling = ref(false)
     const fileIcon = computed(() => (String(preview.value.type).toUpperCase() === 'CSV' ? '📑' : '🧩'))
 
@@ -499,6 +519,7 @@ export default {
           if (!j?.success) break
           const d = j.data || {}
           pipelineStatus.value = d.status || ''
+          stepStatuses.value = Array.isArray(d.step_statuses) ? d.step_statuses : []
           const rl = await fetch('/api/pipeline/logs?job_id=' + encodeURIComponent(pipelineJobId.value))
           const jl = await rl.json()
           if (jl?.success) pipelineLogs.value = jl.data || ''
@@ -548,6 +569,12 @@ export default {
       pipelineJobId,
       pipelineStatus,
       pipelineLogs,
+      stepStatuses,
+      stepNames,
+      showDetails,
+      toggleDetails,
+      stateClass,
+      displayState,
       polling,
       selectedFile,
       listDatasources,
@@ -717,6 +744,17 @@ export default {
 .hint { margin-top: 8px; font-size: 12px; }
 .hint.error { color: #ef4444; }
 .hint.ok { color: #10b981; }
+.progress-wrap { margin-top: 10px; border: 1px solid #e5e7eb; border-radius: 10px; padding: 10px; }
+.progress-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.progress-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 6px; }
+.progress-list li { display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border-radius: 8px; background: #f8fafc; }
+.step-name { color: #334155; }
+.step-state { font-weight: 600; }
+.step-state.waiting { color: #64748b; }
+.step-state.running { color: #2563eb; }
+.step-state.succeeded { color: #10b981; }
+.step-state.failed { color: #ef4444; }
+.guide.logs { max-height: 220px; overflow: auto; white-space: pre-wrap; font-family: ui-monospace, Menlo, Monaco, Consolas, 'Liberation Mono', monospace; margin-top: 8px; }
 .preview-illustration { display: grid; grid-template-columns: 90px 1fr; align-items: center; gap: 16px; padding: 18px; border: 1px solid #dae1e7; border-radius: 16px; background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 50%, #e0f2fe 100%); box-shadow: 0 12px 30px rgba(0,0,0,0.08); margin-top: 14px; }
 .illus-icon { width: 90px; height: 90px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 40px; background: #ffffff; border: 1px solid #e5e7eb; box-shadow: 0 12px 20px rgba(0,0,0,0.10); }
 .illus-title { font-size: 14px; color: #1f2937; font-weight: 600; }

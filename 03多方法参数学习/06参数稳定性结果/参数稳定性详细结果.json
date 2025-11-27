@@ -5,26 +5,26 @@
       "疾病_冠状动脉粥样硬化性心脏病"
     ],
     "method_scores": {
-      "MLE": 0.10849803421504982,
-      "Bayesian": 0.06918557229462584,
-      "EM": 0.10849803421504982,
+      "MLE": 0.10849803421505624,
+      "Bayesian": 0.06918557229461143,
+      "EM": 0.10849803421505624,
       "SEM": 0.470166545735106
     },
-    "mean_score": 0.18908704661495787,
-    "std_score": 0.16307300988284948,
-    "coefficient_of_variation": 0.8624229570570143,
-    "stability_score": 0.5369349621743237,
-    "max_pairwise_diff": 0.40098097344048017,
-    "avg_pairwise_diff": 0.20049048672024009,
+    "mean_score": 0.1890870466149575,
+    "std_score": 0.16307300988285053,
+    "coefficient_of_variation": 0.8624229570570215,
+    "stability_score": 0.5369349621743216,
+    "max_pairwise_diff": 0.4009809734404946,
+    "avg_pairwise_diff": 0.20049048672024727,
     "num_methods": 4,
     "consistency_level": "低度一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "疾病_反流性食管炎->药物_艾司唑仑片": {
@@ -33,26 +33,26 @@
       "药物_艾司唑仑片"
     ],
     "method_scores": {
-      "MLE": 0.4636087861117082,
+      "MLE": 0.463608786111712,
       "Bayesian": 0.4501594278362851,
-      "EM": 0.4636087861117082,
+      "EM": 0.463608786111712,
       "SEM": 0.4901755184430833
     },
-    "mean_score": 0.4668881296256962,
-    "std_score": 0.014522914043475258,
-    "coefficient_of_variation": 0.031105768431333357,
-    "stability_score": 0.9698326113734618,
+    "mean_score": 0.46688812962569815,
+    "std_score": 0.014522914043474828,
+    "coefficient_of_variation": 0.031105768431332306,
+    "stability_score": 0.9698326113734628,
     "max_pairwise_diff": 0.04001609060679823,
     "avg_pairwise_diff": 0.020008045303399113,
     "num_methods": 4,
     "consistency_level": "高度一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "药物_阿司匹林肠溶片->疾病_糖尿病": {
@@ -61,26 +61,26 @@
       "疾病_糖尿病"
     ],
     "method_scores": {
-      "MLE": 0.7732875245097589,
-      "Bayesian": 0.7536232537582546,
-      "EM": 0.7732875245097589,
+      "MLE": 0.7732875245097606,
+      "Bayesian": 0.7536232537582401,
+      "EM": 0.7732875245097606,
       "SEM": 0.711257285367608
     },
-    "mean_score": 0.7528638970363452,
-    "std_score": 0.025327533809718646,
-    "coefficient_of_variation": 0.033641583703801825,
-    "stability_score": 0.9674533375647917,
-    "max_pairwise_diff": 0.06203023914215089,
-    "avg_pairwise_diff": 0.0342924980296595,
+    "mean_score": 0.7528638970363423,
+    "std_score": 0.02532753380971921,
+    "coefficient_of_variation": 0.033641583703802706,
+    "stability_score": 0.9674533375647908,
+    "max_pairwise_diff": 0.062030239142152555,
+    "avg_pairwise_diff": 0.03429249802966302,
     "num_methods": 4,
     "consistency_level": "高度一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "药物_阿司匹林肠溶片->检验_钾": {
@@ -89,26 +89,26 @@
       "检验_钾"
     ],
     "method_scores": {
-      "MLE": 0.20164522053036812,
-      "Bayesian": 0.22240062863508764,
-      "EM": 0.20164522053036812,
-      "SEM": 0.43681373975589255
+      "MLE": 0.20164522053037387,
+      "Bayesian": 0.22240062863508042,
+      "EM": 0.20164522053037387,
+      "SEM": 0.4368137397558908
     },
-    "mean_score": 0.2656262023629291,
-    "std_score": 0.09919772585004824,
-    "coefficient_of_variation": 0.3734485715927711,
-    "stability_score": 0.7280942444319648,
-    "max_pairwise_diff": 0.23516851922552442,
-    "avg_pairwise_diff": 0.12104349429688215,
+    "mean_score": 0.2656262023629298,
+    "std_score": 0.09919772585004641,
+    "coefficient_of_variation": 0.3734485715927633,
+    "stability_score": 0.7280942444319689,
+    "max_pairwise_diff": 0.2351685192255169,
+    "avg_pairwise_diff": 0.12104349429687622,
     "num_methods": 4,
     "consistency_level": "中等一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "疾病_糖尿病->检验_葡萄糖": {
@@ -117,26 +117,26 @@
       "检验_葡萄糖"
     ],
     "method_scores": {
-      "MLE": 0.9825913376102183,
+      "MLE": 0.9825913376102184,
       "Bayesian": 0.9755961838626924,
-      "EM": 0.9825913376102183,
+      "EM": 0.9825913376102184,
       "SEM": 1.0
     },
     "mean_score": 0.9851947147707822,
-    "std_score": 0.009012261253319567,
-    "coefficient_of_variation": 0.009147695494302749,
+    "std_score": 0.00901226125331955,
+    "coefficient_of_variation": 0.009147695494302732,
     "stability_score": 0.9909352262952728,
     "max_pairwise_diff": 0.024403816137307577,
     "avg_pairwise_diff": 0.012201908068653788,
     "num_methods": 4,
     "consistency_level": "高度一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "药物_阿托伐他汀钙片->疾病_冠状动脉粥样硬化性心脏病": {
@@ -145,26 +145,26 @@
       "疾病_冠状动脉粥样硬化性心脏病"
     ],
     "method_scores": {
-      "MLE": 0.17480428393127379,
-      "Bayesian": 0.14429534862170756,
-      "EM": 0.17480428393127379,
-      "SEM": 0.5548832104086023
+      "MLE": 0.17480428393127972,
+      "Bayesian": 0.14429534862168594,
+      "EM": 0.17480428393127972,
+      "SEM": 0.5548832104086014
     },
-    "mean_score": 0.26219678172321437,
-    "std_score": 0.16944098589525533,
-    "coefficient_of_variation": 0.6462359483653928,
-    "stability_score": 0.607446339021412,
-    "max_pairwise_diff": 0.41058786178689477,
-    "avg_pairwise_diff": 0.20529393089344738,
+    "mean_score": 0.2621967817232117,
+    "std_score": 0.16944098589525716,
+    "coefficient_of_variation": 0.6462359483654063,
+    "stability_score": 0.607446339021407,
+    "max_pairwise_diff": 0.41058786178691553,
+    "avg_pairwise_diff": 0.20529393089345774,
     "num_methods": 4,
     "consistency_level": "中等一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "药物_氯化钠注射液->疾病_高血压": {
@@ -187,12 +187,12 @@
     "num_methods": 4,
     "consistency_level": "高度一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "疾病_反流性食管炎->药物_氯化钠注射液": {
@@ -201,26 +201,26 @@
       "药物_氯化钠注射液"
     ],
     "method_scores": {
-      "MLE": 0.07299448360082729,
-      "Bayesian": 0.05994322759627821,
-      "EM": 0.07299448360082729,
-      "SEM": 0.07161957290344807
+      "MLE": 0.07299448360083396,
+      "Bayesian": 0.059943227596263804,
+      "EM": 0.07299448360083396,
+      "SEM": 0.0716195729034463
     },
-    "mean_score": 0.06938794192534521,
-    "std_score": 0.005481721702487505,
-    "coefficient_of_variation": 0.0790010706526692,
-    "stability_score": 0.926783139700795,
-    "max_pairwise_diff": 0.01305125600454908,
-    "avg_pairwise_diff": 0.006754779785171076,
+    "mean_score": 0.0693879419253445,
+    "std_score": 0.005481721702495725,
+    "coefficient_of_variation": 0.07900107065278848,
+    "stability_score": 0.9267831397006926,
+    "max_pairwise_diff": 0.013051256004570161,
+    "avg_pairwise_diff": 0.006754779785183025,
     "num_methods": 4,
     "consistency_level": "高度一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "疾病_反流性食管炎->疾病_高脂血症": {
@@ -229,26 +229,26 @@
       "疾病_高脂血症"
     ],
     "method_scores": {
-      "MLE": 0.5578082837399686,
+      "MLE": 0.5578082837399718,
       "Bayesian": 0.5530076253722478,
-      "EM": 0.5578082837399686,
+      "EM": 0.5578082837399718,
       "SEM": 0.5030909590483074
     },
-    "mean_score": 0.542928787975123,
-    "std_score": 0.02308373001332338,
-    "coefficient_of_variation": 0.042517049242157844,
-    "stability_score": 0.9592169266938464,
-    "max_pairwise_diff": 0.05471732469166124,
-    "avg_pairwise_diff": 0.02815877207378409,
+    "mean_score": 0.5429287879751247,
+    "std_score": 0.023083730013324415,
+    "coefficient_of_variation": 0.04251704924215962,
+    "stability_score": 0.9592169266938448,
+    "max_pairwise_diff": 0.05471732469166446,
+    "avg_pairwise_diff": 0.028158772073786236,
     "num_methods": 4,
     "consistency_level": "高度一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "药物_阿司匹林肠溶片->检验_尿酸": {
@@ -257,26 +257,26 @@
       "检验_尿酸"
     ],
     "method_scores": {
-      "MLE": 0.17494457808863095,
+      "MLE": 0.17494457808863692,
       "Bayesian": 0.17436751122484445,
-      "EM": 0.17494457808863095,
-      "SEM": 0.526851723973817
+      "EM": 0.17494457808863692,
+      "SEM": 0.5268517239738161
     },
-    "mean_score": 0.26277709784398084,
-    "std_score": 0.15246373849618075,
-    "coefficient_of_variation": 0.5802017746109036,
-    "stability_score": 0.6328305764915573,
-    "max_pairwise_diff": 0.3524842127489725,
-    "avg_pairwise_diff": 0.17624210637448626,
+    "mean_score": 0.2627770978439836,
+    "std_score": 0.15246373849617867,
+    "coefficient_of_variation": 0.5802017746108896,
+    "stability_score": 0.6328305764915629,
+    "max_pairwise_diff": 0.3524842127489716,
+    "avg_pairwise_diff": 0.1762421063744858,
     "num_methods": 4,
     "consistency_level": "中等一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "药物_艾司唑仑片->疾病_反流性食管炎": {
@@ -285,26 +285,26 @@
       "疾病_反流性食管炎"
     ],
     "method_scores": {
-      "MLE": 0.4636087861117082,
+      "MLE": 0.463608786111712,
       "Bayesian": 0.45848959571698295,
-      "EM": 0.4636087861117082,
+      "EM": 0.463608786111712,
       "SEM": 0.4901755184430851
     },
-    "mean_score": 0.46897067159587114,
-    "std_score": 0.0124197233592718,
-    "coefficient_of_variation": 0.02648294256228953,
-    "stability_score": 0.9742003091681356,
+    "mean_score": 0.468970671595873,
+    "std_score": 0.012419723359270975,
+    "coefficient_of_variation": 0.02648294256228766,
+    "stability_score": 0.9742003091681374,
     "max_pairwise_diff": 0.031685922726102156,
     "avg_pairwise_diff": 0.015842961363051078,
     "num_methods": 4,
     "consistency_level": "高度一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "药物_阿司匹林肠溶片->药物_阿托伐他汀钙片": {
@@ -313,26 +313,26 @@
       "药物_阿托伐他汀钙片"
     ],
     "method_scores": {
-      "MLE": 0.36504051203600196,
+      "MLE": 0.3650405120360065,
       "Bayesian": 0.3880819376545218,
-      "EM": 0.36504051203600196,
+      "EM": 0.3650405120360065,
       "SEM": 0.3956034543765314
     },
-    "mean_score": 0.3784416040257643,
-    "std_score": 0.013662390648894704,
-    "coefficient_of_variation": 0.03610171425011867,
-    "stability_score": 0.9651562064287795,
-    "max_pairwise_diff": 0.03056294234052942,
-    "avg_pairwise_diff": 0.019121708773351353,
+    "mean_score": 0.37844160402576654,
+    "std_score": 0.013662390648892471,
+    "coefficient_of_variation": 0.03610171425011256,
+    "stability_score": 0.9651562064287853,
+    "max_pairwise_diff": 0.030562942340524868,
+    "avg_pairwise_diff": 0.019121708773348317,
     "num_methods": 4,
     "consistency_level": "高度一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "疾病_反流性食管炎->检验_碳酸氢盐": {
@@ -341,26 +341,26 @@
       "检验_碳酸氢盐"
     ],
     "method_scores": {
-      "MLE": 0.12024918938382169,
-      "Bayesian": 0.09854674387975444,
-      "EM": 0.12024918938382169,
+      "MLE": 0.12024918938383523,
+      "Bayesian": 0.09854674387974004,
+      "EM": 0.12024918938383523,
       "SEM": 0.08616896044902657
     },
-    "mean_score": 0.1063035207741061,
-    "std_score": 0.014616184977765468,
-    "coefficient_of_variation": 0.13749483433220158,
-    "stability_score": 0.879124871443551,
-    "max_pairwise_diff": 0.03408022893479512,
-    "avg_pairwise_diff": 0.020657188718075436,
+    "mean_score": 0.10630352077410926,
+    "std_score": 0.014616184977773844,
+    "coefficient_of_variation": 0.1374948343322763,
+    "stability_score": 0.8791248714434932,
+    "max_pairwise_diff": 0.034080228934808665,
+    "avg_pairwise_diff": 0.020657188718086864,
     "num_methods": 4,
     "consistency_level": "高度一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "疾病_高脂血症->药物_阿托伐他汀钙片": {
@@ -372,23 +372,23 @@
       "MLE": 1.0,
       "Bayesian": 1.0,
       "EM": 1.0,
-      "SEM": 0.9143734089485874
+      "SEM": 0.9143734089485857
     },
-    "mean_score": 0.9785933522371468,
-    "std_score": 0.03707740154499228,
-    "coefficient_of_variation": 0.03788846660385565,
-    "stability_score": 0.963494664578138,
-    "max_pairwise_diff": 0.08562659105141257,
-    "avg_pairwise_diff": 0.042813295525706285,
+    "mean_score": 0.9785933522371464,
+    "std_score": 0.037077401544993054,
+    "coefficient_of_variation": 0.037888466603856454,
+    "stability_score": 0.9634946645781375,
+    "max_pairwise_diff": 0.08562659105141435,
+    "avg_pairwise_diff": 0.04281329552570717,
     "num_methods": 4,
     "consistency_level": "高度一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "疾病_糖尿病->药物_阿司匹林肠溶片": {
@@ -397,26 +397,26 @@
       "药物_阿司匹林肠溶片"
     ],
     "method_scores": {
-      "MLE": 0.7732875245097589,
+      "MLE": 0.7732875245097606,
       "Bayesian": 0.7444029347151392,
-      "EM": 0.7732875245097589,
-      "SEM": 0.711257285367608
+      "EM": 0.7732875245097606,
+      "SEM": 0.7112572853676064
     },
-    "mean_score": 0.7505588172755663,
-    "std_score": 0.02557192584400573,
-    "coefficient_of_variation": 0.03407051553511634,
-    "stability_score": 0.9670520384990521,
-    "max_pairwise_diff": 0.06203023914215089,
-    "avg_pairwise_diff": 0.03582921787017873,
+    "mean_score": 0.7505588172755667,
+    "std_score": 0.02557192584400711,
+    "coefficient_of_variation": 0.03407051553511816,
+    "stability_score": 0.9670520384990504,
+    "max_pairwise_diff": 0.06203023914215422,
+    "avg_pairwise_diff": 0.035829217870180674,
     "num_methods": 4,
     "consistency_level": "高度一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "药物_艾司唑仑片->检验_尿酸": {
@@ -425,26 +425,26 @@
       "检验_尿酸"
     ],
     "method_scores": {
-      "MLE": 0.2518070418302803,
+      "MLE": 0.2518070418302857,
       "Bayesian": 0.2486962939645019,
-      "EM": 0.2518070418302803,
-      "SEM": 0.5904791421278797
+      "EM": 0.2518070418302857,
+      "SEM": 0.5904791421278788
     },
-    "mean_score": 0.33569737993823556,
-    "std_score": 0.14710380090331066,
-    "coefficient_of_variation": 0.4382036015007804,
-    "stability_score": 0.6953118452467297,
-    "max_pairwise_diff": 0.3417828481633778,
-    "avg_pairwise_diff": 0.1708914240816889,
+    "mean_score": 0.335697379938238,
+    "std_score": 0.14710380090330874,
+    "coefficient_of_variation": 0.43820360150077153,
+    "stability_score": 0.6953118452467341,
+    "max_pairwise_diff": 0.3417828481633769,
+    "avg_pairwise_diff": 0.17089142408168845,
     "num_methods": 4,
     "consistency_level": "中等一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "检验_氯->检验_葡萄糖": {
@@ -453,26 +453,26 @@
       "检验_葡萄糖"
     ],
     "method_scores": {
-      "MLE": 0.3017393183582595,
+      "MLE": 0.30173931835826456,
       "Bayesian": 0.2820950730024752,
-      "EM": 0.3017393183582595,
+      "EM": 0.30173931835826456,
       "SEM": 0.43382149700682526
     },
-    "mean_score": 0.32984880168145486,
-    "std_score": 0.06056200558386813,
-    "coefficient_of_variation": 0.18360535274084375,
-    "stability_score": 0.8448762061478738,
+    "mean_score": 0.3298488016814574,
+    "std_score": 0.06056200558386696,
+    "coefficient_of_variation": 0.18360535274083875,
+    "stability_score": 0.8448762061478774,
     "max_pairwise_diff": 0.15172642400435005,
     "avg_pairwise_diff": 0.07586321200217502,
     "num_methods": 4,
     "consistency_level": "高度一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "疾病_高脂血症->检验_钾": {
@@ -481,34 +481,34 @@
       "检验_钾"
     ],
     "method_scores": {
-      "MLE": 0.15341163620567722,
-      "Bayesian": 0.1653190407034291,
-      "EM": 0.15341163620567722,
-      "SEM": 0.38913207657512244
+      "MLE": 0.15341163620568332,
+      "Bayesian": 0.16531904070342188,
+      "EM": 0.15341163620568332,
+      "SEM": 0.38913207657512067
     },
-    "mean_score": 0.2153185974224765,
-    "std_score": 0.10046893164238026,
-    "coefficient_of_variation": 0.4666059172085829,
-    "stability_score": 0.681846423955058,
-    "max_pairwise_diff": 0.23572044036944523,
-    "avg_pairwise_diff": 0.11984478760101458,
+    "mean_score": 0.21531859742247728,
+    "std_score": 0.1004689316423785,
+    "coefficient_of_variation": 0.46660591720857303,
+    "stability_score": 0.6818464239550626,
+    "max_pairwise_diff": 0.23572044036943735,
+    "avg_pairwise_diff": 0.11984478760100843,
     "num_methods": 4,
     "consistency_level": "中等一致",
     "method_correlations": {
-      "MLE-Bayesian": 0.998549548631542,
+      "MLE-Bayesian": 0.9985495486315416,
       "MLE-EM": 1.0,
-      "MLE-SEM": 0.8456530417503371,
-      "Bayesian-EM": 0.998549548631542,
-      "Bayesian-SEM": 0.8420353819073608,
-      "EM-SEM": 0.8456530417503371
+      "MLE-SEM": 0.8456530417503376,
+      "Bayesian-EM": 0.9985495486315416,
+      "Bayesian-SEM": 0.8420353819073597,
+      "EM-SEM": 0.8456530417503376
     }
   },
   "_overall_statistics": {
-    "mean_stability": 0.8494772182897079,
-    "std_stability": 0.15194113710756113,
-    "min_stability": 0.5369349621743237,
+    "mean_stability": 0.8494772182897001,
+    "std_stability": 0.1519411371075573,
+    "min_stability": 0.5369349621743216,
     "max_stability": 1.0,
-    "mean_cv": 0.23636328022847858,
+    "mean_cv": 0.2363632802284883,
     "num_edges": 18,
     "consistency_distribution": {
       "低度一致": 1,
