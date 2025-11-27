@@ -11,82 +11,62 @@
   <key id="d1" for="node" attr.name="label" attr.type="string" />
   <key id="d0" for="node" attr.name="node_type" attr.type="string" />
   <graph edgedefault="directed">
-    <node id="检验_葡萄糖">
+    <node id="检验_碳酸氢盐">
       <data key="d0">检验</data>
-      <data key="d1">检验_葡萄糖</data>
-    </node>
-    <node id="疾病_高血压">
-      <data key="d0">疾病</data>
-      <data key="d1">疾病_高血压</data>
-    </node>
-    <node id="疾病_冠状动脉粥样硬化性心脏病">
-      <data key="d0">疾病</data>
-      <data key="d1">疾病_冠状动脉粥样硬化性心脏病</data>
-    </node>
-    <node id="药物_氯化钠注射液">
-      <data key="d0">药物</data>
-      <data key="d1">药物_氯化钠注射液</data>
-    </node>
-    <node id="检验_尿酸">
-      <data key="d0">检验</data>
-      <data key="d1">检验_尿酸</data>
+      <data key="d1">检验_碳酸氢盐</data>
     </node>
     <node id="药物_阿司匹林肠溶片">
       <data key="d0">药物</data>
       <data key="d1">药物_阿司匹林肠溶片</data>
     </node>
-    <node id="疾病_高脂血症">
+    <node id="疾病_高血压">
       <data key="d0">疾病</data>
-      <data key="d1">疾病_高脂血症</data>
-    </node>
-    <node id="药物_阿托伐他汀钙片">
-      <data key="d0">药物</data>
-      <data key="d1">药物_阿托伐他汀钙片</data>
-    </node>
-    <node id="检验_钾">
-      <data key="d0">检验</data>
-      <data key="d1">检验_钾</data>
-    </node>
-    <node id="检验_碳酸氢盐">
-      <data key="d0">检验</data>
-      <data key="d1">检验_碳酸氢盐</data>
-    </node>
-    <node id="疾病_糖尿病">
-      <data key="d0">疾病</data>
-      <data key="d1">疾病_糖尿病</data>
-    </node>
-    <node id="疾病_反流性食管炎">
-      <data key="d0">疾病</data>
-      <data key="d1">疾病_反流性食管炎</data>
+      <data key="d1">疾病_高血压</data>
     </node>
     <node id="药物_艾司唑仑片">
       <data key="d0">药物</data>
       <data key="d1">药物_艾司唑仑片</data>
     </node>
+    <node id="疾病_反流性食管炎">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_反流性食管炎</data>
+    </node>
+    <node id="疾病_糖尿病">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_糖尿病</data>
+    </node>
+    <node id="检验_尿酸">
+      <data key="d0">检验</data>
+      <data key="d1">检验_尿酸</data>
+    </node>
     <node id="检验_氯">
       <data key="d0">检验</data>
       <data key="d1">检验_氯</data>
     </node>
-    <edge source="疾病_高血压" target="疾病_冠状动脉粥样硬化性心脏病">
-      <data key="d2">0.1914730843445177</data>
-      <data key="d3">silver</data>
-      <data key="d4">0.5318696787347714</data>
-      <data key="d5">False</data>
-      <data key="d6">disease_disease</data>
-      <data key="d7">non_triangulated</data>
-      <data key="d8">3</data>
-      <data key="d9">疾病_高血压-&gt;疾病_冠状动脉粥样硬化性心脏病</data>
-    </edge>
-    <edge source="药物_氯化钠注射液" target="疾病_高血压">
-      <data key="d2">0.061546837990715836</data>
-      <data key="d3">bronze</data>
-      <data key="d4">0.3846677374419739</data>
-      <data key="d5">False</data>
-      <data key="d6">drug_disease</data>
-      <data key="d7">non_triangulated</data>
-      <data key="d8">2</data>
-      <data key="d9">药物_氯化钠注射液-&gt;疾病_高血压</data>
-    </edge>
+    <node id="药物_阿托伐他汀钙片">
+      <data key="d0">药物</data>
+      <data key="d1">药物_阿托伐他汀钙片</data>
+    </node>
+    <node id="药物_氯化钠注射液">
+      <data key="d0">药物</data>
+      <data key="d1">药物_氯化钠注射液</data>
+    </node>
+    <node id="检验_钾">
+      <data key="d0">检验</data>
+      <data key="d1">检验_钾</data>
+    </node>
+    <node id="疾病_高脂血症">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_高脂血症</data>
+    </node>
+    <node id="疾病_冠状动脉粥样硬化性心脏病">
+      <data key="d0">疾病</data>
+      <data key="d1">疾病_冠状动脉粥样硬化性心脏病</data>
+    </node>
+    <node id="检验_葡萄糖">
+      <data key="d0">检验</data>
+      <data key="d1">检验_葡萄糖</data>
+    </node>
     <edge source="药物_阿司匹林肠溶片" target="疾病_糖尿病">
       <data key="d2">0.18962985534505586</data>
       <data key="d3">silver</data>
@@ -127,55 +107,35 @@
       <data key="d8">2</data>
       <data key="d9">药物_阿司匹林肠溶片-&gt;药物_阿托伐他汀钙片</data>
     </edge>
-    <edge source="疾病_高脂血症" target="药物_阿托伐他汀钙片">
-      <data key="d2">0.13882464710274847</data>
-      <data key="d3">bronze</data>
-      <data key="d4">0.3676540443921779</data>
-      <data key="d5">True</data>
-      <data key="d6">disease_drug</data>
-      <data key="d7">triangulated_verified</data>
-      <data key="d8">2</data>
-      <data key="d9">疾病_高脂血症-&gt;药物_阿托伐他汀钙片</data>
-    </edge>
-    <edge source="疾病_高脂血症" target="检验_钾">
-      <data key="d2">0.057396827754800976</data>
-      <data key="d3">bronze</data>
-      <data key="d4">0.3587301734675061</data>
-      <data key="d5">False</data>
-      <data key="d6">disease_test</data>
-      <data key="d7">non_triangulated</data>
-      <data key="d8">2</data>
-      <data key="d9">疾病_高脂血症-&gt;检验_钾</data>
-    </edge>
-    <edge source="药物_阿托伐他汀钙片" target="疾病_冠状动脉粥样硬化性心脏病">
-      <data key="d2">0.1861659154403568</data>
+    <edge source="疾病_高血压" target="疾病_冠状动脉粥样硬化性心脏病">
+      <data key="d2">0.1914730843445177</data>
       <data key="d3">silver</data>
-      <data key="d4">0.51712754288988</data>
+      <data key="d4">0.5318696787347714</data>
       <data key="d5">False</data>
+      <data key="d6">disease_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_高血压-&gt;疾病_冠状动脉粥样硬化性心脏病</data>
+    </edge>
+    <edge source="药物_艾司唑仑片" target="疾病_反流性食管炎">
+      <data key="d2">0.13949010677766452</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3718131673604032</data>
+      <data key="d5">True</data>
       <data key="d6">drug_disease</data>
-      <data key="d7">non_triangulated</data>
-      <data key="d8">3</data>
-      <data key="d9">药物_阿托伐他汀钙片-&gt;疾病_冠状动脉粥样硬化性心脏病</data>
-    </edge>
-    <edge source="疾病_糖尿病" target="检验_葡萄糖">
-      <data key="d2">0.1867225147242466</data>
-      <data key="d3">silver</data>
-      <data key="d4">0.5186736520117962</data>
-      <data key="d5">False</data>
-      <data key="d6">disease_test</data>
-      <data key="d7">non_triangulated</data>
-      <data key="d8">3</data>
-      <data key="d9">疾病_糖尿病-&gt;检验_葡萄糖</data>
-    </edge>
-    <edge source="疾病_糖尿病" target="药物_阿司匹林肠溶片">
-      <data key="d2">0.13867993570891374</data>
-      <data key="d3">bronze</data>
-      <data key="d4">0.3667495981807107</data>
-      <data key="d5">True</data>
-      <data key="d6">disease_drug</data>
       <data key="d7">triangulated_verified</data>
       <data key="d8">2</data>
-      <data key="d9">疾病_糖尿病-&gt;药物_阿司匹林肠溶片</data>
+      <data key="d9">药物_艾司唑仑片-&gt;疾病_反流性食管炎</data>
+    </edge>
+    <edge source="药物_艾司唑仑片" target="检验_尿酸">
+      <data key="d2">0.058631955802833674</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3664497237677104</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_艾司唑仑片-&gt;检验_尿酸</data>
     </edge>
     <edge source="疾病_反流性食管炎" target="药物_艾司唑仑片">
       <data key="d2">0.3114527402497452</data>
@@ -217,25 +177,25 @@
       <data key="d8">2</data>
       <data key="d9">疾病_反流性食管炎-&gt;检验_碳酸氢盐</data>
     </edge>
-    <edge source="药物_艾司唑仑片" target="疾病_反流性食管炎">
-      <data key="d2">0.13949010677766452</data>
+    <edge source="疾病_糖尿病" target="检验_葡萄糖">
+      <data key="d2">0.1867225147242466</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.5186736520117962</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">疾病_糖尿病-&gt;检验_葡萄糖</data>
+    </edge>
+    <edge source="疾病_糖尿病" target="药物_阿司匹林肠溶片">
+      <data key="d2">0.13867993570891374</data>
       <data key="d3">bronze</data>
-      <data key="d4">0.3718131673604032</data>
+      <data key="d4">0.3667495981807107</data>
       <data key="d5">True</data>
-      <data key="d6">drug_disease</data>
+      <data key="d6">disease_drug</data>
       <data key="d7">triangulated_verified</data>
       <data key="d8">2</data>
-      <data key="d9">药物_艾司唑仑片-&gt;疾病_反流性食管炎</data>
-    </edge>
-    <edge source="药物_艾司唑仑片" target="检验_尿酸">
-      <data key="d2">0.058631955802833674</data>
-      <data key="d3">bronze</data>
-      <data key="d4">0.3664497237677104</data>
-      <data key="d5">False</data>
-      <data key="d6">drug_test</data>
-      <data key="d7">non_triangulated</data>
-      <data key="d8">2</data>
-      <data key="d9">药物_艾司唑仑片-&gt;检验_尿酸</data>
+      <data key="d9">疾病_糖尿病-&gt;药物_阿司匹林肠溶片</data>
     </edge>
     <edge source="检验_氯" target="检验_葡萄糖">
       <data key="d2">0.05831024071552594</data>
@@ -246,6 +206,46 @@
       <data key="d7">non_triangulated</data>
       <data key="d8">2</data>
       <data key="d9">检验_氯-&gt;检验_葡萄糖</data>
+    </edge>
+    <edge source="药物_阿托伐他汀钙片" target="疾病_冠状动脉粥样硬化性心脏病">
+      <data key="d2">0.1861659154403568</data>
+      <data key="d3">silver</data>
+      <data key="d4">0.51712754288988</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">3</data>
+      <data key="d9">药物_阿托伐他汀钙片-&gt;疾病_冠状动脉粥样硬化性心脏病</data>
+    </edge>
+    <edge source="药物_氯化钠注射液" target="疾病_高血压">
+      <data key="d2">0.061546837990715836</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3846677374419739</data>
+      <data key="d5">False</data>
+      <data key="d6">drug_disease</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">药物_氯化钠注射液-&gt;疾病_高血压</data>
+    </edge>
+    <edge source="疾病_高脂血症" target="药物_阿托伐他汀钙片">
+      <data key="d2">0.13882464710274847</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3676540443921779</data>
+      <data key="d5">True</data>
+      <data key="d6">disease_drug</data>
+      <data key="d7">triangulated_verified</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高脂血症-&gt;药物_阿托伐他汀钙片</data>
+    </edge>
+    <edge source="疾病_高脂血症" target="检验_钾">
+      <data key="d2">0.057396827754800976</data>
+      <data key="d3">bronze</data>
+      <data key="d4">0.3587301734675061</data>
+      <data key="d5">False</data>
+      <data key="d6">disease_test</data>
+      <data key="d7">non_triangulated</data>
+      <data key="d8">2</data>
+      <data key="d9">疾病_高脂血症-&gt;检验_钾</data>
     </edge>
   </graph>
 </graphml>

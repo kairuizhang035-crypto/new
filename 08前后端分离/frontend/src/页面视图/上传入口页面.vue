@@ -150,7 +150,7 @@
         <div class="guide">
           <p>上传后会在本地解析数据，生成预览与摘要。点击“进入增强知识图谱”即可继续探索，摘要将临时保存到浏览器会话中。</p>
           <div class="btn-row">
-            <button class="btn primary" @click="enterGraphNow">立即进入图谱</button>
+            <button class="btn primary" @click="goToGraph">立即进入图谱</button>
           </div>
         </div>
       </div>
@@ -189,7 +189,6 @@ export default {
     const stateClass = (s) => ({ waiting: 'waiting', running: 'running', succeeded: 'succeeded', failed: 'failed' }[String(s)] || 'waiting')
     const displayState = (s) => ({ waiting: '等待', running: '执行中', succeeded: '成功', failed: '失败' }[String(s)] || '等待')
     const polling = ref(false)
-    const navigateAfterUpload = ref(false)
     const fileIcon = computed(() => (String(preview.value.type).toUpperCase() === 'CSV' ? '📑' : '🧩'))
 
     const hasPreview = computed(() => !!(preview.value && preview.value.name))
@@ -241,25 +240,6 @@ export default {
         window.$vueRouter.replace({ path: '/login', query: { redirect: '/upload', origin } })
       } else {
         window.location.assign('/login?redirect=/upload&origin=' + origin)
-      }
-    }
-
-    const enterGraphNow = async () => {
-      try {
-        const res = await fetch('/api/auth/me')
-        const j = await res.json()
-        if (!j?.authenticated) {
-          const origin = encodeURIComponent(window.location.href)
-          if (window?.$vueRouter) {
-            return window.$vueRouter.replace({ path: '/login', query: { redirect: '/graph', origin } })
-          }
-          return (window.location.href = '/login?redirect=/graph&origin=' + origin)
-        }
-      } catch (e) {}
-      if (window?.$vueRouter) {
-        window.$vueRouter.push('/graph')
-      } else {
-        window.location.href = '#/graph'
       }
     }
 
@@ -486,7 +466,6 @@ export default {
               await selectDatasource(saved)
             }
             uploading.value = false
-            navigateAfterUpload.value = true
           } else if (isCSV) {
             const form = new FormData()
             form.append('file', selectedFile.value)
@@ -498,12 +477,10 @@ export default {
               return
             }
             pipelineJobId.value = j?.data?.job_id || ''
-            try { sessionStorage.setItem('pipeline_job_id', pipelineJobId.value) } catch (_) {}
             uploadMessage.value = '已启动处理管道，正在执行...' 
             uploading.value = false
             polling.value = true
             pipelineStatus.value = 'queued'
-            navigateAfterUpload.value = false
             await pollPipeline()
             return
           } else {
@@ -517,15 +494,14 @@ export default {
             const latest = files.sort((a,b) => (b.size||0)-(a.size||0))[0]
             if (latest?.path) await selectDatasource(latest.path)
           }
-          navigateAfterUpload.value = true
         }
       } catch (_) {
         uploading.value = false
         uploadError.value = '上传过程发生错误'
         return
       }
-      // 仅在需要时导航（JSON或未选择文件），CSV上传保持当前页显示进度
-      if (navigateAfterUpload.value && !polling.value) {
+      // 跳转到增强知识图谱主界面
+      if (!polling.value) {
         if (window?.$vueRouter) {
           window.$vueRouter.push('/graph')
         } else {
@@ -549,7 +525,12 @@ export default {
           if (jl?.success) pipelineLogs.value = jl.data || ''
           if (pipelineStatus.value === 'succeeded') {
             polling.value = false
-            uploadMessage.value = '处理完成，可点击“立即进入图谱”进入可视化'
+            uploadMessage.value = '处理完成，即将进入图谱'
+            if (window?.$vueRouter) {
+              window.$vueRouter.push('/graph')
+            } else {
+              window.location.href = '#/graph'
+            }
             break
           }
           if (pipelineStatus.value === 'failed') {
@@ -605,8 +586,7 @@ export default {
       userEmail,
       userAvatar,
       toggleUserPanel,
-      onLogout,
-      enterGraphNow
+      onLogout
     }
   }
 }
