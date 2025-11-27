@@ -481,7 +481,7 @@ export default {
     }
 
     // 数据源选择
-    const { datasourceFiles, currentDatasource } = storeToRefs(store)
+    const datasourceFiles = ref([])
     const datasourceFilesDedup = computed(() => {
       const seen = new Set()
       const out = []
@@ -494,6 +494,7 @@ export default {
       return out
     })
     const selectedDatasourcePath = ref('')
+    const currentDatasource = ref({})
 
     const fmtSize = (s) => {
       if (!s && s !== 0) return '未知'
@@ -504,8 +505,8 @@ export default {
 
     const refreshDatasourceList = async () => {
       try {
-        await store.refreshDatasources()
-        const files = datasourceFiles.value || []
+        const files = await store.listDatasources()
+        datasourceFiles.value = files
         if (!selectedDatasourcePath.value && files.length) {
           selectedDatasourcePath.value = files[0].path
         }
@@ -514,7 +515,7 @@ export default {
 
     const loadCurrentDatasource = async () => {
       try {
-        await store.refreshDatasources()
+        currentDatasource.value = await store.getCurrentDatasource()
       } catch (e) {}
     }
 

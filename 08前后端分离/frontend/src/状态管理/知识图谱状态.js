@@ -27,9 +27,7 @@ export const useKnowledgeGraphStore = defineStore('knowledgeGraph', {
       pathways: 0
     },
     loading: false,
-    error: null,
-    datasourceFiles: [],
-    currentDatasource: {}
+    error: null
   }),
 
   getters: {
@@ -52,20 +50,6 @@ export const useKnowledgeGraphStore = defineStore('knowledgeGraph', {
   },
 
   actions: {
-    async refreshDatasources() {
-      try {
-        const [listRes, curRes] = await Promise.all([
-          axios.get(`${API_BASE_URL}/datasource/list`),
-          axios.get(`${API_BASE_URL}/datasource/current`)
-        ])
-        this.datasourceFiles = listRes.data?.data || []
-        this.currentDatasource = curRes.data?.data || {}
-        return { list: this.datasourceFiles, current: this.currentDatasource }
-      } catch (error) {
-        console.error('刷新数据源状态失败:', error)
-        throw error
-      }
-    },
     async listDatasources() {
       try {
         const res = await axios.get(`${API_BASE_URL}/datasource/list`)
@@ -91,7 +75,6 @@ export const useKnowledgeGraphStore = defineStore('knowledgeGraph', {
         const res = await axios.post(`${API_BASE_URL}/datasource/select`, { path })
         // 选择成功后重新加载数据
         await this.loadData()
-        await this.refreshDatasources()
         return res.data?.data || {}
       } catch (error) {
         console.error('选择数据源失败:', error)
@@ -109,7 +92,6 @@ export const useKnowledgeGraphStore = defineStore('knowledgeGraph', {
         })
         // 如果后端已自动选择，刷新数据
         await this.loadData()
-        await this.refreshDatasources()
         return res.data?.data || {}
       } catch (error) {
         console.error('上传数据源失败:', error)
