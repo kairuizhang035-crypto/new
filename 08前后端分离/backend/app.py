@@ -72,6 +72,17 @@ PIPELINE_STEPS = [
     }
 ]
 
+def _sha256(path):
+    try:
+        import hashlib
+        h = hashlib.sha256()
+        with open(path, 'rb') as f:
+            for chunk in iter(lambda: f.read(8192), b''):
+                h.update(chunk)
+        return h.hexdigest()
+    except Exception:
+        return ''
+
 def ensure_dir(p):
     try:
         os.makedirs(p, exist_ok=True)
@@ -120,13 +131,52 @@ def _run_pipeline(job_id):
     try:
         for idx, step in enumerate(PIPELINE_STEPS):
             _run_step(job_id, idx, step)
+        src_json = '/home/zkr/因果发现3/06知识图谱构建/01增强知识图谱/增强知识图谱完整结构.json'
+        moved_path = None
+        try:
+            if os.path.exists(src_json):
+                ensure_dir(UPLOAD_DIR)
+                if not os.access(UPLOAD_DIR, os.W_OK):
+                    raise PermissionError('目标目录不可写')
+                s0 = _sha256(src_json)
+                with PIPELINE_LOCK:
+                    job_ctx = PIPELINE_JOBS.get(job_id) or {}
+                    base = (job_ctx.get('source_csv_basename') or '').strip()
+                dest_name = (base + '.json') if base else '增强知识图谱完整结构.json'
+                dest_path = os.path.join(UPLOAD_DIR, dest_name)
+                try:
+                    if os.path.exists(dest_path):
+                        os.replace(src_json, dest_path)
+                    else:
+                        import shutil
+                        shutil.move(src_json, dest_path)
+                except Exception as e:
+                    _append_pipeline_log(job_id, f"移动文件失败: {e}")
+                    raise
+                try:
+                    s1 = _sha256(dest_path)
+                    if s0 and s1 and s0 != s1:
+                        _append_pipeline_log(job_id, "内容校验失败: 移动前后哈希不一致")
+                    moved_path = dest_path
+                except Exception:
+                    moved_path = dest_path
+                _append_pipeline_log(job_id, f"结果已移动: {dest_path}")
+            else:
+                _append_pipeline_log(job_id, "未找到结果文件")
+        except Exception:
+            pass
         with PIPELINE_LOCK:
             job = PIPELINE_JOBS.get(job_id) or {}
             job['status'] = 'succeeded'
             job['end_time'] = int(time.time())
+            if moved_path:
+                job['result_path'] = moved_path
             PIPELINE_JOBS[job_id] = job
         try:
-            kg_api.set_data_file(DATA_FILE_PATH)
+            if moved_path and is_allowed_path(moved_path):
+                kg_api.set_data_file(moved_path)
+            else:
+                kg_api.set_data_file(DATA_FILE_PATH)
         except Exception:
             pass
         _append_pipeline_log(job_id, "流程完成")
@@ -1266,7 +1316,9 @@ def pipeline_upload_and_run():
                 'current_step_name': '',
                 'steps': [s['name'] for s in PIPELINE_STEPS],
                 'start_time': int(time.time()),
-                'user': user
+                'user': user,
+                'source_csv_name': fname,
+                'source_csv_basename': os.path.splitext(fname)[0]
             }
         _append_pipeline_log(job_id, f"CSV保存: {dest}")
         t = threading.Thread(target=_run_pipeline, args=(job_id,), daemon=True)

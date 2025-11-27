@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "analysis_time": "2025-11-27 00:06:31",
+    "analysis_time": "2025-11-27 13:35:24",
     "total_edges": 18,
     "core_edges_count": 6,
     "filtering_criteria": {
@@ -12,18 +12,18 @@
     "疾病_反流性食管炎 -> 药物_艾司唑仑片": {
       "source": "疾病_反流性食管炎",
       "target": "药物_艾司唑仑片",
-      "confidence": 0.698201307406423,
-      "quality_adjusted_confidence": 0.6109261439806202,
+      "confidence": 0.6982013074064239,
+      "quality_adjusted_confidence": 0.610926143980621,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.6,
-        "parameter_fitting": 0.46688812962569226,
+        "parameter_fitting": 0.4668881296256962,
         "mediation_support": 1.2579171,
         "expert_direction": 0.38
       },
       "dimension_contributions": {
         "structural_consistency": 0.21,
-        "parameter_fitting": 0.11672203240642307,
+        "parameter_fitting": 0.11672203240642405,
         "mediation_support": 0.314479275,
         "expert_direction": 0.056999999999999995
       },
@@ -32,18 +32,18 @@
     "药物_阿司匹林肠溶片 -> 检验_钾": {
       "source": "药物_阿司匹林肠溶片",
       "target": "检验_钾",
-      "confidence": 0.6279699755907332,
-      "quality_adjusted_confidence": 0.5494737286418916,
+      "confidence": 0.6279699755907323,
+      "quality_adjusted_confidence": 0.5494737286418908,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.6,
-        "parameter_fitting": 0.26562620236293266,
+        "parameter_fitting": 0.26562620236292905,
         "mediation_support": 1.2142537,
         "expert_direction": 0.32000000000000006
       },
       "dimension_contributions": {
         "structural_consistency": 0.21,
-        "parameter_fitting": 0.06640655059073317,
+        "parameter_fitting": 0.06640655059073226,
         "mediation_support": 0.303563425,
         "expert_direction": 0.04800000000000001
       },
@@ -52,18 +52,18 @@
     "疾病_反流性食管炎 -> 疾病_高脂血症": {
       "source": "疾病_反流性食管炎",
       "target": "疾病_高脂血症",
-      "confidence": 0.6213508219937809,
-      "quality_adjusted_confidence": 0.5436819692445582,
+      "confidence": 0.6213508219937807,
+      "quality_adjusted_confidence": 0.543681969244558,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.4,
-        "parameter_fitting": 0.5429287879751237,
+        "parameter_fitting": 0.542928787975123,
         "mediation_support": 1.2624745,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.13999999999999999,
-        "parameter_fitting": 0.13573219699378092,
+        "parameter_fitting": 0.13573219699378075,
         "mediation_support": 0.315618625,
         "expert_direction": 0.03
       },
@@ -72,18 +72,18 @@
     "药物_艾司唑仑片 -> 疾病_反流性食管炎": {
       "source": "药物_艾司唑仑片",
       "target": "疾病_反流性食管炎",
-      "confidence": 0.6223312178989663,
-      "quality_adjusted_confidence": 0.5445398156615955,
+      "confidence": 0.6223312178989677,
+      "quality_adjusted_confidence": 0.5445398156615968,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.4,
-        "parameter_fitting": 0.46897067159586514,
+        "parameter_fitting": 0.46897067159587114,
         "mediation_support": 1.3163542,
         "expert_direction": 0.24
       },
       "dimension_contributions": {
         "structural_consistency": 0.13999999999999999,
-        "parameter_fitting": 0.11724266789896629,
+        "parameter_fitting": 0.11724266789896778,
         "mediation_support": 0.32908855,
         "expert_direction": 0.036
       },
@@ -97,13 +97,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.4,
-        "parameter_fitting": 0.9785933522371467,
+        "parameter_fitting": 0.9785933522371468,
         "mediation_support": 1.13130925,
         "expert_direction": 0.38
       },
       "dimension_contributions": {
         "structural_consistency": 0.13999999999999999,
-        "parameter_fitting": 0.24464833805928668,
+        "parameter_fitting": 0.2446483380592867,
         "mediation_support": 0.2828273125,
         "expert_direction": 0.056999999999999995
       },
@@ -112,18 +112,18 @@
     "疾病_糖尿病 -> 药物_阿司匹林肠溶片": {
       "source": "疾病_糖尿病",
       "target": "药物_阿司匹林肠溶片",
-      "confidence": 0.6882031293188906,
-      "quality_adjusted_confidence": 0.6021777381540293,
+      "confidence": 0.6882031293188915,
+      "quality_adjusted_confidence": 0.6021777381540301,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.4,
-        "parameter_fitting": 0.7505588172755628,
+        "parameter_fitting": 0.7505588172755663,
         "mediation_support": 1.2142537,
         "expert_direction": 0.38
       },
       "dimension_contributions": {
         "structural_consistency": 0.13999999999999999,
-        "parameter_fitting": 0.1876397043188907,
+        "parameter_fitting": 0.18763970431889157,
         "mediation_support": 0.303563425,
         "expert_direction": 0.056999999999999995
       },
@@ -132,9 +132,9 @@
   },
   "statistics": {
     "core_edges_confidence_stats": {
-      "mean": 0.6637553504613467,
-      "std": 0.04136397090191316,
-      "min": 0.6213508219937809,
+      "mean": 0.6637553504613471,
+      "std": 0.041363970901913294,
+      "min": 0.6213508219937807,
       "max": 0.7244756505592866,
       "median": 0.6580865524548118
     },

@@ -2,23 +2,23 @@
   "metadata": {
     "title": "因果发现网络图数据",
     "description": "用于交互式可视化的网络数据",
-    "created_at": "2025-11-27T00:06:40.642993",
+    "created_at": "2025-11-27T13:35:33.197841",
     "statistics": {
       "total_nodes": 14,
       "total_edges": 18,
       "core_edges": 6,
-      "avg_confidence": 0.5202665200670694,
+      "avg_confidence": 0.5202665200670693,
       "avg_quality": 0.8652777777777777,
       "density": 0.0989010989010989
     }
   },
   "nodes": [
     {
-      "id": "疾病_高血压",
-      "label": "疾病_高血压",
+      "id": "检验_碳酸氢盐",
+      "label": "检验_碳酸氢盐",
       "in_degree": 1,
-      "out_degree": 1,
-      "total_degree": 2,
+      "out_degree": 0,
+      "total_degree": 1,
       "is_core_node": false
     },
     {
@@ -30,8 +30,72 @@
       "is_core_node": true
     },
     {
+      "id": "疾病_高脂血症",
+      "label": "疾病_高脂血症",
+      "in_degree": 1,
+      "out_degree": 2,
+      "total_degree": 3,
+      "is_core_node": true
+    },
+    {
+      "id": "检验_氯",
+      "label": "检验_氯",
+      "in_degree": 0,
+      "out_degree": 1,
+      "total_degree": 1,
+      "is_core_node": false
+    },
+    {
+      "id": "药物_艾司唑仑片",
+      "label": "药物_艾司唑仑片",
+      "in_degree": 1,
+      "out_degree": 2,
+      "total_degree": 3,
+      "is_core_node": true
+    },
+    {
       "id": "药物_阿司匹林肠溶片",
       "label": "药物_阿司匹林肠溶片",
+      "in_degree": 1,
+      "out_degree": 4,
+      "total_degree": 5,
+      "is_core_node": true
+    },
+    {
+      "id": "疾病_糖尿病",
+      "label": "疾病_糖尿病",
+      "in_degree": 1,
+      "out_degree": 2,
+      "total_degree": 3,
+      "is_core_node": true
+    },
+    {
+      "id": "检验_尿酸",
+      "label": "检验_尿酸",
+      "in_degree": 2,
+      "out_degree": 0,
+      "total_degree": 2,
+      "is_core_node": false
+    },
+    {
+      "id": "疾病_冠状动脉粥样硬化性心脏病",
+      "label": "疾病_冠状动脉粥样硬化性心脏病",
+      "in_degree": 2,
+      "out_degree": 0,
+      "total_degree": 2,
+      "is_core_node": false
+    },
+    {
+      "id": "疾病_高血压",
+      "label": "疾病_高血压",
+      "in_degree": 1,
+      "out_degree": 1,
+      "total_degree": 2,
+      "is_core_node": false
+    },
+    {
+      "id": "疾病_反流性食管炎",
+      "label": "疾病_反流性食管炎",
       "in_degree": 1,
       "out_degree": 4,
       "total_degree": 5,
@@ -46,54 +110,6 @@
       "is_core_node": true
     },
     {
-      "id": "检验_氯",
-      "label": "检验_氯",
-      "in_degree": 0,
-      "out_degree": 1,
-      "total_degree": 1,
-      "is_core_node": false
-    },
-    {
-      "id": "疾病_冠状动脉粥样硬化性心脏病",
-      "label": "疾病_冠状动脉粥样硬化性心脏病",
-      "in_degree": 2,
-      "out_degree": 0,
-      "total_degree": 2,
-      "is_core_node": false
-    },
-    {
-      "id": "疾病_高脂血症",
-      "label": "疾病_高脂血症",
-      "in_degree": 1,
-      "out_degree": 2,
-      "total_degree": 3,
-      "is_core_node": true
-    },
-    {
-      "id": "药物_艾司唑仑片",
-      "label": "药物_艾司唑仑片",
-      "in_degree": 1,
-      "out_degree": 2,
-      "total_degree": 3,
-      "is_core_node": true
-    },
-    {
-      "id": "疾病_反流性食管炎",
-      "label": "疾病_反流性食管炎",
-      "in_degree": 1,
-      "out_degree": 4,
-      "total_degree": 5,
-      "is_core_node": true
-    },
-    {
-      "id": "检验_葡萄糖",
-      "label": "检验_葡萄糖",
-      "in_degree": 2,
-      "out_degree": 0,
-      "total_degree": 2,
-      "is_core_node": false
-    },
-    {
       "id": "药物_氯化钠注射液",
       "label": "药物_氯化钠注射液",
       "in_degree": 1,
@@ -102,72 +118,56 @@
       "is_core_node": false
     },
     {
-      "id": "检验_尿酸",
-      "label": "检验_尿酸",
+      "id": "检验_葡萄糖",
+      "label": "检验_葡萄糖",
       "in_degree": 2,
       "out_degree": 0,
       "total_degree": 2,
       "is_core_node": false
-    },
-    {
-      "id": "检验_碳酸氢盐",
-      "label": "检验_碳酸氢盐",
-      "in_degree": 1,
-      "out_degree": 0,
-      "total_degree": 1,
-      "is_core_node": false
-    },
-    {
-      "id": "疾病_糖尿病",
-      "label": "疾病_糖尿病",
-      "in_degree": 1,
-      "out_degree": 2,
-      "total_degree": 3,
-      "is_core_node": true
     }
   ],
   "edges": [
     {
       "source": "疾病_高血压",
       "target": "疾病_冠状动脉粥样硬化性心脏病",
-      "confidence": 0.3482092616537401,
+      "confidence": 0.34820926165373944,
       "quality": 0.875,
       "is_core_edge": false,
       "struct_score": 0.6,
-      "param_score": 0.1890870466149605,
+      "param_score": 0.18908704661495784,
       "mediation_score": 0.24375,
       "expert_score": 0.2
     },
     {
       "source": "疾病_反流性食管炎",
       "target": "药物_艾司唑仑片",
-      "confidence": 0.698201307406423,
+      "confidence": 0.6982013074064239,
       "quality": 0.875,
       "is_core_edge": true,
       "struct_score": 0.6,
-      "param_score": 0.46688812962569226,
+      "param_score": 0.4668881296256962,
       "mediation_score": 1.2579171,
       "expert_score": 0.38
     },
     {
       "source": "药物_阿司匹林肠溶片",
       "target": "疾病_糖尿病",
-      "confidence": 0.503478474259085,
+      "confidence": 0.5034784742590863,
       "quality": 0.875,
       "is_core_edge": false,
       "struct_score": 0.6,
-      "param_score": 0.7528638970363399,
+      "param_score": 0.7528638970363452,
       "mediation_score": 0.27704999999999996,
       "expert_score": 0.24
     },
     {
       "source": "药物_阿司匹林肠溶片",
       "target": "检验_钾",
-      "confidence": 0.6279699755907332,
+      "confidence": 0.6279699755907323,
       "quality": 0.875,
       "is_core_edge": true,
       "struct_score": 0.6,
-      "param_score": 0.26562620236293266,
+      "param_score": 0.26562620236292905,
       "mediation_score": 1.2142537,
       "expert_score": 0.32000000000000006
     },
@@ -178,18 +178,18 @@
       "quality": 0.875,
       "is_core_edge": false,
       "struct_score": 0.6,
-      "param_score": 0.9851947147707825,
+      "param_score": 0.9851947147707822,
       "mediation_score": 0.27704999999999996,
       "expert_score": 0.36000000000000004
     },
     {
       "source": "药物_阿托伐他汀钙片",
       "target": "疾病_冠状动脉粥样硬化性心脏病",
-      "confidence": 0.5943765079308023,
+      "confidence": 0.5943765079308037,
       "quality": 0.875,
       "is_core_edge": false,
       "struct_score": 0.6,
-      "param_score": 0.2621967817232092,
+      "param_score": 0.2621967817232143,
       "mediation_score": 1.13130925,
       "expert_score": 0.24
     },
@@ -207,66 +207,66 @@
     {
       "source": "疾病_反流性食管炎",
       "target": "药物_氯化钠注射液",
-      "confidence": 0.5434355354813365,
+      "confidence": 0.5434355354813363,
       "quality": 0.875,
       "is_core_edge": false,
       "struct_score": 0.4,
-      "param_score": 0.0693879419253463,
+      "param_score": 0.06938794192534516,
       "mediation_score": 1.3163542,
       "expert_score": 0.38
     },
     {
       "source": "疾病_反流性食管炎",
       "target": "疾病_高脂血症",
-      "confidence": 0.6213508219937809,
+      "confidence": 0.6213508219937807,
       "quality": 0.875,
       "is_core_edge": true,
       "struct_score": 0.4,
-      "param_score": 0.5429287879751237,
+      "param_score": 0.542928787975123,
       "mediation_score": 1.2624745,
       "expert_score": 0.2
     },
     {
       "source": "药物_阿司匹林肠溶片",
       "target": "检验_尿酸",
-      "confidence": 0.32475677446099566,
+      "confidence": 0.3247567744609952,
       "quality": 0.875,
       "is_core_edge": false,
       "struct_score": 0.4,
-      "param_score": 0.26277709784398284,
+      "param_score": 0.2627770978439808,
       "mediation_score": 0.28425,
       "expert_score": 0.32000000000000006
     },
     {
       "source": "药物_艾司唑仑片",
       "target": "疾病_反流性食管炎",
-      "confidence": 0.6223312178989663,
+      "confidence": 0.6223312178989677,
       "quality": 0.875,
       "is_core_edge": true,
       "struct_score": 0.4,
-      "param_score": 0.46897067159586514,
+      "param_score": 0.46897067159587114,
       "mediation_score": 1.3163542,
       "expert_score": 0.24
     },
     {
       "source": "药物_阿司匹林肠溶片",
       "target": "药物_阿托伐他汀钙片",
-      "confidence": 0.3259604010064412,
+      "confidence": 0.3259604010064411,
       "quality": 0.875,
       "is_core_edge": false,
       "struct_score": 0.4,
-      "param_score": 0.37844160402576477,
+      "param_score": 0.37844160402576427,
       "mediation_score": 0.24539999999999998,
       "expert_score": 0.2
     },
     {
       "source": "疾病_反流性食管炎",
       "target": "检验_碳酸氢盐",
-      "confidence": 0.5263252551935272,
+      "confidence": 0.5263252551935265,
       "quality": 0.875,
       "is_core_edge": false,
       "struct_score": 0.4,
-      "param_score": 0.10630352077410901,
+      "param_score": 0.10630352077410603,
       "mediation_score": 1.2229975,
       "expert_score": 0.36000000000000004
     },
@@ -277,51 +277,51 @@
       "quality": 0.875,
       "is_core_edge": true,
       "struct_score": 0.4,
-      "param_score": 0.9785933522371467,
+      "param_score": 0.9785933522371468,
       "mediation_score": 1.13130925,
       "expert_score": 0.38
     },
     {
       "source": "疾病_糖尿病",
       "target": "药物_阿司匹林肠溶片",
-      "confidence": 0.6882031293188906,
+      "confidence": 0.6882031293188915,
       "quality": 0.875,
       "is_core_edge": true,
       "struct_score": 0.4,
-      "param_score": 0.7505588172755628,
+      "param_score": 0.7505588172755663,
       "mediation_score": 1.2142537,
       "expert_score": 0.38
     },
     {
       "source": "药物_艾司唑仑片",
       "target": "检验_尿酸",
-      "confidence": 0.5864036199845597,
+      "confidence": 0.5864036199845589,
       "quality": 0.875,
       "is_core_edge": false,
       "struct_score": 0.4,
-      "param_score": 0.33569737993823856,
+      "param_score": 0.33569737993823556,
       "mediation_score": 1.2579171,
       "expert_score": 0.32000000000000006
     },
     {
       "source": "检验_氯",
       "target": "检验_葡萄糖",
-      "confidence": 0.264462200420364,
+      "confidence": 0.2644622004203637,
       "quality": 0.7,
       "is_core_edge": false,
       "struct_score": 0.4,
-      "param_score": 0.329848801681456,
+      "param_score": 0.32984880168145486,
       "mediation_score": 0.04800000000000001,
       "expert_score": 0.2
     },
     {
       "source": "疾病_高脂血症",
       "target": "检验_钾",
-      "confidence": 0.5418335493556214,
+      "confidence": 0.5418335493556191,
       "quality": 0.875,
       "is_core_edge": false,
       "struct_score": 0.4,
-      "param_score": 0.2153185974224857,
+      "param_score": 0.21531859742247647,
       "mediation_score": 1.1760156,
       "expert_score": 0.36000000000000004
     }
