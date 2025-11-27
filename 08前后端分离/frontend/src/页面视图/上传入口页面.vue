@@ -68,6 +68,8 @@
               <button class="btn success" :disabled="uploading" @click="goToGraph">上传数据并进入增强知识图谱</button>
           </div>
           <div v-if="uploadError" class="hint error">{{ uploadError }}</div>
+          <div v-if="uploadMessage" class="hint ok">{{ uploadMessage }}</div>
+          <div v-if="pipelineLogs" class="guide" style="max-height:220px; overflow:auto; white-space:pre-wrap; font-family: ui-monospace, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;">{{ pipelineLogs }}</div>
           </div>
 
           <div class="preview-illustration" aria-label="解析摘要">
@@ -163,6 +165,10 @@ export default {
     const uploading = ref(false)
     const uploadError = ref('')
     const uploadMessage = ref('')
+    const pipelineJobId = ref('')
+    const pipelineStatus = ref('')
+    const pipelineLogs = ref('')
+    const polling = ref(false)
     const fileIcon = computed(() => (String(preview.value.type).toUpperCase() === 'CSV' ? '📑' : '🧩'))
 
     const hasPreview = computed(() => !!(preview.value && preview.value.name))
@@ -427,26 +433,41 @@ export default {
           const name = (selectedFile.value.name || '').toLowerCase()
           const isCSV = name.endsWith('.csv')
           const isJSON = name.endsWith('.json')
-          const resp = await uploadDatasource(selectedFile.value, isJSON)
-          if (!resp?.success) {
-            uploading.value = false
-            uploadError.value = resp?.error || '上传失败'
-            return
-          }
-          const data = resp?.data || {}
           if (isJSON) {
+            const resp = await uploadDatasource(selectedFile.value, true)
+            if (!resp?.success) {
+              uploading.value = false
+              uploadError.value = resp?.error || '上传失败'
+              return
+            }
+            const data = resp?.data || {}
             const saved = data?.selected?.path || data?.saved_path
             if (saved) {
               await selectDatasource(saved)
             }
+            uploading.value = false
           } else if (isCSV) {
-            uploadMessage.value = 'CSV已保存至 07分离/原始数据，JSON文件可作为图谱数据源'
+            const form = new FormData()
+            form.append('file', selectedFile.value)
+            const resp = await fetch('/api/pipeline/upload_and_run', { method: 'POST', body: form })
+            const j = await resp.json()
+            if (!j?.success) {
+              uploading.value = false
+              uploadError.value = j?.error || '启动管道失败'
+              return
+            }
+            pipelineJobId.value = j?.data?.job_id || ''
+            uploadMessage.value = '已启动处理管道，正在执行...' 
+            uploading.value = false
+            polling.value = true
+            pipelineStatus.value = 'queued'
+            await pollPipeline()
+            return
           } else {
             uploadError.value = '仅支持 .csv 或 .json 文件'
             uploading.value = false
             return
           }
-          uploading.value = false
         } else {
           const files = await listDatasources()
           if (files && files.length) {
@@ -460,10 +481,47 @@ export default {
         return
       }
       // 跳转到增强知识图谱主界面
-      if (window?.$vueRouter) {
-        window.$vueRouter.push('/graph')
-      } else {
-        window.location.href = '#/graph'
+      if (!polling.value) {
+        if (window?.$vueRouter) {
+          window.$vueRouter.push('/graph')
+        } else {
+          window.location.href = '#/graph'
+        }
+      }
+    }
+
+    const pollPipeline = async () => {
+      try {
+        if (!pipelineJobId.value) return
+        for (;;) {
+          const res = await fetch('/api/pipeline/status?job_id=' + encodeURIComponent(pipelineJobId.value))
+          const j = await res.json()
+          if (!j?.success) break
+          const d = j.data || {}
+          pipelineStatus.value = d.status || ''
+          const rl = await fetch('/api/pipeline/logs?job_id=' + encodeURIComponent(pipelineJobId.value))
+          const jl = await rl.json()
+          if (jl?.success) pipelineLogs.value = jl.data || ''
+          if (pipelineStatus.value === 'succeeded') {
+            polling.value = false
+            uploadMessage.value = '处理完成，即将进入图谱'
+            if (window?.$vueRouter) {
+              window.$vueRouter.push('/graph')
+            } else {
+              window.location.href = '#/graph'
+            }
+            break
+          }
+          if (pipelineStatus.value === 'failed') {
+            polling.value = false
+            uploadError.value = '处理失败，查看日志'
+            break
+          }
+          await new Promise(r => setTimeout(r, 2000))
+        }
+      } catch (e) {
+        polling.value = false
+        uploadError.value = '状态轮询失败'
       }
     }
 
@@ -487,6 +545,10 @@ export default {
       uploading,
       uploadError,
       uploadMessage,
+      pipelineJobId,
+      pipelineStatus,
+      pipelineLogs,
+      polling,
       selectedFile,
       listDatasources,
       selectDatasource,

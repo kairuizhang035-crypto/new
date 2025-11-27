@@ -7,6 +7,11 @@
 
 import json
 import os
+import threading
+import subprocess
+import uuid
+import sys
+import datetime
 from flask import Flask, jsonify, request, session, make_response
 from werkzeug.security import check_password_hash, generate_password_hash
 import time
@@ -37,10 +42,94 @@ USERS_FILE = '/home/zkr/因果发现3/secure_credentials/users.json'
 USER_LOG_FILE = '/home/zkr/因果发现3/secure_credentials/users.log'
 JWT_SECRET = os.environ.get('JWT_SECRET', 'dev-jwt-secret')
 JWT_TTL_SECONDS = 7 * 24 * 3600
+PIPELINE_JOBS = {}
+PIPELINE_LOCK = threading.Lock()
+PIPELINE_LOG_DIR = '/home/zkr/因果发现3/07分离/原始数据'
+PIPELINE_STEPS = [
+    {
+        'name': '数据预处理',
+        'path': '/home/zkr/因果发现3/01数据预处理/数据预处理_统一执行.py'
+    },
+    {
+        'name': '因果发现',
+        'path': '/home/zkr/因果发现3/02因果发现/00统一执行脚本.py'
+    },
+    {
+        'name': '多方法参数学习',
+        'path': '/home/zkr/因果发现3/03多方法参数学习/00统一执行脚本.py'
+    },
+    {
+        'name': '贝叶斯中介分析',
+        'path': '/home/zkr/因果发现3/04贝叶斯中介分析/00统一运行脚本.py'
+    },
+    {
+        'name': '三角测量验证',
+        'path': '/home/zkr/因果发现3/05三角测量/因果发现结果三角验证.py'
+    },
+    {
+        'name': '知识图谱增强',
+        'path': '/home/zkr/因果发现3/06知识图谱构建/01增强知识图谱.py'
+    }
+]
 
 def ensure_dir(p):
     try:
         os.makedirs(p, exist_ok=True)
+    except Exception:
+        pass
+
+def _append_pipeline_log(job_id, text):
+    try:
+        ensure_dir(PIPELINE_LOG_DIR)
+        log_file = os.path.join(PIPELINE_LOG_DIR, f"pipeline_{job_id}.log")
+        ts = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        with open(log_file, 'a', encoding='utf-8') as f:
+            f.write(f"[{ts}] {text}\n")
+    except Exception:
+        pass
+
+def _run_step(job_id, step_idx, step):
+    with PIPELINE_LOCK:
+        job = PIPELINE_JOBS.get(job_id) or {}
+        job['current_step'] = step_idx
+        job['current_step_name'] = step.get('name')
+        job['status'] = 'running'
+        PIPELINE_JOBS[job_id] = job
+    _append_pipeline_log(job_id, f"开始执行: {step.get('name')} -> {step.get('path')}")
+    try:
+        cwd = os.path.dirname(step.get('path') or '')
+        cmd = [sys.executable, step.get('path')]
+        res = subprocess.run(cmd, cwd=cwd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        if res.stdout:
+            _append_pipeline_log(job_id, res.stdout)
+        if res.stderr:
+            _append_pipeline_log(job_id, res.stderr)
+        if res.returncode != 0:
+            raise RuntimeError(f"步骤失败: {step.get('name')} 返回码 {res.returncode}")
+    except Exception as e:
+        with PIPELINE_LOCK:
+            job = PIPELINE_JOBS.get(job_id) or {}
+            job['status'] = 'failed'
+            job['error'] = str(e)
+            job['end_time'] = int(time.time())
+            PIPELINE_JOBS[job_id] = job
+        _append_pipeline_log(job_id, f"错误: {e}")
+        raise
+
+def _run_pipeline(job_id):
+    try:
+        for idx, step in enumerate(PIPELINE_STEPS):
+            _run_step(job_id, idx, step)
+        with PIPELINE_LOCK:
+            job = PIPELINE_JOBS.get(job_id) or {}
+            job['status'] = 'succeeded'
+            job['end_time'] = int(time.time())
+            PIPELINE_JOBS[job_id] = job
+        try:
+            kg_api.set_data_file(DATA_FILE_PATH)
+        except Exception:
+            pass
+        _append_pipeline_log(job_id, "流程完成")
     except Exception:
         pass
 
@@ -1147,6 +1236,79 @@ def datasource_upload():
         return jsonify({'success': True, 'data': {'saved_path': dest, 'selected': selected}})
     except Exception as e:
         logger.error(f"上传数据源失败: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/pipeline/upload_and_run', methods=['POST'])
+def pipeline_upload_and_run():
+    try:
+        user = get_auth_user()
+        if not user:
+            return jsonify({'success': False, 'error': '未认证'}), 401
+        f = request.files.get('file')
+        if not f:
+            return jsonify({'success': False, 'error': '缺少文件'}), 400
+        fname = safe_filename(f.filename)
+        if not fname.lower().endswith('.csv'):
+            return jsonify({'success': False, 'error': '仅支持CSV'}), 400
+        target_dir = '/home/zkr/因果发现3/01数据预处理'
+        ensure_dir(target_dir)
+        dest = os.path.join(target_dir, '缩减数据_规格.csv')
+        try:
+            f.save(dest)
+        except Exception as e:
+            logger.error(f"保存文件失败: {e}")
+            return jsonify({'success': False, 'error': '存储失败'}), 500
+        job_id = uuid.uuid4().hex
+        with PIPELINE_LOCK:
+            PIPELINE_JOBS[job_id] = {
+                'status': 'queued',
+                'current_step': -1,
+                'current_step_name': '',
+                'steps': [s['name'] for s in PIPELINE_STEPS],
+                'start_time': int(time.time()),
+                'user': user
+            }
+        _append_pipeline_log(job_id, f"CSV保存: {dest}")
+        t = threading.Thread(target=_run_pipeline, args=(job_id,), daemon=True)
+        t.start()
+        return jsonify({'success': True, 'data': {'job_id': job_id}})
+    except Exception as e:
+        logger.error(f"启动管道失败: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/pipeline/status', methods=['GET'])
+def pipeline_status():
+    try:
+        user = get_auth_user()
+        if not user:
+            return jsonify({'success': False, 'error': '未认证'}), 401
+        job_id = request.args.get('job_id', '')
+        with PIPELINE_LOCK:
+            job = PIPELINE_JOBS.get(job_id)
+        if not job:
+            return jsonify({'success': False, 'error': '任务不存在'}), 404
+        return jsonify({'success': True, 'data': job})
+    except Exception as e:
+        logger.error(f"获取管道状态失败: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/pipeline/logs', methods=['GET'])
+def pipeline_logs():
+    try:
+        user = get_auth_user()
+        if not user:
+            return jsonify({'success': False, 'error': '未认证'}), 401
+        job_id = request.args.get('job_id', '')
+        log_file = os.path.join(PIPELINE_LOG_DIR, f"pipeline_{job_id}.log")
+        if not os.path.exists(log_file):
+            return jsonify({'success': True, 'data': ''})
+        size = os.path.getsize(log_file)
+        head = min(size, 64 * 1024)
+        with open(log_file, 'r', encoding='utf-8') as f:
+            content = f.read(head)
+        return jsonify({'success': True, 'data': content})
+    except Exception as e:
+        logger.error(f"获取管道日志失败: {e}")
         return jsonify({'success': False, 'error': str(e)}), 500
 
 @app.route('/api/datasource/delete', methods=['POST'])
