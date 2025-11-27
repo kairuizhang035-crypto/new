@@ -4,15 +4,13 @@
       <div class="toolbar">
         <div class="title">后台处理进度</div>
         <div class="actions">
-          <input class="job-input" v-model="pipelineJobId" placeholder="输入 Job ID" />
-          <button class="btn" @click="saveJobId">保存</button>
-          <button class="btn primary" :disabled="polling" @click="startPolling">开始轮询</button>
+          <button class="btn primary" :disabled="polling || !pipelineJobId" @click="startPolling">刷新进度</button>
           <button class="btn" :disabled="!polling" @click="stopPolling">停止</button>
         </div>
       </div>
       <div class="content">
         <div class="hint" v-if="!pipelineJobId">未检测到 Job ID，请在上方输入或从上传页启动管道。</div>
-        <div class="hint ok" v-if="uploadMessage">{{ uploadMessage }}</div>
+        
         <div class="hint error" v-if="uploadError">{{ uploadError }}</div>
         <div v-if="stepStatuses && stepStatuses.length" class="progress-wrap">
           <div class="progress-header">
@@ -53,11 +51,12 @@ export default {
     const displayState = (s) => ({ waiting: '等待', running: '执行中', succeeded: '成功', failed: '失败' }[String(s)] || '等待')
 
     const loadJobId = () => {
-      try { pipelineJobId.value = sessionStorage.getItem('pipeline_job_id') || '' } catch (_) {}
+      try {
+        const fromSession = sessionStorage.getItem('pipeline_job_id') || ''
+        pipelineJobId.value = fromSession
+      } catch (_) {}
     }
-    const saveJobId = () => {
-      try { sessionStorage.setItem('pipeline_job_id', pipelineJobId.value || '') } catch (_) {}
-    }
+    const saveJobId = () => {}
 
     const stopPolling = () => { polling.value = false }
 
@@ -88,7 +87,10 @@ export default {
       }
     }
 
-    onMounted(() => { loadJobId() })
+    onMounted(() => {
+      loadJobId()
+      if (pipelineJobId.value) startPolling()
+    })
 
     return {
       pipelineJobId,
@@ -117,7 +119,6 @@ export default {
 .toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 20px; border-bottom: 1px solid #f1f3f5; background: linear-gradient(180deg, #ffffff, #fbfbfb); }
 .title { font-size: 16px; font-weight: 600; color: #2c3e50; }
 .actions { display: flex; gap: 8px; align-items: center; }
-.job-input { width: 220px; padding: 8px 10px; border: 1px solid #dee2e6; border-radius: 8px; font-size: 13px; }
 .btn { padding: 8px 14px; border: 1px solid #dee2e6; border-radius: 8px; background: #fff; color: #34495e; font-size: 13px; cursor: pointer; }
 .btn.primary { border-color: #3b82f6; color: #fff; background: #3b82f6; }
 .content { padding: 14px; }
