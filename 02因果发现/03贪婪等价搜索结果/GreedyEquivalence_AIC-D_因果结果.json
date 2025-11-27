@@ -2,7 +2,7 @@
   "算法信息": {
     "算法名称": "贪婪等价搜索 (Greedy Equivalence Search - GES)",
     "评分方法": "AIC-D (Akaike Information Criterion - Discrete)",
-    "生成时间": "2025-11-27 14:14:45",
+    "生成时间": "2025-11-27 14:25:40",
     "数据维度": {
       "样本数": 15,
       "变量数": 15
