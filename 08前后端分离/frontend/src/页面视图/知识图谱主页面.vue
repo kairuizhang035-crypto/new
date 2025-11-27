@@ -166,6 +166,18 @@
           </div>
           <span class="count">可视化</span>
         </div>
+
+        <div 
+          class="nav-item" 
+          :class="{ active: activePanel === 'admin' }"
+          @click="setActivePanel('admin')"
+        >
+          <div>
+            <span class="icon">🛠️</span>
+            后台管理
+          </div>
+          <span class="count">进度</span>
+        </div>
       </div>
     </div>
 
@@ -260,6 +272,10 @@
             @show-edge-details="onGraphEdgeClick"
           />
         </div>
+
+        <div v-if="activePanel === 'admin'" class="panel active">
+          <component :is="AdminComponent" />
+        </div>
       </div>
     </div>
 
@@ -300,6 +316,7 @@ import 权重系统组件 from './权重系统组件.vue'
 import 参数学习组件 from './参数学习组件.vue'
 import 路径分析组件 from './路径分析组件.vue'
 import 网络图谱组件 from './网络图谱组件.vue'
+import 后台管理组件 from './后台管理组件.vue'
 
 export default {
   name: '知识图谱主页面',
@@ -325,6 +342,7 @@ export default {
     const OverviewComponent = 概览统计组件
     // 网络图谱使用动态组件，避免在少数环境下中文标签渲染为文本
     const GraphComponent = 网络图谱组件
+    const AdminComponent = 后台管理组件
     // 分界线与拖拽逻辑（在 setup 内定义）
     const containerEl = ref(null)
     const sidebarWidth = ref(300)
@@ -2407,6 +2425,7 @@ export default {
       PathwayComponent,
       OverviewComponent,
       GraphComponent,
+      AdminComponent,
       containerEl,
       sidebarWidth,
       startDrag,
