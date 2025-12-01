@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "analysis_time": "2025-11-27 18:35:56",
+    "analysis_time": "2025-11-27 19:07:47",
     "total_edges": 18,
     "core_edges_count": 6,
     "filtering_criteria": {
@@ -12,18 +12,18 @@
     "疾病_反流性食管炎 -> 药物_艾司唑仑片": {
       "source": "疾病_反流性食管炎",
       "target": "药物_艾司唑仑片",
-      "confidence": 0.6982013074064235,
-      "quality_adjusted_confidence": 0.6109261439806206,
+      "confidence": 0.6982013074064233,
+      "quality_adjusted_confidence": 0.6109261439806204,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.6,
-        "parameter_fitting": 0.4668881296256938,
+        "parameter_fitting": 0.4668881296256937,
         "mediation_support": 1.2579171,
         "expert_direction": 0.38
       },
       "dimension_contributions": {
         "structural_consistency": 0.21,
-        "parameter_fitting": 0.11672203240642345,
+        "parameter_fitting": 0.11672203240642343,
         "mediation_support": 0.314479275,
         "expert_direction": 0.056999999999999995
       },
@@ -32,18 +32,18 @@
     "药物_阿司匹林肠溶片 -> 检验_钾": {
       "source": "药物_阿司匹林肠溶片",
       "target": "检验_钾",
-      "confidence": 0.627969975590733,
-      "quality_adjusted_confidence": 0.5494737286418914,
+      "confidence": 0.6279699755907328,
+      "quality_adjusted_confidence": 0.5494737286418911,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.6,
-        "parameter_fitting": 0.2656262023629319,
+        "parameter_fitting": 0.2656262023629308,
         "mediation_support": 1.2142537,
         "expert_direction": 0.32000000000000006
       },
       "dimension_contributions": {
         "structural_consistency": 0.21,
-        "parameter_fitting": 0.06640655059073297,
+        "parameter_fitting": 0.0664065505907327,
         "mediation_support": 0.303563425,
         "expert_direction": 0.04800000000000001
       },
@@ -52,18 +52,18 @@
     "疾病_反流性食管炎 -> 疾病_高脂血症": {
       "source": "疾病_反流性食管炎",
       "target": "疾病_高脂血症",
-      "confidence": 0.6213508219937813,
-      "quality_adjusted_confidence": 0.5436819692445587,
+      "confidence": 0.621350821993781,
+      "quality_adjusted_confidence": 0.5436819692445584,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.4,
-        "parameter_fitting": 0.5429287879751257,
+        "parameter_fitting": 0.542928787975124,
         "mediation_support": 1.2624745,
         "expert_direction": 0.2
       },
       "dimension_contributions": {
         "structural_consistency": 0.13999999999999999,
-        "parameter_fitting": 0.13573219699378142,
+        "parameter_fitting": 0.135732196993781,
         "mediation_support": 0.315618625,
         "expert_direction": 0.03
       },
@@ -72,18 +72,18 @@
     "药物_艾司唑仑片 -> 疾病_反流性食管炎": {
       "source": "药物_艾司唑仑片",
       "target": "疾病_反流性食管炎",
-      "confidence": 0.6223312178989681,
-      "quality_adjusted_confidence": 0.544539815661597,
+      "confidence": 0.6223312178989668,
+      "quality_adjusted_confidence": 0.5445398156615959,
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.4,
-        "parameter_fitting": 0.46897067159587225,
+        "parameter_fitting": 0.46897067159586703,
         "mediation_support": 1.3163542,
         "expert_direction": 0.24
       },
       "dimension_contributions": {
         "structural_consistency": 0.13999999999999999,
-        "parameter_fitting": 0.11724266789896806,
+        "parameter_fitting": 0.11724266789896676,
         "mediation_support": 0.32908855,
         "expert_direction": 0.036
       },
@@ -117,13 +117,13 @@
       "quality_score": 0.875,
       "dimension_scores": {
         "structural_consistency": 0.4,
-        "parameter_fitting": 0.7505588172755621,
+        "parameter_fitting": 0.7505588172755613,
         "mediation_support": 1.2142537,
         "expert_direction": 0.38
       },
       "dimension_contributions": {
         "structural_consistency": 0.13999999999999999,
-        "parameter_fitting": 0.18763970431889052,
+        "parameter_fitting": 0.18763970431889032,
         "mediation_support": 0.303563425,
         "expert_direction": 0.056999999999999995
       },
@@ -132,9 +132,9 @@
   },
   "statistics": {
     "core_edges_confidence_stats": {
-      "mean": 0.6637553504613471,
-      "std": 0.04136397090191286,
-      "min": 0.6213508219937813,
+      "mean": 0.6637553504613468,
+      "std": 0.04136397090191312,
+      "min": 0.621350821993781,
       "max": 0.7244756505592866,
       "median": 0.6580865524548116
     },

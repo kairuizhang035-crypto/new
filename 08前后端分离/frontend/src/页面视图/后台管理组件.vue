@@ -34,7 +34,7 @@
             </div>
           </div>
           <div v-if="uploads && uploads.length" class="uploads-list" role="list">
-            <div v-for="f in uploads" :key="f.path" class="upload-item" role="listitem">
+            <div v-for="f in pagedUploads" :key="f.path" class="upload-item" role="listitem">
               <div class="upload-main">
                 <span class="upload-name">{{ f.name }}</span>
                 <span class="upload-size">（{{ humanSize(f.size) }}）</span>
@@ -44,6 +44,14 @@
               </div>
             </div>
           </div>
+          <div v-if="uploads && uploads.length" class="pager">
+            <button class="pager-chip" :class="{ disabled: page===1 }" @click="toFirst" aria-disabled="page===1">首页</button>
+            <button class="pager-chip" :class="{ disabled: page===1 }" @click="toPrev" aria-disabled="page===1">上一页</button>
+            <span class="pager-chip" :class="{ active: true }">{{ page }}</span>
+            <span class="pager-chip" v-if="totalPages>1">{{ Math.min(page+1, totalPages) }}</span>
+            <button class="pager-chip" :class="{ disabled: page===totalPages }" @click="toNext" aria-disabled="page===totalPages">下一页</button>
+            <button class="pager-chip" :class="{ disabled: page===totalPages }" @click="toLast" aria-disabled="page===totalPages">末页</button>
+          </div>
           <div v-else class="uploads-empty">暂无上传数据</div>
         </div>
       </div>
@@ -52,7 +60,7 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 
 export default {
   name: '后台管理组件',
@@ -103,6 +111,20 @@ export default {
       }
     }
 
+    // 分页状态（每页5条）
+    const page = ref(1)
+    const pageSize = ref(5)
+    const totalPages = computed(() => Math.max(1, Math.ceil((uploads.value?.length || 0) / pageSize.value)))
+    const pagedUploads = computed(() => {
+      const start = (page.value - 1) * pageSize.value
+      return (uploads.value || []).slice(start, start + pageSize.value)
+    })
+    const clampPage = () => { page.value = Math.min(totalPages.value, Math.max(1, page.value)) }
+    const toFirst = () => { page.value = 1 }
+    const toPrev = () => { page.value = Math.max(1, page.value - 1) }
+    const toNext = () => { page.value = Math.min(totalPages.value, page.value + 1) }
+    const toLast = () => { page.value = totalPages.value }
+
     const toggleDetails = () => { showDetails.value = !showDetails.value }
     const stateClass = (s) => ({ waiting: 'waiting', running: 'running', succeeded: 'succeeded', failed: 'failed' }[String(s)] || 'waiting')
     const displayState = (s) => ({ waiting: '等待', running: '执行中', succeeded: '成功', failed: '失败' }[String(s)] || '等待')
@@ -148,6 +170,7 @@ export default {
       loadJobId()
       if (pipelineJobId.value) startPolling()
       refreshUploadsList()
+      clampPage()
     })
 
     return {
@@ -162,6 +185,14 @@ export default {
       uploadError,
       uploads,
       humanSize,
+      page,
+      pageSize,
+      totalPages,
+      pagedUploads,
+      toFirst,
+      toPrev,
+      toNext,
+      toLast,
       refreshUploadsList,
       onDeleteUpload,
       toggleDetails,
@@ -210,4 +241,10 @@ export default {
 .upload-size { font-size: 12px; color: #64748b; }
 .upload-actions .btn.danger { border-color: #ef4444; background: #ef4444; color: #fff; }
 .uploads-empty { padding: 12px; color: #64748b; font-size: 13px; }
+
+/* 简易分页样式 */
+.pager { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-top: 1px solid #f1f5f9; }
+.pager-chip { padding: 6px 10px; border: 1px solid #e5e7eb; border-radius: 8px; background: #fff; color: #334155; font-size: 12px; }
+.pager-chip.active { background: #f8fafc; font-weight: 600; }
+.pager-chip.disabled { opacity: .6; pointer-events: none; }
 </style>
