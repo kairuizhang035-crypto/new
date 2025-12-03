@@ -20,7 +20,7 @@ df = df.loc[:, (df != df.iloc[0]).any()]
 print(df.shape)
 
 # 保留每类前缀的前10个列：疾病/药物/检验
-prefix_targets = [('疾病', 200), ('药物', 200), ('检验', 200)]
+prefix_targets = [('疾病', 50), ('药物', 50), ('检验', 50)]
 selected_cols = []
 for prefix, k in prefix_targets:
     matched = [c for c in df.columns if str(c).startswith(prefix)]
@@ -65,7 +65,7 @@ for col in df_imputed.columns:
         _clean_cols.append(base)
 df_imputed.columns = _clean_cols
 
-df_imputed = df_imputed.iloc[:6000, :]
+df_imputed = df_imputed.iloc[:300, :]
 #输出df_imputed的维度
 print(df_imputed.shape)
 print(df_imputed.head())
